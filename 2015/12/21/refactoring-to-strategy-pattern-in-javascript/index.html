@@ -2,7 +2,18 @@
 lang="en-US" prefix="og: http://ogp.me/ns#"><head><meta
 charset="UTF-8"><meta
 name="viewport" content="width=device-width, initial-scale=1"><link
-rel="profile" href="http://gmpg.org/xfn/11"><title>Refactoring to Strategy Pattern in Javascript &ndash; Brilliant Coding Blog</title><link
+rel="profile" href="http://gmpg.org/xfn/11"> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-74127232-1', 'auto',{
+		'anonymizeIp': true,
+		'storage': 'none',
+		'siteSpeedSampleRate': 90
+	});
+	ga('require', 'autotrack');
+	ga('send', 'pageview');</script> <title>Refactoring to Strategy Pattern in Javascript &ndash; Brilliant Coding Blog</title><link
 rel="canonical" href="https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/" /><meta
 property="og:locale" content="en_US" /><meta
 property="og:type" content="article" /><meta
@@ -27,103 +38,105 @@ rel='dns-prefetch' href='//fonts.googleapis.com' /><link
 rel='dns-prefetch' href='//s.w.org' /><link
 rel="alternate" type="application/rss+xml" title="Brilliant Coding Blog &raquo; Feed" href="https://brilliantcoding.com/feed/" /><link
 rel="alternate" type="application/rss+xml" title="Brilliant Coding Blog &raquo; Refactoring to Strategy Pattern in Javascript Comments Feed" href="https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/feed/" /><link
-rel='stylesheet' id='brilliantcoding-style-css'  href='https://brilliantcoding.com/wp-content/themes/brilliantcoding/style-min.css' type='text/css' media='all' /><link
-rel='stylesheet' id='brilliantcoding-opensans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700%2C700italic%2C400italic%2C300italic%7COpen+Sans+Condensed%3A700%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' /> <script type='text/javascript' src='https://brilliantcoding.com/wp-content/themes/brilliantcoding/js/theme-min.js'></script> <meta
-name="generator" content="WordPress 4.6.1" /><link
-rel='shortlink' href='https://brilliantcoding.com/?p=16' /><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link
-rel="icon" href="https://brilliantcoding.com/wp-content/uploads/2016/02/Brilliant-logo-v1-120x120.png" sizes="32x32" /><link
-rel="icon" href="https://brilliantcoding.com/wp-content/uploads/2016/02/Brilliant-logo-v1-120x120.png" sizes="192x192" /><link
-rel="apple-touch-icon-precomposed" href="https://brilliantcoding.com/wp-content/uploads/2016/02/Brilliant-logo-v1-120x120.png" /><meta
-name="msapplication-TileImage" content="https://brilliantcoding.com/wp-content/uploads/2016/02/Brilliant-logo-v1-120x120.png" /> <script async src='https://brilliantcoding.com/wp-content/themes/brilliantcoding/js/autotrack.js'></script> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-74127232-1', 'auto',{
-  	'anonymizeIp': true,
-  	'storage': 'none',
-  	'siteSpeedSampleRate': 90
-  });
-  ga('require', 'autotrack');
-  ga('send', 'pageview');</script> </head><body
-class="single single-post postid-16 single-format-standard"><div
-id="page" class="hfeed site">
+rel='stylesheet' id='bc-847cba1013f2ef83c10e8641953cb3bc-css'  href='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/css/bc.min.css' type='text/css' media='all' /><link
+rel='stylesheet' id='bc-opensans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700%2C700italic%2C400italic%2C300italic%7COpen+Sans+Condensed%3A700%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' /> <script type='text/javascript' src='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/js/vendor/dep/jquery-slim.min.js'></script> <script type='text/javascript' src='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/js/vendor/dep/popper.min.js'></script> <script type='text/javascript' src='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/js/vendor/anchor.min.js'></script> <script type='text/javascript' src='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/js/vendor/autotrack.js'></script> <script type='text/javascript' src='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/js/vendor/bootstrap.min.js'></script> <script type='text/javascript' src='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/js/vendor/clipboard.min.js'></script> <script type='text/javascript' src='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/js/vendor/holder.min.js'></script> <script type='text/javascript' src='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/js/bc.min.js'></script> <meta
+name="generator" content="WordPress 4.8.2" /><link
+rel='shortlink' href='https://brilliantcoding.com/?p=16' /><link
+rel="icon" href="https://brilliantcoding.com/wp-content/uploads/2018/01/Brilliant-logo-120x120-v2-4.png" sizes="32x32" /><link
+rel="icon" href="https://brilliantcoding.com/wp-content/uploads/2018/01/Brilliant-logo-120x120-v2-4.png" sizes="192x192" /><link
+rel="apple-touch-icon-precomposed" href="https://brilliantcoding.com/wp-content/uploads/2018/01/Brilliant-logo-120x120-v2-4.png" /><meta
+name="msapplication-TileImage" content="https://brilliantcoding.com/wp-content/uploads/2018/01/Brilliant-logo-120x120-v2-4.png" /></head><body
+class="post-template-default single single-post postid-16 single-format-standard">
 <a
-class="skip-link screen-reader-text" href="#content">Skip to content</a><header
-id="masthead" class="site-header" role="banner"><div
-class="site-branding alignleft"><h1 class="site-title" style="background-image: url(https://brilliantcoding.com/wp-content/uploads/2016/02/Brilliant-logo-v1-120x120.png);"><a
-href="https://brilliantcoding.com/" rel="home">Brilliant Coding Blog</a></h1><h2 class="site-description">Be Brilliant</h2></div><div
-class='social-links alignright'><ul
-id="menu-social" class="menu"><li
-id="menu-item-12" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12"><a
-href="https://twitter.com/brilliantcoding"><span
-class="screen-reader-text">Twitter</span></a></li><li
-id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13"><a
-href="https://www.facebook.com/Brilliant-Coding-1500149683622222/"><span
-class="screen-reader-text">Facebook</span></a></li><li
-id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14"><a
-href="https://plus.google.com/101801437148778837314/"><span
-class="screen-reader-text">Google+</span></a></li><li
-id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15"><a
-href="https://github.com/brilliantcoding"><span
-class="screen-reader-text">GIthub</span></a></li></ul></div><div
-class='navigation-bar'>
-<nav
-id="site-navigation" class="main-navigation" role="navigation"><div
-class="menu-primary-container"><ul
-id="menu-primary" class="menu"><li
-id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10"><a
-href="https://brilliantcoding.com/now/">Now</a></li><li
-id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11"><a
-href="https://brilliantcoding.com/about/">About</a></li></ul></div>			</nav></div>
-</header><div
-id="content" class="site-content">
- <script src="https://apis.google.com/js/platform.js" async defer></script> <div
+id="bc-skippy" class="sr-only sr-only-focusable" href="#content">
+<span
+class="bc-skiplink-text">Skip to content</span>
+</a><header
+class="bc-navbar nav navbar navbar-expand navbar-dark flex-column flex-md-row"><div
+class="navbar-nav-scroll"><ul
+class="navbar-nav d-flex align-items-center"><li
+class="navbar-item"><a
+class="nav-link " href="https://brilliantcoding.com/now/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<span
+class="font-weight-bold">Now</span>
+</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://brilliantcoding.com/about/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<span
+class="font-weight-bold">About</span>
+</a></li></ul></div><ul
+class="navbar-nav flex-row ml-md-auto d-none d-md-flex"><li
+class="navbar-item"><a
+class="nav-link " href="https://twitter.com/brilliantcoding" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fa fa-twitter" aria-hidden="true"></i>
+</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://www.facebook.com/Brilliant-Coding-1500149683622222/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fa fa-facebook" aria-hidden="true"></i>
+</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://plus.google.com/101801437148778837314/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fa fa-google-plus" aria-hidden="true"></i>
+</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://github.com/brilliantcoding" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fa fa-github" aria-hidden="true"></i>
+</a></li></ul></header><div
+class="blog-title mt-2"><div
+class="container d-flex"><div>
+<a
+class="float-left mr-3" href="https://brilliantcoding.com/">
+<img
+src="https://brilliantcoding.com/wp-content/uploads/2018/01/Brilliant-logo-120x120-v2-4.png" />
+</a></div><div
+class="align-self-end"><h1 class="site-title">
+Brilliant Coding Blog</h1><p
+class="site-description mb-0">Be Brilliant</p></div></div></div> <script src="https://apis.google.com/js/platform.js" async defer></script> <div
 id="fb-root"></div> <script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script> <div
-id="primary" class="content-area"><p
-id="breadcrumbs"><span
-xmlns:v="http://rdf.data-vocabulary.org/#"><span
-typeof="v:Breadcrumb"><a
-href="https://brilliantcoding.com" rel="v:url" property="v:title">Home</a> &gt; <span
-rel="v:child" typeof="v:Breadcrumb"><a
-href="https://brilliantcoding.com/category/code-refactor/" rel="v:url" property="v:title">Code Refactor</a> &gt; <strong
-class="breadcrumb_last">Refactoring to Strategy Pattern in Javascript</strong></span></span></span></p>		<main
-id="main" class="site-main" role="main">
+class="blog-content bc-content"><div
+class="container">
 <article
-id="post-16" class="post-16 post type-post status-publish format-standard hentry category-code-refactor tag-javascript">
-<header
-class="entry-header"><h1 class="entry-title">Refactoring to Strategy Pattern in Javascript</h1><div
-class="entry-meta">
+id="post-16" class="h-entry row mt-5 bc-post-article"><div
+class="col-md-12 text-md-left text-center ml-3 pb-5 bc-border"><h2 class="p-name">Refactoring to Strategy Pattern in Javascript</h2><div
+class="clearfix"><a
+href="https://brilliantcoding.com/tag/javascript/" rel="tag">Javascript</a></div>
+<span>Posted on</span>
 <span
-class="posted-on"><a
-href="https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/" rel="bookmark"><time
-class="entry-date published" datetime="2015-12-21T06:57:28+00:00">December 21, 2015</time><time
-class="updated" datetime="2016-04-25T06:21:33+00:00">April 25, 2016</time></a></span><span
-class="byline"> <span
-class="author vcard"><a
-class="url fn n" href="https://brilliantcoding.com/author/mjjacko/">Matthew Jackowski</a></span></span><span
-class="tags-links"><a
-href="https://brilliantcoding.com/tag/javascript/" rel="tag">Javascript</a></span></div><div
-class="entry-meta-social">
+class="clearfix">
+<time
+class="dt-published" datetime="2015-12-21T06:57:28+00:00">
+December 21, 2015						</time>
+</span>
+<span>Last modified</span>
 <span
-class="twitter-button">		<a
-href="https://twitter.com/share" class="twitter-share-button" data-url="http://tinyurl.com/yaeeygj5" data-via="brilliantcoding">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></span><span
-class="facebook-button" style="display: inline-block;"><div
-class="fb-share-button" data-href="https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/" data-layout="button"></div></span><span
-class="googleplus-button"><div
-class="g-plusone" data-annotation="none" data-href="https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/"></div></span></div></header><div
-class="entry-content"><p>This is a quick example to show refactoring to a strategy pattern.</p><p>We will take a simple function that uses a case statement and refactor with the strategy pattern. Keep in mind this approach will also work with &#8216;if &#8230; else&#8217; trees too!<br
+class="clearfix">
+<time
+class="dt-updated" datetime="2016-04-25T06:21:33+00:00">
+April 25, 2016						</time>
+</span>
+<span
+class="clearfix">
+<a
+class="p-author h-card" href="https://brilliantcoding.com/author/mjjacko/">
+Matthew Jackowski
+</a>
+</span><div
+class="e-content"><p>This is a quick example to show refactoring to a strategy pattern.</p><p>We will take a simple function that uses a case statement and refactor with the strategy pattern. Keep in mind this approach will also work with &#8216;if &#8230; else&#8217; trees too!<br
 />
 <span
-id="more-16"></span></p><style type="text/css">@import url("https://brilliantcoding.com/wp-content/themes/brilliantcoding/highlight/styles/monokai.css");</style> <script src="https://brilliantcoding.com/wp-content/themes/brilliantcoding/highlight/highlight.pack.js"></script> <script>hljs.initHighlightingOnLoad();</script> <style>@font-face {
+id="more-16"></span></p><style type="text/css">@import url("https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/highlight/styles/monokai.css");</style> <script src="https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/highlight/highlight.pack.js"></script> <script>hljs.initHighlightingOnLoad();</script> <style>@font-face {
     font-family: "Iosevka";
-    src: url(https://brilliantcoding.com/wp-content/themes/brilliantcoding/iosevka/iosevka-regular.ttf) format("truetype");
+    src: url(https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/iosevka/iosevka-regular.ttf) format("truetype");
 }</style><p>In the example below we are using function &#8216;send&#8217; to display information on different types of messages. It&#8217;s important to note that in the &#8216;switch&#8217; implementation a string identifier has to be passed explicitly.</p><pre><code class="javascript">  send: function(t, m) {
     switch (t) {
       case message.A.name: {
@@ -182,39 +195,507 @@ myapp.switchStrategy(A);
 myapp.invokeStrategy(msg);
 myapp.switchStrategy(Z); // Not defined error
 </code></pre><p>The final version of this code can be found in a Gist <a
-href="https://gist.github.com/matthewjackowski/1256ea75fce704675426" target="_blank">here</a>.</p></div></article><nav
-class="navigation post-navigation" role="navigation"><h1 class="screen-reader-text">Post navigation</h1><div
-class="nav-links"><div
-class="nav-next"><a
-href="https://brilliantcoding.com/2015/12/22/open-source-programming-environments-that-make-coding-easier/" rel="next">Open Source programming environments that make coding easier&nbsp;<span
-class="meta-nav">&rarr;</span></a></div></div>
-</nav><div
+href="https://gist.github.com/matthewjackowski/1256ea75fce704675426" target="_blank">here</a>.</p></div></div>
+<a
+id="bc-skippy" class="sr-only sr-only-focusable" href="https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/">
+<span
+class="bc-skiplink-text">Refactoring to Strategy Pattern in Javascript</span>
+</a></article></div></div><div
 id="disqus_thread"></div> <script>/**
      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
      */
-    
-    var disqus_config = function () {
-        this.page.url = 'https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/';
-        this.page.identifier = 'refactoring-to-strategy-pattern-in-javascript';
-	this.page.title = 'Refactoring to Strategy Pattern in Javascript';
-    };
-    
+     
+     var disqus_config = function () {
+     	this.page.url = 'https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/';
+     	this.page.identifier = 'refactoring-to-strategy-pattern-in-javascript';
+     	this.page.title = 'Refactoring to Strategy Pattern in Javascript';
+     };
+     
     (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
-        var d = document, s = d.createElement('script');
-        
+    	var d = document, s = d.createElement('script');
+    	
         s.src = '//brilliantcoding.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
         
         s.setAttribute('data-timestamp', + new Date());
         (d.head || d.body).appendChild(s);
     })();</script> <noscript>Please enable JavaScript to view the <a
-href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-</main></div></div><footer
-id="colophon" class="site-footer" role="contentinfo"><div
-class="site-info">
-Founded by Matthew Jackowski 2016			<span
-class="sep"> | </span>
-<a
-href="http://wordpress.org/">Proudly powered by WordPress</a></div>
-</footer></div></body>
+href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript><footer
+id="colophon" class="bc-footer" role="contentinfo"><div
+class="container"><div
+class="bc-social-icons"><ul
+class="navbar-nav flex-row ml-md-auto d-none d-md-flex"><li
+class="navbar-item"><a
+class="nav-link " href="https://twitter.com/brilliantcoding" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fa fa-twitter" aria-hidden="true"></i>
+Twitter			</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://www.facebook.com/Brilliant-Coding-1500149683622222/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fa fa-facebook" aria-hidden="true"></i>
+Facebook			</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://plus.google.com/101801437148778837314/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fa fa-google-plus" aria-hidden="true"></i>
+Google+			</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://github.com/brilliantcoding" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fa fa-github" aria-hidden="true"></i>
+GIthub			</a></li></ul></div><div
+class="bc-copyright">
+<span>© 2017 Matthew Jackowski</span>
+<span>- Powered by the Brilliant Coding Wordpress Theme</span></div>		</div>
+	</footer>
+	<!-- Array
+(
+    [post_format] => article
+    [post_type] => post
+    [posts] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 16
+                    [title] => Refactoring to Strategy Pattern in Javascript
+                    [name] => refactoring-to-strategy-pattern-in-javascript
+                    [content] => <p>This is a quick example to show refactoring to a strategy pattern.</p>
+<p>We will take a simple function that uses a case statement and refactor with the strategy pattern. Keep in mind this approach will also work with &#8216;if &#8230; else&#8217; trees too!<br />
+<span id="more-16"></span></p>
+<style type="text/css"> @import url("https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/highlight/styles/monokai.css"); </style>
+<script src="https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<style>
+@font-face {
+    font-family: "Iosevka";
+    src: url(https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/iosevka/iosevka-regular.ttf) format("truetype");
+}
+</style>
+<p>In the example below we are using function &#8216;send&#8217; to display information on different types of messages. It&#8217;s important to note that in the &#8216;switch&#8217; implementation a string identifier has to be passed explicitly.</p>
+<pre><code class="javascript">  send: function(t, m) {
+    switch (t) {
+      case message.A.name: {
+        console.log('Type found, take action on message type A');
+        message.A.inspect(m);
+        break;
+      }
+      case message.B.name: {
+        console.log('Type found, take action on message type B.');
+        message.B.inspect(m);
+        break;
+      }
+      default: {
+        console.log('Type not found, return false');
+        return false;
+        break;
+      }
+    }
+    return true;
+  },
+</code></pre>
+<p>An example invocation for this approach is:</p>
+<pre><code class="javascript">msg = message.A.create();
+console.log(myapp.send('Message Type A',msg));
+console.log(myapp.send('Invalid Type',msg));
+</code></pre>
+<p>Now let&#8217;s refactor to our strategy pattern:</p>
+<p>First we will need to create a &#8216;Strategy&#8217; function that will implement the &#8216;send&#8217; call. Next will be create a message &#8216;A&#8217; and &#8216;B&#8217; strategies to allow us to switch our strategy. Last we will add 2 new functions to &#8216;switch&#8217; and &#8216;invoke&#8217; our strategy function.</p>
+<pre><code class="javascript">var Strategy = function(f) {
+  this.send = f;
+};
+
+Strategy.prototype.execute = function(m) {
+  this.send(m);
+};
+
+var A = new Strategy(function(m) {
+  console.log('Type found, take action on message type A');
+  message.A.inspect(m);
+  return true;
+});
+
+var B = new Strategy(function(m) {
+  console.log('Type found, take action on message type B');
+  message.B.inspect(m);
+  return true;
+});
+
+myapp = {
+  switchStrategy: function(strategy) {
+  this.strategy = strategy;
+},
+
+  invokeStrategy: function(m) {
+  this.strategy.execute(m);
+},
+
+};
+</code></pre>
+<p>The invocation of this now looks like this:</p>
+<pre><code class="javascript">msg = message.A.create();
+myapp.switchStrategy(A);
+myapp.invokeStrategy(msg);
+myapp.switchStrategy(Z); // Not defined error
+</code></pre>
+<p>The final version of this code can be found in a Gist <a href="https://gist.github.com/matthewjackowski/1256ea75fce704675426" target="_blank">here</a>.</p>
+
+                    [excerpt] => This is a quick example to show refactoring to a strategy pattern.  We will take a simple function that uses a case statement and refactor with the strategy pattern. Keep in mind this approach will also work with 'if ... else' trees too!
+                    [permalink] => https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/
+                    [tags_list] => <a href="https://brilliantcoding.com/tag/javascript/" rel="tag">Javascript</a>
+                    [published_date_ISO8601] => 2015-12-21T06:57:28+00:00
+                    [published_date] => December 21, 2015
+                    [modified_date_ISO8601] => 2016-04-25T06:21:33+00:00
+                    [modified_date] => April 25, 2016
+                    [author_posts_url] => https://brilliantcoding.com/author/mjjacko/
+                    [author] => Matthew Jackowski
+                    [class_excerpt] => Array
+                        (
+                            [0] => excerpt
+                            [1] => post-16
+                            [2] => post
+                            [3] => type-post
+                            [4] => status-publish
+                            [5] => format-standard
+                            [6] => hentry
+                            [7] => category-code-refactor
+                            [8] => tag-javascript
+                        )
+
+                    [tinyurl] => 
+                )
+
+        )
+
+    [bloginfo] => Array
+        (
+            [charset] => UTF-8
+            [name] => Brilliant Coding Blog
+            [description] => Be Brilliant
+            [language_attributes] => lang="en-US" prefix="og: http://ogp.me/ns#"
+            [home_url] => https://brilliantcoding.com/
+        )
+
+    [theme] => Array
+        (
+            [mod_gatrackingid] => UA-74127232-1
+            [mod_disquisshortname] => brilliantcoding
+            [skip_text] => Skip to content
+            [copyright_html] => © 2017 Matthew Jackowski
+            [powered_html] => - Powered by the Brilliant Coding Wordpress Theme
+            [template_name] => single
+        )
+
+    [template] => Array
+        (
+            [directory_uri] => https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha
+            [directory] => /var/www/html/wp-content/themes/brilliantcodingalpha
+            [body_class] => post-template-default single single-post postid-16 single-format-standard
+        )
+
+    [wp_nav_menu] => Array
+        (
+            [primary] => Array
+                (
+                    [0] => WP_Post Object
+                        (
+                            [ID] => 10
+                            [post_author] => 1
+                            [post_date] => 2016-02-21 06:28:57
+                            [post_date_gmt] => 2016-02-21 06:28:57
+                            [post_content] =>  
+                            [post_title] => 
+                            [post_excerpt] => 
+                            [post_status] => publish
+                            [comment_status] => closed
+                            [ping_status] => closed
+                            [post_password] => 
+                            [post_name] => 10
+                            [to_ping] => 
+                            [pinged] => 
+                            [post_modified] => 2016-02-21 06:28:57
+                            [post_modified_gmt] => 2016-02-21 06:28:57
+                            [post_content_filtered] => 
+                            [post_parent] => 0
+                            [guid] => http://192.168.99.100:32769/?p=10
+                            [menu_order] => 1
+                            [post_type] => nav_menu_item
+                            [post_mime_type] => 
+                            [comment_count] => 0
+                            [filter] => raw
+                            [db_id] => 10
+                            [menu_item_parent] => 0
+                            [object_id] => 8
+                            [object] => page
+                            [type] => post_type
+                            [type_label] => Page
+                            [url] => https://brilliantcoding.com/now/
+                            [title] => Now
+                            [target] => 
+                            [attr_title] => 
+                            [description] => 
+                            [classes] => Array
+                                (
+                                    [0] => 
+                                )
+
+                            [xfn] => 
+                        )
+
+                    [1] => WP_Post Object
+                        (
+                            [ID] => 11
+                            [post_author] => 1
+                            [post_date] => 2016-02-21 06:28:57
+                            [post_date_gmt] => 2016-02-21 06:28:57
+                            [post_content] =>  
+                            [post_title] => 
+                            [post_excerpt] => 
+                            [post_status] => publish
+                            [comment_status] => closed
+                            [ping_status] => closed
+                            [post_password] => 
+                            [post_name] => 11
+                            [to_ping] => 
+                            [pinged] => 
+                            [post_modified] => 2016-02-21 06:28:57
+                            [post_modified_gmt] => 2016-02-21 06:28:57
+                            [post_content_filtered] => 
+                            [post_parent] => 0
+                            [guid] => http://192.168.99.100:32769/?p=11
+                            [menu_order] => 2
+                            [post_type] => nav_menu_item
+                            [post_mime_type] => 
+                            [comment_count] => 0
+                            [filter] => raw
+                            [db_id] => 11
+                            [menu_item_parent] => 0
+                            [object_id] => 2
+                            [object] => page
+                            [type] => post_type
+                            [type_label] => Page
+                            [url] => https://brilliantcoding.com/about/
+                            [title] => About
+                            [target] => 
+                            [attr_title] => 
+                            [description] => 
+                            [classes] => Array
+                                (
+                                    [0] => 
+                                )
+
+                            [xfn] => 
+                        )
+
+                )
+
+            [social] => Array
+                (
+                    [0] => WP_Post Object
+                        (
+                            [ID] => 12
+                            [post_author] => 1
+                            [post_date] => 2016-02-21 06:34:27
+                            [post_date_gmt] => 2016-02-21 06:34:27
+                            [post_content] => 
+                            [post_title] => Twitter
+                            [post_excerpt] => 
+                            [post_status] => publish
+                            [comment_status] => closed
+                            [ping_status] => closed
+                            [post_password] => 
+                            [post_name] => twitter
+                            [to_ping] => 
+                            [pinged] => 
+                            [post_modified] => 2018-01-03 07:05:44
+                            [post_modified_gmt] => 2018-01-03 07:05:44
+                            [post_content_filtered] => 
+                            [post_parent] => 0
+                            [guid] => http://192.168.99.100:32769/?p=12
+                            [menu_order] => 1
+                            [post_type] => nav_menu_item
+                            [post_mime_type] => 
+                            [comment_count] => 0
+                            [filter] => raw
+                            [db_id] => 12
+                            [menu_item_parent] => 0
+                            [object_id] => 12
+                            [object] => custom
+                            [type] => custom
+                            [type_label] => Custom Link
+                            [title] => Twitter
+                            [url] => https://twitter.com/brilliantcoding
+                            [target] => 
+                            [attr_title] => 
+                            [description] => 
+                            [classes] => Array
+                                (
+                                    [0] => fa
+                                    [1] => fa-twitter
+                                )
+
+                            [xfn] => 
+                        )
+
+                    [1] => WP_Post Object
+                        (
+                            [ID] => 13
+                            [post_author] => 1
+                            [post_date] => 2016-02-21 06:34:27
+                            [post_date_gmt] => 2016-02-21 06:34:27
+                            [post_content] => 
+                            [post_title] => Facebook
+                            [post_excerpt] => 
+                            [post_status] => publish
+                            [comment_status] => closed
+                            [ping_status] => closed
+                            [post_password] => 
+                            [post_name] => facebook
+                            [to_ping] => 
+                            [pinged] => 
+                            [post_modified] => 2018-01-03 07:05:44
+                            [post_modified_gmt] => 2018-01-03 07:05:44
+                            [post_content_filtered] => 
+                            [post_parent] => 0
+                            [guid] => http://192.168.99.100:32769/?p=13
+                            [menu_order] => 2
+                            [post_type] => nav_menu_item
+                            [post_mime_type] => 
+                            [comment_count] => 0
+                            [filter] => raw
+                            [db_id] => 13
+                            [menu_item_parent] => 0
+                            [object_id] => 13
+                            [object] => custom
+                            [type] => custom
+                            [type_label] => Custom Link
+                            [title] => Facebook
+                            [url] => https://www.facebook.com/Brilliant-Coding-1500149683622222/
+                            [target] => 
+                            [attr_title] => 
+                            [description] => 
+                            [classes] => Array
+                                (
+                                    [0] => fa
+                                    [1] => fa-facebook
+                                )
+
+                            [xfn] => 
+                        )
+
+                    [2] => WP_Post Object
+                        (
+                            [ID] => 14
+                            [post_author] => 1
+                            [post_date] => 2016-02-21 06:34:27
+                            [post_date_gmt] => 2016-02-21 06:34:27
+                            [post_content] => 
+                            [post_title] => Google+
+                            [post_excerpt] => 
+                            [post_status] => publish
+                            [comment_status] => closed
+                            [ping_status] => closed
+                            [post_password] => 
+                            [post_name] => google
+                            [to_ping] => 
+                            [pinged] => 
+                            [post_modified] => 2018-01-03 07:05:45
+                            [post_modified_gmt] => 2018-01-03 07:05:45
+                            [post_content_filtered] => 
+                            [post_parent] => 0
+                            [guid] => http://192.168.99.100:32769/?p=14
+                            [menu_order] => 3
+                            [post_type] => nav_menu_item
+                            [post_mime_type] => 
+                            [comment_count] => 0
+                            [filter] => raw
+                            [db_id] => 14
+                            [menu_item_parent] => 0
+                            [object_id] => 14
+                            [object] => custom
+                            [type] => custom
+                            [type_label] => Custom Link
+                            [title] => Google+
+                            [url] => https://plus.google.com/101801437148778837314/
+                            [target] => 
+                            [attr_title] => 
+                            [description] => 
+                            [classes] => Array
+                                (
+                                    [0] => fa
+                                    [1] => fa-google-plus
+                                )
+
+                            [xfn] => 
+                        )
+
+                    [3] => WP_Post Object
+                        (
+                            [ID] => 15
+                            [post_author] => 1
+                            [post_date] => 2016-02-21 06:34:27
+                            [post_date_gmt] => 2016-02-21 06:34:27
+                            [post_content] => 
+                            [post_title] => GIthub
+                            [post_excerpt] => 
+                            [post_status] => publish
+                            [comment_status] => closed
+                            [ping_status] => closed
+                            [post_password] => 
+                            [post_name] => github
+                            [to_ping] => 
+                            [pinged] => 
+                            [post_modified] => 2018-01-03 07:05:45
+                            [post_modified_gmt] => 2018-01-03 07:05:45
+                            [post_content_filtered] => 
+                            [post_parent] => 0
+                            [guid] => http://192.168.99.100:32769/?p=15
+                            [menu_order] => 4
+                            [post_type] => nav_menu_item
+                            [post_mime_type] => 
+                            [comment_count] => 0
+                            [filter] => raw
+                            [db_id] => 15
+                            [menu_item_parent] => 0
+                            [object_id] => 15
+                            [object] => custom
+                            [type] => custom
+                            [type_label] => Custom Link
+                            [title] => GIthub
+                            [url] => https://github.com/brilliantcoding
+                            [target] => 
+                            [attr_title] => 
+                            [description] => 
+                            [classes] => Array
+                                (
+                                    [0] => fa
+                                    [1] => fa-github
+                                )
+
+                            [xfn] => 
+                        )
+
+                )
+
+        )
+
+    [site] => Array
+        (
+            [icon_url] => https://brilliantcoding.com/wp-content/uploads/2018/01/Brilliant-logo-120x120-v2-4.png
+        )
+
+    [search] => Array
+        (
+            [query] => 
+        )
+
+    [archive] => Array
+        (
+            [title] => Archives
+            [description] => 
+        )
+
+)
+ -->
+</body>
 </html>
