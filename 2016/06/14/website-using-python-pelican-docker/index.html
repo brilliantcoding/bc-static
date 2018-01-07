@@ -47,8 +47,7 @@ rel="icon" href="https://brilliantcoding.com/wp-content/uploads/2018/01/Brillian
 rel="icon" href="https://brilliantcoding.com/wp-content/uploads/2018/01/Brilliant-logo-120x120-v2-4.png" sizes="192x192" /><link
 rel="apple-touch-icon-precomposed" href="https://brilliantcoding.com/wp-content/uploads/2018/01/Brilliant-logo-120x120-v2-4.png" /><meta
 name="msapplication-TileImage" content="https://brilliantcoding.com/wp-content/uploads/2018/01/Brilliant-logo-120x120-v2-4.png" /></head><body
-class="post-template-default single single-post postid-223 single-format-standard">
-<a
+class="post-template-default single single-post postid-223 single-format-standard"><a
 id="bc-skippy" class="sr-only sr-only-focusable" href="#content">
 <span
 class="bc-skiplink-text">Skip to content</span>
@@ -56,6 +55,11 @@ class="bc-skiplink-text">Skip to content</span>
 class="bc-navbar nav navbar navbar-expand navbar-dark flex-column flex-md-row"><div
 class="navbar-nav-scroll"><ul
 class="navbar-nav d-flex align-items-center"><li
+class="navbar-item"><a
+class="nav-link " href="https://brilliantcoding.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<span
+class="font-weight-bold">Home</span>
+</a></li><li
 class="navbar-item"><a
 class="nav-link " href="https://brilliantcoding.com/now/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
 <span
@@ -89,11 +93,11 @@ class="fa fa-github" aria-hidden="true"></i>
 </a></li></ul></header><div
 class="blog-title mt-2"><div
 class="container d-flex"><div>
-<a
-class="float-left mr-3" href="https://brilliantcoding.com/">
+<span
+class="float-left mr-3">
 <img
 src="https://brilliantcoding.com/wp-content/uploads/2018/01/Brilliant-logo-120x120-v2-4.png" />
-</a></div><div
+</span></div><div
 class="align-self-end"><h1 class="site-title">
 Brilliant Coding Blog</h1><p
 class="site-description mb-0">Be Brilliant</p></div></div></div> <script src="https://apis.google.com/js/platform.js" async defer></script> <div
@@ -111,14 +115,14 @@ id="post-223" class="h-entry row mt-5 bc-post-article"><div
 class="col-md-12 text-md-left text-center ml-3 pb-5 bc-border"><h2 class="p-name">Build a Static Website Using Python, Pelican, and Docker</h2><div
 class="clearfix"><a
 href="https://brilliantcoding.com/tag/python/" rel="tag">Python</a></div>
-<span>Posted on</span>
+<span></span>
 <span
 class="clearfix">
 <time
 class="dt-published" datetime="2016-06-14T07:23:06+00:00">
 June 14, 2016						</time>
 </span>
-<span>Last modified</span>
+<span></span>
 <span
 class="clearfix">
 <time
@@ -163,7 +167,7 @@ id="bc-skippy" class="sr-only sr-only-focusable" href="https://brilliantcoding.c
 <span
 class="bc-skiplink-text">Build a Static Website Using Python, Pelican, and Docker</span>
 </a></article></div></div><div
-id="disqus_thread"></div> <script>/**
+id="disqus_thread" class="m-5"></div> <script>/**
      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
      */
@@ -209,426 +213,8 @@ class="fa fa-github" aria-hidden="true"></i>
 GIthub			</a></li></ul></div><div
 class="bc-copyright">
 <span>© 2017 Matthew Jackowski</span>
-<span>- Powered by the Brilliant Coding Wordpress Theme</span></div>		</div>
+<span>- Powered by the <a
+href="https://github.com/brilliantcoding/bc-wptheme">Brilliant Coding Wordpress Theme</a></span></div>		</div>
 	</footer>
-	<!-- Array
-(
-    [post_format] => article
-    [post_type] => post
-    [posts] => Array
-        (
-            [0] => Array
-                (
-                    [id] => 223
-                    [title] => Build a Static Website Using Python, Pelican, and Docker
-                    [name] => website-using-python-pelican-docker
-                    [content] => <p>In this example I&#8217;ll show you how you can build a static website for your open source project on <a href="https://pages.github.com/" target="_blank">GitHub pages</a> using the combination of <a href="https://www.python.org/" target="_blank">Python</a> (language), <a href="http://blog.getpelican.com/" target="_blank">Pelican</a> (generator), and <a href="https://www.docker.com/" target="_blank">Docker</a> (environment).  For this type of task, speed is important.  I want to avoid spending time thinking about designing a blog system or implementing a content management system.  My goal with this approach, is to focus on the content, and avoid worrying about installation, setup, or infrastructure.<br />
-<span id="more-223"></span></p>
-<p>As far as content creation goes, Pelican <a href="http://docs.getpelican.com/en/stable/content.html" target="_blank">supports</a> HTML, Markdown reStructuredText formats and more.  There are many editors out there that will make building content in these formats very simple.  A deeper discussion of formats and editors deserves its own post, so I&#8217;m not going to delve into the details here.</p>
-<h2>Step by Step</h2>
-<p>Here&#8217;s the entire process:</p>
-<ul>
-<li><strong>Step 1 &#8211; </strong>First setup and <a href="https://docs.docker.com/" target="_blank">install docker</a>.  I do this on my local system, but you could use any of the various Docker hosting providers as well.</li>
-</ul>
-<p><a href="https://hub.docker.com/r/mjjacko/pelican/" target="_blank"><img class="alignright" style="border: 1px solid #000;" src="https://brilliantcoding.com/wp-content/uploads/2016/06/website-using-python-pelican-docker-2.jpg" alt="MJJacko's Pelican Image" width="369" height="204" /></a></p>
-<p>&nbsp;</p>
-<ul>
-<li><strong>Step 2 &#8211; </strong>Next, run an existing Docker image.  I have a great <a href="https://hub.docker.com/r/mjjacko/pelican/" target="_blank">docker image</a> already setup, but of course you could also build your own (see below for <a href="#1" target="_blank">&#8216;advanced&#8217; configuration</a>).</li>
-</ul>
-<p>&nbsp;</p>
-<ul>
-<li><strong>Step 3 &#8211; </strong>Next map the Docker volume to one of your local file folders.  This allows you to edit and create your content files, just as you would any other local file.</li>
-</ul>
-<p>&nbsp;</p>
-<ul>
-<li><strong>Step 4 &#8211; </strong>The web server included with Pelican will detect any file changes and auto-rebuild your site.  You can see the updates directly by just browsing to the web server&#8217;s URL.</li>
-</ul>
-<p><a href="https://help.github.com/articles/creating-project-pages-manually/#add-content-and-push" target="_blank"><img class="alignright" style="border: 1px solid #000;" src="https://brilliantcoding.com/wp-content/uploads/2016/06/website-using-python-pelican-docker-1.png" alt="GitHub Add content and push" width="375" height="208" /></a></p>
-<p>&nbsp;</p>
-<ul>
-<li><strong>Step 5 &#8211; </strong>Once you are happy with your site&#8230;ship it!  In this case deployment is done by simply pushing your generated HTML content to the gh-pages branch.</li>
-</ul>
-<p>&nbsp;</p>
-<ul>
-<li><strong>And done!</strong></li>
-</ul>
-<h2><a name="1"></a>Advanced Configuration</h2>
-<p>While we are avoiding the complexity of a blog or CMS application, there is some configuration that still have to be defined.  However if we bundle these configuration files inside of our docker image we only need to worry about it when we are initially setting up the project, or making environmental changes (which should be fairly infrequent).</p>
-<p>Making a docker image requires a docker &#8216;build&#8217; (<a href="https://docs.docker.com/engine/reference/builder/" target="_blank">Dockerfile</a>) file plus any files that need to be added to the new image.  You can checkout <a href="https://github.com/matthewjackowski/pelican-dockerfile" target="_blank">my example</a> on GitHub.</p>
-<p>In this case there are 3 important configuration files:</p>
-<ul>
-<li><a href="https://github.com/matthewjackowski/pelican-dockerfile/blob/master/files/pelican/requirements.txt" target="_blank">requirements.txt</a> &#8211; any Python dependencies that are needed</li>
-<li><a href="https://github.com/matthewjackowski/pelican-dockerfile/blob/master/files/pelican/pelicanconf.py" target="_blank">pelicanconf.py</a> &#8211; basic site configuration</li>
-<li><a href="https://github.com/matthewjackowski/pelican-dockerfile/blob/master/files/pelican/publishconf.py" target="_blank">publishconf.py</a> &#8211; configuration for static publishing</li>
-</ul>
-<p>These configuration files are intended to to be a basic minimum to get you running quickly, however you might want to replace them from your own repository.  This is totally fine, however be aware that re-installing requirements in the container will not happen automatically.  You will either need to build a new image, or login to the container, run &#8216;<a href="https://pip.pypa.io/en/stable/" target="_blank">pip</a>&#8216; and then use &#8216;<a href="https://docs.docker.com/engine/reference/commandline/commit/" target="_blank">Docker commit</a>&#8216; to save the image.</p>
-<p>Also we will include a <a href="https://github.com/matthewjackowski/pelican-dockerfile/blob/master/files/develop_server.sh" target="_blank">bash script</a> that keeps the a running server with the site available.  Otherwise Docker would run once and exit.</p>
-<p>With these files in place, actually creating the image is easy, change to your build directory and run: <code>docker build -t user/myrepo:latest .</code></p>
-<p>Once you build the image from the Dockerfile others on your team can use the image directly.  Additionally you can maintain the Dockerfile with source control so that the team can easily contribute any changes to the environment back to it.</p>
-<p>With static site generation, a docker managed environment and a GitHub pages hosting solution, building a website is quick, and simple to manage.</p>
-<h2>Notes</h2>
-<ul>
-<li>Pelican has a large library of <a href="https://github.com/getpelican/pelican-plugins#pelican-plugins" target="_blank">plugins</a> that can help address many content publishing needs.  You might be surprised how much you can do with a static site generator!</li>
-<li>We might add additional build tools in different languages, such as  Ruby&#8217;s SASS for CSS development.  These tools can be added to the Docker build process a single time, then when other team members update their environments this will preconfigured.</li>
-<li>This post relies heavily on GitHub pages, but it&#8217;s worthwhile to mention that other static hosting solutions that use Git should work equally well.</li>
-</ul>
-
-                    [excerpt] => In this example I&#8217;ll show you how you can build a static website for your open source project on GitHub pages using the combination of Python (language), Pelican (generator), and Docker (environment).  For this type of task, speed is important.  I want to avoid spending time thinking about designing a blog system or implementing a [&hellip;]
-                    [permalink] => https://brilliantcoding.com/2016/06/14/website-using-python-pelican-docker/
-                    [tags_list] => <a href="https://brilliantcoding.com/tag/python/" rel="tag">Python</a>
-                    [published_date_ISO8601] => 2016-06-14T07:23:06+00:00
-                    [published_date] => June 14, 2016
-                    [modified_date_ISO8601] => 2016-10-07T21:28:10+00:00
-                    [modified_date] => October 7, 2016
-                    [author_posts_url] => https://brilliantcoding.com/author/mjjacko/
-                    [author] => Matthew Jackowski
-                    [class_excerpt] => Array
-                        (
-                            [0] => excerpt
-                            [1] => post-223
-                            [2] => post
-                            [3] => type-post
-                            [4] => status-publish
-                            [5] => format-standard
-                            [6] => hentry
-                            [7] => category-open-source-software
-                            [8] => tag-python
-                        )
-
-                    [tinyurl] => 
-                )
-
-        )
-
-    [bloginfo] => Array
-        (
-            [charset] => UTF-8
-            [name] => Brilliant Coding Blog
-            [description] => Be Brilliant
-            [language_attributes] => lang="en-US" prefix="og: http://ogp.me/ns#"
-            [home_url] => https://brilliantcoding.com/
-        )
-
-    [theme] => Array
-        (
-            [mod_gatrackingid] => UA-74127232-1
-            [mod_disquisshortname] => brilliantcoding
-            [skip_text] => Skip to content
-            [copyright_html] => © 2017 Matthew Jackowski
-            [powered_html] => - Powered by the Brilliant Coding Wordpress Theme
-            [template_name] => single
-        )
-
-    [template] => Array
-        (
-            [directory_uri] => https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha
-            [directory] => /var/www/html/wp-content/themes/brilliantcodingalpha
-            [body_class] => post-template-default single single-post postid-223 single-format-standard
-        )
-
-    [wp_nav_menu] => Array
-        (
-            [primary] => Array
-                (
-                    [0] => WP_Post Object
-                        (
-                            [ID] => 10
-                            [post_author] => 1
-                            [post_date] => 2016-02-21 06:28:57
-                            [post_date_gmt] => 2016-02-21 06:28:57
-                            [post_content] =>  
-                            [post_title] => 
-                            [post_excerpt] => 
-                            [post_status] => publish
-                            [comment_status] => closed
-                            [ping_status] => closed
-                            [post_password] => 
-                            [post_name] => 10
-                            [to_ping] => 
-                            [pinged] => 
-                            [post_modified] => 2016-02-21 06:28:57
-                            [post_modified_gmt] => 2016-02-21 06:28:57
-                            [post_content_filtered] => 
-                            [post_parent] => 0
-                            [guid] => http://192.168.99.100:32769/?p=10
-                            [menu_order] => 1
-                            [post_type] => nav_menu_item
-                            [post_mime_type] => 
-                            [comment_count] => 0
-                            [filter] => raw
-                            [db_id] => 10
-                            [menu_item_parent] => 0
-                            [object_id] => 8
-                            [object] => page
-                            [type] => post_type
-                            [type_label] => Page
-                            [url] => https://brilliantcoding.com/now/
-                            [title] => Now
-                            [target] => 
-                            [attr_title] => 
-                            [description] => 
-                            [classes] => Array
-                                (
-                                    [0] => 
-                                )
-
-                            [xfn] => 
-                        )
-
-                    [1] => WP_Post Object
-                        (
-                            [ID] => 11
-                            [post_author] => 1
-                            [post_date] => 2016-02-21 06:28:57
-                            [post_date_gmt] => 2016-02-21 06:28:57
-                            [post_content] =>  
-                            [post_title] => 
-                            [post_excerpt] => 
-                            [post_status] => publish
-                            [comment_status] => closed
-                            [ping_status] => closed
-                            [post_password] => 
-                            [post_name] => 11
-                            [to_ping] => 
-                            [pinged] => 
-                            [post_modified] => 2016-02-21 06:28:57
-                            [post_modified_gmt] => 2016-02-21 06:28:57
-                            [post_content_filtered] => 
-                            [post_parent] => 0
-                            [guid] => http://192.168.99.100:32769/?p=11
-                            [menu_order] => 2
-                            [post_type] => nav_menu_item
-                            [post_mime_type] => 
-                            [comment_count] => 0
-                            [filter] => raw
-                            [db_id] => 11
-                            [menu_item_parent] => 0
-                            [object_id] => 2
-                            [object] => page
-                            [type] => post_type
-                            [type_label] => Page
-                            [url] => https://brilliantcoding.com/about/
-                            [title] => About
-                            [target] => 
-                            [attr_title] => 
-                            [description] => 
-                            [classes] => Array
-                                (
-                                    [0] => 
-                                )
-
-                            [xfn] => 
-                        )
-
-                )
-
-            [social] => Array
-                (
-                    [0] => WP_Post Object
-                        (
-                            [ID] => 12
-                            [post_author] => 1
-                            [post_date] => 2016-02-21 06:34:27
-                            [post_date_gmt] => 2016-02-21 06:34:27
-                            [post_content] => 
-                            [post_title] => Twitter
-                            [post_excerpt] => 
-                            [post_status] => publish
-                            [comment_status] => closed
-                            [ping_status] => closed
-                            [post_password] => 
-                            [post_name] => twitter
-                            [to_ping] => 
-                            [pinged] => 
-                            [post_modified] => 2018-01-03 07:05:44
-                            [post_modified_gmt] => 2018-01-03 07:05:44
-                            [post_content_filtered] => 
-                            [post_parent] => 0
-                            [guid] => http://192.168.99.100:32769/?p=12
-                            [menu_order] => 1
-                            [post_type] => nav_menu_item
-                            [post_mime_type] => 
-                            [comment_count] => 0
-                            [filter] => raw
-                            [db_id] => 12
-                            [menu_item_parent] => 0
-                            [object_id] => 12
-                            [object] => custom
-                            [type] => custom
-                            [type_label] => Custom Link
-                            [title] => Twitter
-                            [url] => https://twitter.com/brilliantcoding
-                            [target] => 
-                            [attr_title] => 
-                            [description] => 
-                            [classes] => Array
-                                (
-                                    [0] => fa
-                                    [1] => fa-twitter
-                                )
-
-                            [xfn] => 
-                        )
-
-                    [1] => WP_Post Object
-                        (
-                            [ID] => 13
-                            [post_author] => 1
-                            [post_date] => 2016-02-21 06:34:27
-                            [post_date_gmt] => 2016-02-21 06:34:27
-                            [post_content] => 
-                            [post_title] => Facebook
-                            [post_excerpt] => 
-                            [post_status] => publish
-                            [comment_status] => closed
-                            [ping_status] => closed
-                            [post_password] => 
-                            [post_name] => facebook
-                            [to_ping] => 
-                            [pinged] => 
-                            [post_modified] => 2018-01-03 07:05:44
-                            [post_modified_gmt] => 2018-01-03 07:05:44
-                            [post_content_filtered] => 
-                            [post_parent] => 0
-                            [guid] => http://192.168.99.100:32769/?p=13
-                            [menu_order] => 2
-                            [post_type] => nav_menu_item
-                            [post_mime_type] => 
-                            [comment_count] => 0
-                            [filter] => raw
-                            [db_id] => 13
-                            [menu_item_parent] => 0
-                            [object_id] => 13
-                            [object] => custom
-                            [type] => custom
-                            [type_label] => Custom Link
-                            [title] => Facebook
-                            [url] => https://www.facebook.com/Brilliant-Coding-1500149683622222/
-                            [target] => 
-                            [attr_title] => 
-                            [description] => 
-                            [classes] => Array
-                                (
-                                    [0] => fa
-                                    [1] => fa-facebook
-                                )
-
-                            [xfn] => 
-                        )
-
-                    [2] => WP_Post Object
-                        (
-                            [ID] => 14
-                            [post_author] => 1
-                            [post_date] => 2016-02-21 06:34:27
-                            [post_date_gmt] => 2016-02-21 06:34:27
-                            [post_content] => 
-                            [post_title] => Google+
-                            [post_excerpt] => 
-                            [post_status] => publish
-                            [comment_status] => closed
-                            [ping_status] => closed
-                            [post_password] => 
-                            [post_name] => google
-                            [to_ping] => 
-                            [pinged] => 
-                            [post_modified] => 2018-01-03 07:05:45
-                            [post_modified_gmt] => 2018-01-03 07:05:45
-                            [post_content_filtered] => 
-                            [post_parent] => 0
-                            [guid] => http://192.168.99.100:32769/?p=14
-                            [menu_order] => 3
-                            [post_type] => nav_menu_item
-                            [post_mime_type] => 
-                            [comment_count] => 0
-                            [filter] => raw
-                            [db_id] => 14
-                            [menu_item_parent] => 0
-                            [object_id] => 14
-                            [object] => custom
-                            [type] => custom
-                            [type_label] => Custom Link
-                            [title] => Google+
-                            [url] => https://plus.google.com/101801437148778837314/
-                            [target] => 
-                            [attr_title] => 
-                            [description] => 
-                            [classes] => Array
-                                (
-                                    [0] => fa
-                                    [1] => fa-google-plus
-                                )
-
-                            [xfn] => 
-                        )
-
-                    [3] => WP_Post Object
-                        (
-                            [ID] => 15
-                            [post_author] => 1
-                            [post_date] => 2016-02-21 06:34:27
-                            [post_date_gmt] => 2016-02-21 06:34:27
-                            [post_content] => 
-                            [post_title] => GIthub
-                            [post_excerpt] => 
-                            [post_status] => publish
-                            [comment_status] => closed
-                            [ping_status] => closed
-                            [post_password] => 
-                            [post_name] => github
-                            [to_ping] => 
-                            [pinged] => 
-                            [post_modified] => 2018-01-03 07:05:45
-                            [post_modified_gmt] => 2018-01-03 07:05:45
-                            [post_content_filtered] => 
-                            [post_parent] => 0
-                            [guid] => http://192.168.99.100:32769/?p=15
-                            [menu_order] => 4
-                            [post_type] => nav_menu_item
-                            [post_mime_type] => 
-                            [comment_count] => 0
-                            [filter] => raw
-                            [db_id] => 15
-                            [menu_item_parent] => 0
-                            [object_id] => 15
-                            [object] => custom
-                            [type] => custom
-                            [type_label] => Custom Link
-                            [title] => GIthub
-                            [url] => https://github.com/brilliantcoding
-                            [target] => 
-                            [attr_title] => 
-                            [description] => 
-                            [classes] => Array
-                                (
-                                    [0] => fa
-                                    [1] => fa-github
-                                )
-
-                            [xfn] => 
-                        )
-
-                )
-
-        )
-
-    [site] => Array
-        (
-            [icon_url] => https://brilliantcoding.com/wp-content/uploads/2018/01/Brilliant-logo-120x120-v2-4.png
-        )
-
-    [search] => Array
-        (
-            [query] => 
-        )
-
-    [archive] => Array
-        (
-            [title] => Archives
-            [description] => 
-        )
-
-)
- -->
 </body>
 </html>
