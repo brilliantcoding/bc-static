@@ -33,39 +33,38 @@ Scenario('images', (I) => {
 });
 
 Scenario('files', (I) => {
-	I.amOnPage('https://brilliantcoding.com/wp-content/themes/brilliantcoding/style-min.css');
-	I.amOnPage('https://brilliantcoding.com/wp-content/themes/brilliantcoding/js/theme-min.js');
-	I.amOnPage('https://brilliantcoding.com/wp-content/themes/brilliantcoding/genericons/genericons/Genericons.svg');
-	I.amOnPage('https://brilliantcoding.com/wp-content/themes/brilliantcoding/genericons/genericons/Genericons.eot');
-	I.amOnPage('https://brilliantcoding.com/wp-content/themes/brilliantcoding/genericons/genericons/Genericons.woff');
-	I.amOnPage('https://brilliantcoding.com/wp-content/themes/brilliantcoding/genericons/genericons/Genericons.ttf');
-	I.amOnPage('https://brilliantcoding.com/wp-content/themes/brilliantcoding/iosevka/iosevka-regular.ttf');
+	I.amOnPage('https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/css/bc.min.css');
+	I.amOnPage('https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/js/bc.min.js');
+	I.amOnPage('https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/css/fonts/font-awesome/fontawesome-webfont.woff');
+	I.amOnPage('https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/highlight/highlight.pack.js');
+	I.amOnPage('https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/iosevka/iosevka-regular.ttf');
+
 });
 
 Scenario('pages', (I) => {
-	I.amOnPage('https://brilliantcoding.com/now');
+	I.amOnPage('https://brilliantcoding.com/now/');
 	I.seeInTitle("What I'm doing now – Brilliant Coding Blog");
-	I.amOnPage('https://brilliantcoding.com/about');
+	I.amOnPage('https://brilliantcoding.com/about/');
 	I.seeInTitle('Who is Brilliant Coding? – Brilliant Coding Blog');
 });
 
 Scenario('posts', (I) => {
-	I.amOnPage('https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript');
+	I.amOnPage('https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/');
 	I.seeInTitle('Refactoring to Strategy Pattern in Javascript – Brilliant Coding Blog');
 
-	I.amOnPage('https://brilliantcoding.com/2015/12/22/open-source-programming-environments-that-make-coding-easier');
+	I.amOnPage('https://brilliantcoding.com/2015/12/22/open-source-programming-environments-that-make-coding-easier/');
 	I.seeInTitle('Open Source programming environments that make coding easier – Brilliant Coding Blog');
 
-	I.amOnPage('https://brilliantcoding.com/2015/12/28/refactoring-a-for-loop-to-a-lambda-in-java');
+	I.amOnPage('https://brilliantcoding.com/2015/12/28/refactoring-a-for-loop-to-a-lambda-in-java/');
 	I.seeInTitle('Refactoring a For-Loop to a Lambda in Java – Brilliant Coding Blog');
 
-	I.amOnPage('https://brilliantcoding.com/2016/03/24/jvm-programming-languages');
+	I.amOnPage('https://brilliantcoding.com/2016/03/24/jvm-programming-languages/');
 	I.seeInTitle('Looking ahead: JVM Programming Languages – Brilliant Coding Blog');
 
-	I.amOnPage('https://brilliantcoding.com/2016/04/04/refactoring-to-factory-methods-in-php');
+	I.amOnPage('https://brilliantcoding.com/2016/04/04/refactoring-to-factory-methods-in-php/');
 	I.seeInTitle('Refactoring to Factory Function in PHP – Brilliant Coding Blog');
 
-	I.amOnPage('https://brilliantcoding.com/2016/04/18/list-of-amazing-tech-talks-on-software-development');
+	I.amOnPage('https://brilliantcoding.com/2016/04/18/list-of-amazing-tech-talks-on-software-development/');
 	I.seeInTitle('List of Amazing Tech Talks on Software Development – Brilliant Coding Blog');
 });
 

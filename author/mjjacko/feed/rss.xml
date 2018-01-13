@@ -6,15 +6,15 @@ xmlns:dc="http://purl.org/dc/elements/1.1/"
 xmlns:atom="http://www.w3.org/2005/Atom"
 xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
 xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-><channel><title>Java &#8211; Brilliant Coding Blog</title>
-<atom:link href="http://localhost/tag/java/feed/" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
+><channel><title>Matthew Jackowski &#8211; Brilliant Coding Blog</title>
+<atom:link href="http://localhost/author/mjjacko/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
 <description>Be Brilliant</description>
 <lastBuildDate>Wed, 03 Jan 2018 09:22:21 +0000</lastBuildDate>
 <language>en-US</language>
 <sy:updatePeriod>hourly</sy:updatePeriod>
 <sy:updateFrequency>1</sy:updateFrequency>
 <generator>https://wordpress.org/?v=4.8.2</generator><image>
-<url>https://brilliantcoding.com/wp-content/uploads/2018/01/Brilliant-logo-120x120-v2-4.png</url><title>Java &#8211; Brilliant Coding Blog</title><link>https://brilliantcoding.com</link>
+<url>https://brilliantcoding.com/wp-content/uploads/2018/01/Brilliant-logo-120x120-v2-4.png</url><title>Matthew Jackowski &#8211; Brilliant Coding Blog</title><link>https://brilliantcoding.com</link>
 <width>32</width>
 <height>32</height>
 </image>
@@ -26,6 +26,38 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 isPermaLink="false">https://brilliantcoding.com/?p=252</guid>
 <description><![CDATA[<p>JavaOne is one of the biggest annual conferences to discuss Java technologies. It was inaugurated in 1996 by Sun Microsystems, and now is run during Oracle OpenWorld after the 2010 acquisition of Sun by Oracle Corporation. This year there was more excitement than usual around the JavaOne event, usually the event focuses on the technical [&#8230;]</p><p>The post <a
 rel="nofollow" href="https://brilliantcoding.com/2016/10/08/javaone-forgotten-java-edition/">JavaOne and the forgotten Java edition</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
+]]></description>
+</item>
+<item><title>Build a Static Website Using Python, Pelican, and Docker</title><link>https://brilliantcoding.com/2016/06/14/website-using-python-pelican-docker/</link>
+<pubDate>Tue, 14 Jun 2016 07:23:06 +0000</pubDate>
+<dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
+<category><![CDATA[Open Source Software]]></category>
+<category><![CDATA[Python]]></category><guid
+isPermaLink="false">http://192.168.99.100:32769/?p=223</guid>
+<description><![CDATA[<p>In this example I&#8217;ll show you how you can build a static website for your open source project on GitHub pages using the combination of Python (language), Pelican (generator), and Docker (environment).  For this type of task, speed is important.  I want to avoid spending time thinking about designing a blog system or implementing a [&#8230;]</p><p>The post <a
+rel="nofollow" href="https://brilliantcoding.com/2016/06/14/website-using-python-pelican-docker/">Build a Static Website Using Python, Pelican, and Docker</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
+]]></description>
+</item>
+<item><title>List of Amazing Tech Talks on Software Development</title><link>https://brilliantcoding.com/2016/04/18/list-of-amazing-tech-talks-on-software-development/</link>
+<pubDate>Mon, 18 Apr 2016 06:24:39 +0000</pubDate>
+<dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
+<category><![CDATA[Software Development]]></category><guid
+isPermaLink="false">http://192.168.99.100:32769/?p=179</guid>
+<description><![CDATA[<p>Building computer software is all about ideas. I find quite a bit of inspiration from listening to presentations and tech talks from other people in software development. You should be warned that some people might find the topics below fairly controversial!  But I feel that&#8217;s good. To me, if a presentation makes you pause to [&#8230;]</p><p>The post <a
+rel="nofollow" href="https://brilliantcoding.com/2016/04/18/list-of-amazing-tech-talks-on-software-development/">List of Amazing Tech Talks on Software Development</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
+]]></description>
+</item>
+<item><title>Refactoring to Factory Function in PHP</title><link>https://brilliantcoding.com/2016/04/04/refactoring-to-factory-methods-in-php/</link>
+<pubDate>Mon, 04 Apr 2016 05:49:52 +0000</pubDate>
+<dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
+<category><![CDATA[Code Refactor]]></category>
+<category><![CDATA[PHP]]></category><guid
+isPermaLink="false">http://192.168.99.100:32772/?p=147</guid>
+<description><![CDATA[<p>This is a quick example to show a simple PHP refactoring for object creation.  Specifically our goal is to use static functions to better encapsulate our object constructor calls. In this example, we assume that we have a flexible message constructor that allows us to build messages given some text and time information. public function [&#8230;]</p><p>The post <a
+rel="nofollow" href="https://brilliantcoding.com/2016/04/04/refactoring-to-factory-methods-in-php/">Refactoring to Factory Function in PHP</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
 </item>
@@ -69,6 +101,20 @@ isPermaLink="false">http://brilliantcoding.com:8080/?p=50</guid>
 rel="nofollow" href="https://brilliantcoding.com/2015/12/22/open-source-programming-environments-that-make-coding-easier/">Open Source programming environments that make coding easier</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
+</item>
+<item><title>Refactoring to Strategy Pattern in Javascript</title><link>https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/</link>
+<comments>https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/#respond</comments>
+<pubDate>Mon, 21 Dec 2015 06:57:28 +0000</pubDate>
+<dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
+<category><![CDATA[Code Refactor]]></category>
+<category><![CDATA[Javascript]]></category><guid
+isPermaLink="false">http://192.168.99.100:32769/?p=16</guid>
+<description><![CDATA[<p>This is a quick example to show refactoring to a strategy pattern.  We will take a simple function that uses a case statement and refactor with the strategy pattern. Keep in mind this approach will also work with 'if ... else' trees too!</p><p>The post <a
+rel="nofollow" href="https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/">Refactoring to Strategy Pattern in Javascript</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
+]]></description>
+<wfw:commentRss>https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/feed/rss.xml</wfw:commentRss>
+<slash:comments>0</slash:comments>
 </item>
 </channel>
 </rss>

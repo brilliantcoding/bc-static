@@ -7,7 +7,7 @@ xmlns:atom="http://www.w3.org/2005/Atom"
 xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
 xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 ><channel><title>Brilliant Coding Blog</title>
-<atom:link href="http://localhost/feed/" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
+<atom:link href="http://localhost/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
 <description>Be Brilliant</description>
 <lastBuildDate>Wed, 03 Jan 2018 09:22:21 +0000</lastBuildDate>
 <language>en-US</language>
@@ -113,7 +113,7 @@ isPermaLink="false">http://192.168.99.100:32769/?p=16</guid>
 rel="nofollow" href="https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/">Refactoring to Strategy Pattern in Javascript</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
-<wfw:commentRss>https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/feed/</wfw:commentRss>
+<wfw:commentRss>https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/feed/rss.xml</wfw:commentRss>
 <slash:comments>0</slash:comments>
 </item>
 </channel>

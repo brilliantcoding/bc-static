@@ -6,29 +6,18 @@ xmlns:dc="http://purl.org/dc/elements/1.1/"
 xmlns:atom="http://www.w3.org/2005/Atom"
 xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
 xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-><channel><title>Programming Languages &#8211; Brilliant Coding Blog</title>
-<atom:link href="http://localhost/category/programming-languages/feed/" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
+><channel><title>Kotlin &#8211; Brilliant Coding Blog</title>
+<atom:link href="http://localhost/tag/kotlin/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
 <description>Be Brilliant</description>
-<lastBuildDate>Sat, 15 Oct 2016 17:14:29 +0000</lastBuildDate>
+<lastBuildDate>Wed, 03 Jan 2018 09:22:21 +0000</lastBuildDate>
 <language>en-US</language>
 <sy:updatePeriod>hourly</sy:updatePeriod>
 <sy:updateFrequency>1</sy:updateFrequency>
-<generator>https://wordpress.org/?v=4.6.1</generator><image>
-<url>https://brilliantcoding.com/wp-content/uploads/2016/02/Brilliant-logo-v1-120x120.png</url><title>Programming Languages &#8211; Brilliant Coding Blog</title><link>https://brilliantcoding.com</link>
+<generator>https://wordpress.org/?v=4.8.2</generator><image>
+<url>https://brilliantcoding.com/wp-content/uploads/2018/01/Brilliant-logo-120x120-v2-4.png</url><title>Kotlin &#8211; Brilliant Coding Blog</title><link>https://brilliantcoding.com</link>
 <width>32</width>
 <height>32</height>
 </image>
-<item><title>JavaOne and the forgotten Java edition</title><link>https://brilliantcoding.com/2016/10/08/javaone-forgotten-java-edition/</link>
-<pubDate>Sat, 08 Oct 2016 05:00:29 +0000</pubDate>
-<dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
-<category><![CDATA[Programming Languages]]></category>
-<category><![CDATA[Java]]></category><guid
-isPermaLink="false">https://brilliantcoding.com/?p=252</guid>
-<description><![CDATA[<p>JavaOne is one of the biggest annual conferences to discuss Java technologies. It was inaugurated in 1996 by Sun Microsystems, and now is run during Oracle OpenWorld after the 2010 acquisition of Sun by Oracle Corporation. This year there was more excitement than usual around the JavaOne event, usually the event focuses on the technical [&#8230;]</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2016/10/08/javaone-forgotten-java-edition/">JavaOne and the forgotten Java edition</a> appeared first on <a
-rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
-]]></description>
-</item>
 <item><title>Looking ahead: JVM Programming Languages</title><link>https://brilliantcoding.com/2016/03/24/jvm-programming-languages/</link>
 <pubDate>Thu, 24 Mar 2016 04:51:09 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
