@@ -9,7 +9,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 ><channel><title>Brilliant Coding Blog</title>
 <atom:link href="http://localhost/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
 <description>Be Brilliant</description>
-<lastBuildDate>Wed, 03 Jan 2018 09:22:21 +0000</lastBuildDate>
+<lastBuildDate>Sun, 21 Jan 2018 22:33:05 +0000</lastBuildDate>
 <language>en-US</language>
 <sy:updatePeriod>hourly</sy:updatePeriod>
 <sy:updateFrequency>1</sy:updateFrequency>
@@ -18,6 +18,18 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 <width>32</width>
 <height>32</height>
 </image>
+<item><title>A Bootstrap 4 hackable WordPress Theme</title><link>https://brilliantcoding.com/2018/01/21/bootstrap-4-hackable-wordpress-theme/</link>
+<pubDate>Sun, 21 Jan 2018 09:30:59 +0000</pubDate>
+<dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
+<category><![CDATA[Notes from the Dev]]></category>
+<category><![CDATA[PHP]]></category>
+<category><![CDATA[SASS]]></category><guid
+isPermaLink="false">https://brilliantcoding.com/?p=396</guid>
+<description><![CDATA[<p>Notes from the dev For the Brilliant Coding blog, I built a new WordPress theme called: Brilliant Coding Alpha. Previously I had used existing WordPress themes, which were great, but lacked some of the flexibility I wanted. Instead I made an easily &#8220;hackable&#8221; theme that had a number of specific design objectives: Allow for compilation [&#8230;]</p><p>The post <a
+rel="nofollow" href="https://brilliantcoding.com/2018/01/21/bootstrap-4-hackable-wordpress-theme/">A Bootstrap 4 hackable WordPress Theme</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
+]]></description>
+</item>
 <item><title>JavaOne and the forgotten Java edition</title><link>https://brilliantcoding.com/2016/10/08/javaone-forgotten-java-edition/</link>
 <pubDate>Sat, 08 Oct 2016 05:00:29 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
