@@ -82,6 +82,11 @@ Scenario('posts', (I) => {
 	I.amOnPage('https://brilliantcoding.com/2016/04/18/list-of-amazing-tech-talks-on-software-development/');
 	I.seeInTitle('List of Amazing Tech Talks on Software Development – Brilliant Coding Blog');
 	I.wait(3);
+	
+	I.amOnPage('https://brilliantcoding.com/2018/01/21/bootstrap-4-hackable-wordpress-theme/');
+	I.seeInTitle('A Bootstrap 4 hackable Wordpress Theme &ndash; Brilliant Coding Blog');
+	I.wait(3);
+
 });
 
 Scenario('categories', (I) => {
