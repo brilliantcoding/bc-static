@@ -9,7 +9,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 ><channel><title>Kotlin &#8211; Brilliant Coding Blog</title>
 <atom:link href="http://localhost/tag/kotlin/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
 <description>Be Brilliant</description>
-<lastBuildDate>Fri, 26 Jan 2018 00:25:22 +0000</lastBuildDate>
+<lastBuildDate>Fri, 26 Jan 2018 08:01:32 +0000</lastBuildDate>
 <language>en-US</language>
 <sy:updatePeriod>hourly</sy:updatePeriod>
 <sy:updateFrequency>1</sy:updateFrequency>
