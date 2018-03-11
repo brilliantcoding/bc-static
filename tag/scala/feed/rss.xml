@@ -9,7 +9,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 ><channel><title>Scala &#8211; Brilliant Coding Blog</title>
 <atom:link href="http://localhost/tag/scala/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
 <description>Be Brilliant</description>
-<lastBuildDate>Fri, 26 Jan 2018 08:01:32 +0000</lastBuildDate>
+<lastBuildDate>Sun, 11 Mar 2018 09:29:10 +0000</lastBuildDate>
 <language>en-US</language>
 <sy:updatePeriod>hourly</sy:updatePeriod>
 <sy:updateFrequency>1</sy:updateFrequency>
