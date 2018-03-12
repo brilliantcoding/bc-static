@@ -84,8 +84,13 @@ Scenario('posts', (I) => {
 	I.wait(3);
 	
 	I.amOnPage('https://brilliantcoding.com/2018/01/21/bootstrap-4-hackable-wordpress-theme/');
-	I.seeInTitle('A Bootstrap 4 hackable Wordpress Theme &ndash; Brilliant Coding Blog');
+	I.seeInTitle('A Bootstrap 4 hackable Wordpress Theme – Brilliant Coding Blog');
 	I.wait(3);
+
+	I.amOnPage('http://localhost:32771/2018/03/10/java-enterprise-edition-where-have-you-gone/');
+	I.seeInTitle('Java Enterprise Edition, where have you gone? – Brilliant Coding Blog');
+	I.wait(3);
+
 
 });
 
