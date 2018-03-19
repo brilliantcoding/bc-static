@@ -13,24 +13,24 @@ rel="profile" href="http://gmpg.org/xfn/11"> <script>(function(i,s,o,g,r,a,m){i[
 		'siteSpeedSampleRate': 90
 	});
 	ga('require', 'autotrack');
-	ga('send', 'pageview');</script> <title>Java Enterprise Edition, where have you gone? &ndash; Brilliant Coding Blog</title><link
+	ga('send', 'pageview');</script> <title>Java Enterprise Edition, where have you gone?</title><link
 rel="canonical" href="https://brilliantcoding.com/2018/03/10/java-enterprise-edition-where-have-you-gone/" /><meta
 property="og:locale" content="en_US" /><meta
 property="og:type" content="article" /><meta
-property="og:title" content="Java Enterprise Edition, where have you gone? &ndash; Brilliant Coding Blog" /><meta
-property="og:description" content="About a year and half ago, I wrote a post about Java Enterprise Edition and it&rsquo;s uncertain future.  Since then there has been quite a few changes and while the future is far from certain, I feel it is much brighter! But before we dive into these details, let&rsquo;s have a quick review on the &hellip;" /><meta
+property="og:title" content="Java Enterprise Edition, where have you gone?" /><meta
+property="og:description" content="What is the Java Enterprise Edition framework and why it is still an important part of many applications? About a year and half ago, I wrote a post about it and it’s uncertain future.  Since then there has been quite a few changes and while the future is far from certain, I feel it is &hellip;" /><meta
 property="og:url" content="https://brilliantcoding.com/2018/03/10/java-enterprise-edition-where-have-you-gone/" /><meta
 property="og:site_name" content="Brilliant Coding Blog" /><meta
 property="article:publisher" content="https://www.facebook.com/brilliantcoding/" /><meta
 property="article:tag" content="Java" /><meta
 property="article:section" content="Open Source Software" /><meta
 property="article:published_time" content="2018-03-10T19:21:38+00:00" /><meta
-property="article:modified_time" content="2018-03-11T09:29:10+00:00" /><meta
-property="og:updated_time" content="2018-03-11T09:29:10+00:00" /><meta
+property="article:modified_time" content="2018-03-19T07:53:37+00:00" /><meta
+property="og:updated_time" content="2018-03-19T07:53:37+00:00" /><meta
 property="og:image" content="https://brilliantcoding.com/wp-content/uploads/2016/03/1e91b7f.jpg" /><meta
 name="twitter:card" content="summary" /><meta
-name="twitter:description" content="About a year and half ago, I wrote a post about Java Enterprise Edition and it&rsquo;s uncertain future.  Since then there has been quite a few changes and while the future is far from certain, I feel it is much brighter! But before we dive into these details, let&rsquo;s have a quick review on the [&hellip;]" /><meta
-name="twitter:title" content="Java Enterprise Edition, where have you gone? &ndash; Brilliant Coding Blog" /><meta
+name="twitter:description" content="What is the Java Enterprise Edition framework and why it is still an important part of many applications? About a year and half ago, I wrote a post about it and it’s uncertain future.  Since then there has been quite a few changes and while the future is far from certain, I feel it is [&hellip;]" /><meta
+name="twitter:title" content="Java Enterprise Edition, where have you gone?" /><meta
 name="twitter:site" content="@brilliantcoding" /><meta
 name="twitter:image" content="https://brilliantcoding.com/wp-content/uploads/2016/03/1e91b7f.jpg" /><meta
 name="twitter:creator" content="@brilliantcoding" /><link
@@ -124,8 +124,8 @@ March 10, 2018						</time>
 <span
 class="clearfix">
 <time
-class="dt-updated" datetime="2018-03-11T09:29:10+00:00">
-March 11, 2018						</time>
+class="dt-updated" datetime="2018-03-19T07:53:37+00:00">
+March 19, 2018						</time>
 </span>
 <span>Published by:</span>
 <span
@@ -135,27 +135,32 @@ class="p-author h-card" href="https://brilliantcoding.com/author/mjjacko/">
 Matthew Jackowski
 </a>
 </span><div
-class="e-content"><p>About a year and half ago, I wrote a post about<a
-href="https://brilliantcoding.com/2016/10/08/javaone-forgotten-java-edition/"> Java Enterprise Edition and it&rsquo;s uncertain future</a>.  Since then there has been quite a few changes and while the future is far from certain, I feel it is much brighter!<br
+class="e-content"><p>What is the Java Enterprise Edition framework and why it is still an important part of many applications? About a year and half ago, I wrote a post about it and <a
+href="https://brilliantcoding.com/2016/10/08/javaone-forgotten-java-edition/">it’s uncertain future</a>.  Since then there has been quite a few changes and while the future is far from certain, I feel it is much brighter and certainly shouldn&#8217;t continue to be the &#8220;forgotten&#8221; Java framework.<br
 />
 <span
-id="more-438"></span></p><p>But before we dive into these details, let&rsquo;s have a quick review on the history of the Java Enterprise Edition framework and why it is still an important part of many applications.</p><h3>A history of names</h3><p>Let’s start with a recap on the names of this project.</p><ul><li>JPE Java Platform for the Enterprise (1998)</li><li>J2EE Java 2 Platform, Enterprise Edition (1999)</li><li>Java EE Java Enterprise Edition (2006)</li><li>Jakarta EE (2018) &lt; Spoiler</li></ul><p>It’s important to note that when you refer to &ldquo;J2EE&rdquo;, technically you are referencing a very old version of the framework. In most cases I hope that these older version have gone the way of the COBOL and retired themselves, but it always surprises me how long older technology &ldquo;lingers&rdquo;.</p><h3>Why &ldquo;enterprise&rdquo; applications?</h3><p>When your building systems, and this is especially true when building large enterprise systems, there is a natural tendency to focus on the &ldquo;business logic&rdquo;. Usually these are the specific rules and processes a business uses to operate. Including project time for tasks such as a new way to generate web pages, or building a library that reads and writes from a database is typically NOT included. Because of this, large organizations usually want established specifications, frameworks and tools that support these components already.<br
+id="more-438"></span></p><h3>A history of names</h3><p>Probably the most confusing aspect is the many names this framework has had in the past. And because naming things is a *hard* task, here is a quick recap:</p><ul><li>JPE Java Platform for the Enterprise (1998)</li><li>J2EE Java 2 Platform, Enterprise Edition (1999)</li><li>Java EE Java Enterprise Edition (2006)</li><li>Jakarta EE (2018) &lt; Spoiler</li></ul><p>Often people might be more familiar with one of the older versions and not even be aware that the framework has continued to evolve under a new name. In most cases, the older versions have (hopefully) gone the way of COBOL and retired themselves, but I often find it surprising how older technology can &#8220;linger&#8221; such that pre-2000 versions might still be used in production systems.</p><h3>Why &#8220;enterprise&#8221; applications?</h3><p>When your building systems, and this is especially true when building large enterprise systems, there is a natural tendency to focus on the &#8220;business logic&#8221;. Usually these are the specific rules and processes a business uses to operate. Including project time for tasks such as a new way to generate web pages, or building a library that reads and writes from a database is typically NOT included. Because of this, large organizations usually want established specifications, frameworks and tools that support these components already.<br
 />
-One core benefit of frameworks like the Java Enterprise Edition, it provides a neatly wrapped up set of common components needed for these large projects. Other benefits include, it is mature, well tested and often supported by large software organizations.</p><p>Hopefully it’s clear why enterprise application frameworks rose to such prominence and often became the cornerstone of many information technology departments.</p><p>Alright, enough history lessons! Let’s turn our attention to the new news (finally).</p><h3>An announcement and a new question</h3><div
-class="alignright" style="font-size:65%">
-<img
-src="https://brilliantcoding.com/wp-content/uploads/2018/03/java-ee-mini.png" style="border: 1px solid #000;"></p><p>Java EE gets a new name!</p></div><p>Last September, Oracle who had acquired Java technologies from Sun in 2010, was open sourcing the framework and moving it to the Eclipse Foundation. But they unfortunately kept the name, so a new name was needed once again.  After a vote by the community, the name was decided to be &#8220;Jakarta EE (JEE)&#8221;</p><p>So without pause, we will no longer refer to Java Enterprise Edition and instead use Jakarta EE!</p><p>While the Eclipse Foundation is an excellent landing pad for Jakarta EE, it does raise at least one additional question. The Eclipse Foundation already has an incubator project called the &ldquo;MicroProfile&rdquo; project which was started just a few years ago with the goal of &ldquo;Optimizing Enterprise Java for a microservices architecture&#8221;. The MicroProfile project was based off of existing Jakarta EE technology, namely JAX-RS (web services), CDI (dependency injection), and JSON-P (serialization/deserialization).</p><p>The new question now that both frameworks exist under the Eclipse Foundation, what will happen to MicroProfile?</p><p>My hope to see increased collaboration between the two projects that benefit everyone in the community. Maybe MicroProfile could continue to thrive as a sub project under a larger JEE umbrella (I certainly like the idea of a common &ldquo;enterprise microservice architecture&rdquo;). Maybe even including support for serverless solutions like AWS Lambda.</p><h3>A dire prediction, but hope remains</h3><p>Back in 2016 Gartner published a report that discussed the &#8220;fading relevance&rdquo; of three-tier application frameworks.  Such dire predictions might be too premature. Especially given the recent change to open source.  But also there is a second reason for hope.</p><p>Just recently a new version of Java was released with a key &ldquo;modularization&rdquo; language feature. What was previously known as project &ldquo;jigsaw&rdquo; and now known as &ldquo;Java Platform Module System&#8221; (JPMS), this feature represents almost four years of effort to make modularization a core part of the Java ecosystem. This is important to our story because &#8220;modularization&#8221; is one of the key benefits of the any application framework. Jakarta EE has supported &ldquo;modularization&rdquo; through features such as &ldquo;Contexts and Dependency Injection&rdquo; (CDI) for quite some time. This shift in the core Java language could allow future JEE versions to compete with other alternatives, which, coupled with clear, open source ownership, gives quite a bit of hope for the future.</p><ul><h4>References</h4><li>Opening Up Java EE &#8211; An Update <br
-/> <a
-href="https://blogs.oracle.com/theaquarium/opening-up-ee-update">https://blogs.oracle.com/theaquarium/opening-up-ee-update</a></li><li>Java EE version history &#8211; Wikipedia <br
-/> <a
-href="https://en.wikipedia.org/wiki/Java_EE_version_history">https://en.wikipedia.org/wiki/Java_EE_version_history</a></li><li>Java Platform Module System &#8211; Wikipedia <br
-/> <a
-href="https://en.wikipedia.org/wiki/Java_Platform_Module_System">https://en.wikipedia.org/wiki/Java_Platform_Module_System</a></li><li>Market Guide for Application Platforms <br
-/> <a
-href="https://www.gartner.com/doc/3522917/market-guide-application-platforms">https://www.gartner.com/doc/3522917/market-guide-application-platforms</a></li><li>Eclipse MicroProfile &#8211; Optimizing Enterprise Java for a microservices architecture <br
-/> <a
-href="https://microprofile.io/">https://microprofile.io/</a></li><li>And the Name Is… <br
-/> <a
+One core benefit of frameworks like the Java Enterprise Edition, it provides a neatly wrapped up set of common components needed for these large projects. Other benefits include, it is mature, well tested and often supported by large software companies.</p><p>Due to these core benefits, it&#8217;s easy to understand why enterprise application frameworks rose to such prominence and often became the cornerstone of many information technology departments.</p><h3>An announcement and a new question</h3><div
+class="alignright" style="font-size: 65%;"><p><img
+style="border: 1px solid #000;" src="https://brilliantcoding.com/wp-content/uploads/2018/03/java-ee-mini.png" /></p><p>Java EE gets a new name!</p></div><p>Last September, Oracle who had acquired Java technologies from Sun in 2010, was open sourcing the framework and moving it to the Eclipse Foundation. But they unfortunately kept the name, so a new name was needed once again. After a vote by the community, the name was decided to be &#8220;Jakarta EE (JEE)&#8221;</p><p>So without pause, we will no longer refer to Java Enterprise Edition and instead use Jakarta EE!</p><p>While the Eclipse Foundation is an excellent landing pad for Jakarta EE, it does raise at least one additional question. The Eclipse Foundation already has an incubator project called the &#8220;MicroProfile&#8221; project which was started just a few years ago with the goal of &#8220;Optimizing Enterprise Java for a microservices architecture&#8221;. The MicroProfile project was based off of existing Jakarta EE technology, namely JAX-RS (web services), CDI (dependency injection), and JSON-P (serialization/deserialization).</p><p>Now that both frameworks exist under the Eclipse Foundation, what will happen to MicroProfile?</p><p>My hope to see increased collaboration between the two projects that benefit everyone in the community. Maybe MicroProfile could continue to thrive as a sub project under a larger JEE umbrella (I certainly like the idea of a common &#8220;enterprise microservice architecture&#8221;). Maybe even including support for serverless solutions like AWS Lambda.</p><h3>A dire prediction, but hope remains</h3><p>Back in 2016 Gartner published a report that discussed the &#8220;fading relevance&#8221; of three-tier application frameworks. Such dire predictions might be too premature. Especially given the recent change to open source. But also there is a second reason for hope.</p><p>Just recently a new version of Java was released with a key &#8220;modularization&#8221; language feature. What was previously known as project &#8220;jigsaw&#8221; and now known as &#8220;Java Platform Module System&#8221; (JPMS), this feature represents almost four years of effort to make modularization a core part of the Java ecosystem. This is important to our story because &#8220;modularization&#8221; is one of the key benefits of the any application framework. Jakarta EE has supported &#8220;modularization&#8221; through features such as &#8220;Contexts and Dependency Injection&#8221; (CDI) for quite some time. This shift in the core Java language could allow future JEE versions to compete with other alternatives, which, coupled with clear, open source ownership, gives quite a bit of hope for the future.</p><h4>References</h4><ul><li>Opening Up Java EE &#8211; An Update<br
+/>
+<a
+href="https://blogs.oracle.com/theaquarium/opening-up-ee-update">https://blogs.oracle.com/theaquarium/opening-up-ee-update</a></li><li>Java EE version history &#8211; Wikipedia<br
+/>
+<a
+href="https://en.wikipedia.org/wiki/Java_EE_version_history">https://en.wikipedia.org/wiki/Java_EE_version_history</a></li><li>Java Platform Module System &#8211; Wikipedia<br
+/>
+<a
+href="https://en.wikipedia.org/wiki/Java_Platform_Module_System">https://en.wikipedia.org/wiki/Java_Platform_Module_System</a></li><li>Market Guide for Application Platforms<br
+/>
+<a
+href="https://www.gartner.com/doc/3522917/market-guide-application-platforms">https://www.gartner.com/doc/3522917/market-guide-application-platforms</a></li><li>Eclipse MicroProfile &#8211; Optimizing Enterprise Java for a microservices architecture<br
+/>
+<a
+href="https://microprofile.io/">https://microprofile.io/</a></li><li>And the Name Is…<br
+/>
+<a
 href="https://mmilinkov.wordpress.com/2018/02/26/and-the-name-is/">https://mmilinkov.wordpress.com/2018/02/26/and-the-name-is/</a></li></ul><p><em>Have a comment, question or correction about this article? I’d love to hear from you! You can drop a message in the Disqus form below or you can direct message me on Twitter at <a
 href="https://twitter.com/@mjjacko">https://twitter.com/@mjjacko</a></em></p></div></div>
 <a
