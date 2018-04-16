@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><rss
+version="2.0"
+xmlns:content="http://purl.org/rss/1.0/modules/content/"
+xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:atom="http://www.w3.org/2005/Atom"
+xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+><channel><title>Notes from the Dev &#8211; Brilliant Coding Blog</title>
+<atom:link href="http://localhost/category/notes-from-the-dev/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
+<description>Be Brilliant</description>
+<lastBuildDate>Sun, 15 Apr 2018 03:44:09 +0000</lastBuildDate>
+<language>en-US</language>
+<sy:updatePeriod>hourly</sy:updatePeriod>
+<sy:updateFrequency>1</sy:updateFrequency>
+<generator>https://wordpress.org/?v=4.9.5</generator><image>
+<url>https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png</url><title>Notes from the Dev &#8211; Brilliant Coding Blog</title><link>https://brilliantcoding.com</link>
+<width>32</width>
+<height>32</height>
+</image>
+<item><title>A Bootstrap 4 hackable WordPress Theme</title><link>https://brilliantcoding.com/2018/01/21/bootstrap-4-hackable-wordpress-theme/</link>
+<pubDate>Sun, 21 Jan 2018 09:30:59 +0000</pubDate>
+<dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
+<category><![CDATA[Notes from the Dev]]></category>
+<category><![CDATA[PHP]]></category>
+<category><![CDATA[SASS]]></category><guid
+isPermaLink="false">https://brilliantcoding.com/?p=396</guid>
+<description><![CDATA[<p>Notes from the dev For the Brilliant Coding blog, I built a new WordPress theme called: Brilliant Coding Alpha. Previously I had used existing WordPress themes, which were great, but lacked some of the flexibility I wanted. Instead I wanted something a little more &#8220;hackable&#8221;, after some research I found a few &#8220;theme builders&#8221; that [&#8230;]</p><p>The post <a
+rel="nofollow" href="https://brilliantcoding.com/2018/01/21/bootstrap-4-hackable-wordpress-theme/">A Bootstrap 4 hackable WordPress Theme</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
+]]></description>
+</item>
+</channel>
+</rss>

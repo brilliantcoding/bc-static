@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><rss
+version="2.0"
+xmlns:content="http://purl.org/rss/1.0/modules/content/"
+xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:atom="http://www.w3.org/2005/Atom"
+xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+><channel><title>Programming Languages &#8211; Brilliant Coding Blog</title>
+<atom:link href="http://localhost/category/programming-languages/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
+<description>Be Brilliant</description>
+<lastBuildDate>Sun, 15 Apr 2018 03:44:09 +0000</lastBuildDate>
+<language>en-US</language>
+<sy:updatePeriod>hourly</sy:updatePeriod>
+<sy:updateFrequency>1</sy:updateFrequency>
+<generator>https://wordpress.org/?v=4.9.5</generator><image>
+<url>https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png</url><title>Programming Languages &#8211; Brilliant Coding Blog</title><link>https://brilliantcoding.com</link>
+<width>32</width>
+<height>32</height>
+</image>
+<item><title>JavaOne and the forgotten Java edition</title><link>https://brilliantcoding.com/2016/10/08/javaone-forgotten-java-edition/</link>
+<pubDate>Sat, 08 Oct 2016 05:00:29 +0000</pubDate>
+<dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
+<category><![CDATA[Programming Languages]]></category>
+<category><![CDATA[Java]]></category><guid
+isPermaLink="false">https://brilliantcoding.com/?p=252</guid>
+<description><![CDATA[<p>JavaOne is one of the biggest annual conferences to discuss Java technologies. It was inaugurated in 1996 by Sun Microsystems, and now is run during Oracle OpenWorld after the 2010 acquisition of Sun by Oracle Corporation. This year there was more excitement than usual around the JavaOne event, usually the event focuses on the technical [&#8230;]</p><p>The post <a
+rel="nofollow" href="https://brilliantcoding.com/2016/10/08/javaone-forgotten-java-edition/">JavaOne and the forgotten Java edition</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
+]]></description>
+</item>
+<item><title>Looking ahead: JVM Programming Languages</title><link>https://brilliantcoding.com/2016/03/24/jvm-programming-languages/</link>
+<pubDate>Thu, 24 Mar 2016 04:51:09 +0000</pubDate>
+<dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
+<category><![CDATA[Programming Languages]]></category>
+<category><![CDATA[Clojure]]></category>
+<category><![CDATA[Java]]></category>
+<category><![CDATA[Kotlin]]></category>
+<category><![CDATA[Scala]]></category><guid
+isPermaLink="false">http://192.168.99.100:32791/?p=109</guid>
+<description><![CDATA[<p>In this article I take a look ahead at the future of four programming languages; Java, Scala, Clojure and Kotlin. All four of these languages are designed to run on the Java Virtual Machine ( JVM ), which is supported on practically every computer operating system. Most recently, JVM programming languages have become popular choices [&#8230;]</p><p>The post <a
+rel="nofollow" href="https://brilliantcoding.com/2016/03/24/jvm-programming-languages/">Looking ahead: JVM Programming Languages</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
+]]></description>
+</item>
+</channel>
+</rss>
