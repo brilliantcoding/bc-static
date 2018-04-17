@@ -51,7 +51,7 @@ Scenario('files', (I) => {
 
 Scenario('pages', (I) => {
 	I.amOnPage('https://brilliantcoding.com/now/');
-	I.seeInTitle("What I'm doing now – Brilliant Coding Blog");
+	I.seeInTitle("Now – Brilliant Coding Blog");
 	I.wait(3);
 	I.amOnPage('https://brilliantcoding.com/about/');
 	I.seeInTitle('Who is Brilliant Coding? – Brilliant Coding Blog');
@@ -84,7 +84,7 @@ Scenario('posts', (I) => {
 	I.wait(3);
 	
 	I.amOnPage('https://brilliantcoding.com/2018/01/21/bootstrap-4-hackable-wordpress-theme/');
-	I.seeInTitle('A Bootstrap 4 hackable Wordpress Theme – Brilliant Coding Blog');
+	I.seeInTitle('A Bootstrap 4 hackable WordPress Theme – Brilliant Coding Blog');
 	I.wait(3);
 
 	I.amOnPage('http://localhost:32771/2018/03/10/java-enterprise-edition-where-have-you-gone/');
