@@ -9,7 +9,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 ><channel><title>Java &#8211; Brilliant Coding Blog</title>
 <atom:link href="http://localhost/tag/java/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
 <description>Be Brilliant</description>
-<lastBuildDate>Sun, 15 Apr 2018 03:44:09 +0000</lastBuildDate>
+<lastBuildDate>Thu, 19 Apr 2018 04:55:34 +0000</lastBuildDate>
 <language>en-US</language>
 <sy:updatePeriod>hourly</sy:updatePeriod>
 <sy:updateFrequency>1</sy:updateFrequency>
@@ -24,7 +24,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 <category><![CDATA[Open Source Software]]></category>
 <category><![CDATA[Java]]></category><guid
 isPermaLink="false">https://brilliantcoding.com/?p=438</guid>
-<description><![CDATA[<p>What is the Java Enterprise Edition framework and why it is still an important part of many applications? About a year and half ago, I wrote a post about it and it’s uncertain future.  Since then there has been quite a few changes and while the future is far from certain, I feel it is [&#8230;]</p><p>The post <a
+<description><![CDATA[<p>What is the Java Enterprise Edition framework and why it is still an important part of many applications? About a year and half ago, I wrote a post about it and it’s uncertain future.&#160; Since then there has been quite a few changes and while the future is far from certain, I feel it is [&#8230;]</p><p>The post <a
 rel="nofollow" href="https://brilliantcoding.com/2018/03/10/java-enterprise-edition-where-have-you-gone/">Java Enterprise Edition, where have you gone?</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>

@@ -36,13 +36,11 @@ name="twitter:card" content="summary" /><meta
 name="twitter:description" content="In this article I take a look ahead at the future of four programming languages; Java, Scala, Clojure and Kotlin. All four of these languages are designed to run on the Java Virtual Machine ( JVM ), which is supported on practically every computer operating system. Most recently, JVM programming languages have become popular choices [&hellip;]" /><meta
 name="twitter:site" content="@brilliantcoding" /><meta
 name="twitter:image" content="https://brilliantcoding.com/wp-content/uploads/2016/03/1e91b7f.jpg" /><meta
-name="twitter:creator" content="@brilliantcoding" /> <script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/brilliantcoding.com\/","sameAs":["https:\/\/www.facebook.com\/brilliantcoding\/","https:\/\/twitter.com\/brilliantcoding"],"@id":"#organization","name":"Brilliant Coding","logo":"https:\/\/brilliantcoding.com\/wp-content\/uploads\/2018\/01\/brilliantcoding-logo.png"}</script> <link
-rel='dns-prefetch' href='//fonts.googleapis.com' /><link
+name="twitter:creator" content="@brilliantcoding" /> <script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/brilliantcoding.com\/","sameAs":["https:\/\/www.facebook.com\/brilliantcoding\/","https:\/\/twitter.com\/brilliantcoding"],"@id":"https:\/\/brilliantcoding.com\/#organization","name":"Brilliant Coding","logo":"https:\/\/brilliantcoding.com\/wp-content\/uploads\/2018\/01\/brilliantcoding-logo.png"}</script> <link
 rel='dns-prefetch' href='//s.w.org' /><link
 rel="alternate" type="application/rss+xml" title="Brilliant Coding Blog &raquo; Feed" href="https://brilliantcoding.com/feed/rss.xml" /><link
 rel="alternate" type="application/rss+xml" title="Brilliant Coding Blog &raquo; Looking ahead: JVM Programming Languages Comments Feed" href="https://brilliantcoding.com/2016/03/24/jvm-programming-languages/feed/rss.xml" /><link
-rel='stylesheet' id='bc-847cba1013f2ef83c10e8641953cb3bc-css'  href='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/css/bc.min.css' type='text/css' media='all' /><link
-rel='stylesheet' id='bc-opensans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700%2C700italic%2C400italic%2C300italic%7COpen+Sans+Condensed%3A700%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' /> <script type='text/javascript' src='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/js/bc.min.js'></script> <meta
+rel='stylesheet' id='bc-847cba1013f2ef83c10e8641953cb3bc-css'  href='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/css/bc.min.css' type='text/css' media='all' /> <script type='text/javascript' src='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/js/bc.min.js'></script> <meta
 name="generator" content="WordPress 4.9.5" /><link
 rel="icon" href="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" sizes="32x32" /><link
 rel="icon" href="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" sizes="192x192" /><link
@@ -105,46 +103,8 @@ class="bc-content"><div
 class="container-fluid">
 <article
 id="post-109" class="h-entry row mt-5 row flex-xl-nowrap bc-post-article"><div
-class="d-none d-xl-block col-xl-4 bc-sidebar">
-<span>Categories</span><ul
-class="section"><li
-class="list-item">
-<a
-class="list-link " href="https://brilliantcoding.com/category/code-refactor/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
-<span
-class="font-weight-bold">Code Refactor</span>
-</a></li><li
-class="list-item">
-<a
-class="list-link " href="https://brilliantcoding.com/category/programming-languages/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
-<span
-class="font-weight-bold">Programming Languages</span>
-</a></li><li
-class="list-item">
-<a
-class="list-link " href="https://brilliantcoding.com/category/open-source-software/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
-<span
-class="font-weight-bold">Open Source Software</span>
-</a></li><li
-class="list-item">
-<a
-class="list-link " href="https://brilliantcoding.com/category/developer-tools/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
-<span
-class="font-weight-bold">Developer Tools</span>
-</a></li><li
-class="list-item">
-<a
-class="list-link " href="https://brilliantcoding.com/category/software-development/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
-<span
-class="font-weight-bold">Software Development</span>
-</a></li><li
-class="list-item">
-<a
-class="list-link " href="https://brilliantcoding.com/category/notes-from-the-dev/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
-<span
-class="font-weight-bold">Notes from the Dev</span>
-</a></li></ul></div><div
-class="col-md-12 col-xl-8 pl-5 pr-xl-1 pr-5"><h2 class="p-name">Looking ahead: JVM Programming Languages</h2><div
+id="left_gutter" class="d-none d-xl-block col-xl-1"></div><div
+class="col-md-12 col-xl-9 pl-4 pr-4 pb-4"><h2 class="p-name">Looking ahead: JVM Programming Languages</h2><div
 class="pl-2 bc-metadata">
 <span
 class="clearfix"></span>
@@ -201,7 +161,33 @@ href="http://www.groovy-lang.org/" target="_blank">Groovy</a> is a mature projec
 href="http://jruby.org/" target="_blank">JRuby</a> project.  It&#8217;s a testament to the options you get from embracing open source as it&#8217;s a sanctuary from MRI versus other <a
 href="http://llvm.org/" target="_blank">LLVM</a> forks (ie <a
 href="http://rubinius.com/">Rubinius</a>).  However for serious long term production development I see Ruby users switching to Clojure instead of using <a
-href="http://jruby.org/" target="_blank">JRuby</a> (Clojures poor development environment by Java standards is still far better than what the Ruby community has to work with).</p><p>Copyright (c) Matthew Jackowski, 2016. Photo: © Africa Studio &#8211; Fotolia.com.</p></div></div>
+href="http://jruby.org/" target="_blank">JRuby</a> (Clojures poor development environment by Java standards is still far better than what the Ruby community has to work with).</p><p>Copyright (c) Matthew Jackowski, 2016. Photo: © Africa Studio &#8211; Fotolia.com.</p></div></div><div
+class="d-none d-xl-block col-xl-2 p-0 bc-sidebar"><h6>Categories</h6><ul
+class="section"><li
+class="list-item">
+<a
+class="list-link " href="" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Code Refactor (3)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Programming Languages (2)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Open Source Software (2)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Developer Tools (1)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Software Development (1)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Notes from the Dev (1)						</a></li></ul></div>
 <a
 id="bc-skippy" class="sr-only sr-only-focusable" href="https://brilliantcoding.com/2016/03/24/jvm-programming-languages/">
 <span
@@ -228,7 +214,7 @@ class="nav-link " href="https://brilliantcoding.com/feed/rss.xml" onclick="ga('s
 class="fa fa-rss" aria-hidden="true"></i>
 RSS			</a></li></ul></div><div
 class="bc-copyright">
-<span>© 2017 Matthew Jackowski</span>
+<span>© 2018 Matthew Jackowski</span>
 <span>- Powered by the <a
 href="https://github.com/brilliantcoding/bc-wptheme">Brilliant Coding Wordpress Theme</a></span></div>		</div>
 	</footer>
