@@ -8,7 +8,7 @@ xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
 <channel><title>Comments on: Build a Static Website Using Python, Pelican, and Docker</title>
 <atom:link href="http://localhost/2016/06/14/website-using-python-pelican-docker/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com/2016/06/14/website-using-python-pelican-docker/</link>
 <description>Be Brilliant</description>
-<lastBuildDate>Sun, 20 May 2018 01:24:14 +0000</lastBuildDate>
+<lastBuildDate>Sun, 20 May 2018 21:01:03 +0000</lastBuildDate>
 <sy:updatePeriod>hourly</sy:updatePeriod>
 <sy:updateFrequency>1</sy:updateFrequency>
 <generator>https://wordpress.org/?v=4.9.6</generator>
