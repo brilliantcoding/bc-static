@@ -8,9 +8,9 @@ xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
 <channel><title>Comments on: JavaOne and the forgotten Java edition</title>
 <atom:link href="http://localhost/2016/10/08/javaone-forgotten-java-edition/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com/2016/10/08/javaone-forgotten-java-edition/</link>
 <description>Be Brilliant</description>
-<lastBuildDate>Fri, 27 Apr 2018 05:20:09 +0000</lastBuildDate>
+<lastBuildDate>Sun, 20 May 2018 01:24:14 +0000</lastBuildDate>
 <sy:updatePeriod>hourly</sy:updatePeriod>
 <sy:updateFrequency>1</sy:updateFrequency>
-<generator>https://wordpress.org/?v=4.9.5</generator>
+<generator>https://wordpress.org/?v=4.9.6</generator>
 </channel>
 </rss>
