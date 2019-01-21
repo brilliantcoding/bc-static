@@ -15,38 +15,37 @@ rel="profile" href="http://gmpg.org/xfn/11"> <script>(function(i,s,o,g,r,a,m){i[
 	});
 	ga('require', 'autotrack');
 	ga('send', 'pageview');</script> <title>Programming for failure &#8211; learning the basics &#8211; Brilliant Coding Blog</title><link
-rel="canonical" href="http://localhost:32771/2019/01/19/programming-for-failure-learning-the-basics/" /><meta
+rel="canonical" href="https://brilliantcoding.com/2019/01/19/programming-for-failure-learning-the-basics/" /><meta
 property="og:locale" content="en_US" /><meta
 property="og:type" content="article" /><meta
-property="og:description" content="When code fails, the programmer has to consider what happens when that failure occurs. That includes knowing what the failure means and how to handle it. Exception handling is the sub-program inside of the program where we, as programmers, attempt to exert some control over the results of that failure. Often we break program failures &hellip;" /><meta
-property="og:url" content="http://localhost:32771/2019/01/19/programming-for-failure-learning-the-basics/" /><meta
+property="og:title" content="Programming for failure - learning the basics" /><meta
+property="og:description" content="When code fails, the programmer has to consider what happens when that failure occurs. That includes knowing what the failure means and how to handle it. Exception handling is the sub-program inside of the program where we, as programmers, attempt to exert some control over the results of that failure." /><meta
+property="og:url" content="https://brilliantcoding.com/2019/01/19/programming-for-failure-learning-the-basics/" /><meta
 property="og:site_name" content="Brilliant Coding Blog" /><meta
 property="article:tag" content="Java" /><meta
 property="article:tag" content="Python" /><meta
 property="article:section" content="Software Development" /><meta
 property="article:published_time" content="2019-01-19T06:53:38+00:00" /><meta
-property="article:modified_time" content="2019-01-21T07:26:28+00:00" /><meta
-property="og:updated_time" content="2019-01-21T07:26:28+00:00" /><meta
-property="og:image" content="http://localhost:32771/wp-content/uploads/2019/01/error-hierarchy.png" /><meta
-property="og:image:width" content="787" /><meta
-property="og:image:height" content="611" /><meta
-property="og:image" content="http://localhost:32771/wp-content/uploads/2019/01/example-stack-traces.png" /><meta
-property="og:image:width" content="410" /><meta
-property="og:image:height" content="299" /><meta
+property="article:modified_time" content="2019-01-21T08:34:38+00:00" /><meta
+property="og:updated_time" content="2019-01-21T08:34:38+00:00" /><meta
+property="og:image" content="https://brilliantcoding.com/wp-content/uploads/2019/01/programming-for-failure-basics-socialthumb.jpg" /><meta
+property="og:image:width" content="1200" /><meta
+property="og:image:height" content="675" /><meta
 name="twitter:card" content="summary" /><meta
-name="twitter:description" content="When code fails, the programmer has to consider what happens when that failure occurs. That includes knowing what the failure means and how to handle it. Exception handling is the sub-program inside of the program where we, as programmers, attempt to exert some control over the results of that failure. Often we break program failures [&hellip;]" /><meta
+name="twitter:description" content="When code fails, the programmer has to consider what happens when that failure occurs. That includes knowing what the failure means and how to handle it. Exception handling is the sub-program inside of the program where we, as programmers, attempt to exert some control over the results of that failure." /><meta
+name="twitter:title" content="Programming for failure - learning the basics" /><meta
 name="twitter:site" content="@brilliantcoding" /><meta
-name="twitter:image" content="http://localhost:32771/wp-content/uploads/2019/01/error-hierarchy.png" /><meta
-name="twitter:creator" content="@brilliantcoding" /> <script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"Organization","url":"http:\/\/localhost:32771\/","sameAs":["https:\/\/twitter.com\/brilliantcoding"],"@id":"http:\/\/localhost:32771\/#organization","name":"Brilliant Coding","logo":"http:\/\/localhost:32771\/wp-content\/uploads\/2018\/01\/brilliantcoding-logo.png"}</script> <link
+name="twitter:image" content="https://brilliantcoding.com/wp-content/uploads/2019/01/programming-for-failure-basics-socialthumb.jpg" /><meta
+name="twitter:creator" content="@brilliantcoding" /> <script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/brilliantcoding.com\/","sameAs":["https:\/\/twitter.com\/brilliantcoding"],"@id":"https:\/\/brilliantcoding.com\/#organization","name":"Brilliant Coding","logo":"https:\/\/brilliantcoding.com\/wp-content\/uploads\/2018\/01\/brilliantcoding-logo.png"}</script> <link
 rel='dns-prefetch' href='//s.w.org' /><link
-rel="alternate" type="application/rss+xml" title="Brilliant Coding Blog &raquo; Feed" href="http://localhost:32771/feed/" /><link
-rel="alternate" type="application/rss+xml" title="Brilliant Coding Blog &raquo; Programming for failure &#8211; learning the basics Comments Feed" href="http://localhost:32771/2019/01/19/programming-for-failure-learning-the-basics/feed/" /><link
-rel='stylesheet' id='bc-847cba1013f2ef83c10e8641953cb3bc-css'  href='http://localhost:32771/wp-content/themes/brilliantcodingalpha/assets/css/bc.min.css' type='text/css' media='all' /> <script type='text/javascript' src='http://localhost:32771/wp-content/themes/brilliantcodingalpha/assets/js/bc.min.js'></script> <meta
+rel="alternate" type="application/rss+xml" title="Brilliant Coding Blog &raquo; Feed" href="https://brilliantcoding.com/feed/rss.xml" /><link
+rel="alternate" type="application/rss+xml" title="Brilliant Coding Blog &raquo; Programming for failure &#8211; learning the basics Comments Feed" href="https://brilliantcoding.com/2019/01/19/programming-for-failure-learning-the-basics/feed/rss.xml" /><link
+rel='stylesheet' id='bc-847cba1013f2ef83c10e8641953cb3bc-css'  href='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/css/bc.min.css' type='text/css' media='all' /> <script type='text/javascript' src='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/js/bc.min.js'></script> <meta
 name="generator" content="WordPress 4.9.6" /><link
-rel="icon" href="http://localhost:32771/wp-content/uploads/2018/01/brilliantcoding-logo.png" sizes="32x32" /><link
-rel="icon" href="http://localhost:32771/wp-content/uploads/2018/01/brilliantcoding-logo.png" sizes="192x192" /><link
-rel="apple-touch-icon-precomposed" href="http://localhost:32771/wp-content/uploads/2018/01/brilliantcoding-logo.png" /><meta
-name="msapplication-TileImage" content="http://localhost:32771/wp-content/uploads/2018/01/brilliantcoding-logo.png" /></head><body
+rel="icon" href="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" sizes="32x32" /><link
+rel="icon" href="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" sizes="192x192" /><link
+rel="apple-touch-icon-precomposed" href="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" /><meta
+name="msapplication-TileImage" content="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" /></head><body
 class="post-template-default single single-post postid-606 single-format-standard"><a
 id="bc-skippy" class="sr-only sr-only-focusable" href="#content">
 <span
@@ -57,19 +56,19 @@ class="navbar-nav-scroll"><ul
 class="navbar-nav d-flex align-items-center"><li
 class="navbar-item">
 <a
-class="nav-link " href="http://localhost:32771/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+class="nav-link " href="https://brilliantcoding.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
 <span
 class="font-weight-bold">Home</span>
 </a></li><li
 class="navbar-item">
 <a
-class="nav-link " href="http://localhost:32771/now/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+class="nav-link " href="https://brilliantcoding.com/now/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
 <span
 class="font-weight-bold">Now</span>
 </a></li><li
 class="navbar-item">
 <a
-class="nav-link " href="http://localhost:32771/about/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+class="nav-link " href="https://brilliantcoding.com/about/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
 <span
 class="font-weight-bold">About</span>
 </a></li></ul></div><ul
@@ -95,7 +94,7 @@ class="row pl-5"><div>
 <span
 class="float-left mr-3">
 <img
-src="http://localhost:32771/wp-content/uploads/2018/01/brilliantcoding-logo.png" />
+src="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" />
 </span></div></div><div
 class="align-self-end"><h1 class="site-title">
 Brilliant Coding Blog</h1><p
@@ -112,7 +111,7 @@ class="clearfix"></span>
 <i
 class="fa fa-user" aria-hidden="true"></i>
 <a
-class="p-author h-card" href="http://localhost:32771/author/mjjacko/">
+class="p-author h-card" href="https://brilliantcoding.com/author/mjjacko/">
 Matthew Jackowski		</a>
 <span
 class="sep"> | </span>
@@ -127,20 +126,20 @@ class="sep"> | </span>
 class="fa fa-tags" aria-hidden="true"></i>
 <span
 class="tag-list"><a
-href="http://localhost:32771/tag/java/" rel="tag">Java</a>, <a
-href="http://localhost:32771/tag/python/" rel="tag">Python</a></span>
+href="https://brilliantcoding.com/tag/java/" rel="tag">Java</a>, <a
+href="https://brilliantcoding.com/tag/python/" rel="tag">Python</a></span>
 <span
 class="d-none">
 <time
-class="dt-updated" datetime="2019-01-21T07:26:28+00:00">
+class="dt-updated" datetime="2019-01-21T08:34:38+00:00">
 January 21, 2019			</time>
 </span></div><div
 class="e-content"><p>When code fails, the programmer has to consider what happens when that failure occurs. That includes knowing what the failure means and how to handle it.  Exception handling is the sub-program inside of the program where we, as programmers, attempt to exert some control over the results of that failure.<br
 />
 <span
-id="more-606"></span><style type="text/css">@import url("http://localhost:32771/wp-content/themes/brilliantcodingalpha/highlight/styles/monokai.css");</style> <script src="http://localhost:32771/wp-content/themes/brilliantcodingalpha/highlight/highlight.pack.js"></script> <script>hljs.initHighlightingOnLoad();</script> <style>@font-face {
+id="more-606"></span><style type="text/css">@import url("https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/highlight/styles/monokai.css");</style> <script src="https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/highlight/highlight.pack.js"></script> <script>hljs.initHighlightingOnLoad();</script> <style>@font-face {
     font-family: "Iosevka";
-    src: url(http://localhost:32771/wp-content/themes/brilliantcodingalpha/iosevka/iosevka-regular.ttf) format("truetype");
+    src: url(https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/iosevka/iosevka-regular.ttf) format("truetype");
 }</style><br
 />
 Often we break program failures into two distinct types: errors and exceptions.  Errors represent a significant failure in the execution of the program.  In dynamic languages like Python, “errors” can include typos and other syntax problems and need to be fixed by the programmer.  In compiled languages like Java, errors mean that an unrecoverable problem has occurred and the program should be allowed to crash.  Exceptions, however, represent failures that we, as programmers, can anticipate.  In fact we often want exceptions to happen so our program and react to the environment.  We might even refer to exceptions as “operational errors”.<br
@@ -157,7 +156,7 @@ title="Error Handling in Node.js"><a
 href="https://www.joyent.com/node-js/production/design/errors">Error Handling in Node.js</a></cite></footer></blockquote><h3>Handling exceptions</h3><p>A well designed program will avoid having very large routines in a single file.  Instead, as part of the design, it’s common to break up the program into many files.  This design approach results in having a number of different calls for the program’s execution. This “call stack” is straightforward when writing code for what *should* happen, but when failures happen, this is where our design requires some deeper thought..</p><p>Let&#8217;s take an example program that makes an HTTP call to a remote site with three classes: Main, ResponseHandler, and HttpConnection.  This gives us three distinct execution call levels.  Exceptions can happen at any level, but all exceptions can be handled at the top of the call stack due to the lower classes passing the exception back up the call stack.  Handling generic exceptions at the top of our program’s “call stack” is a great way to start our error handling design.  Eventually as we run and test our program we’ll build better handling routines that need to be located close to where the exception happens.</p><p>Often we will not write our program to explicitly handle *every* possible exception, in which case we should have a way to generically deal with “Unhandled” exceptions. The most common choice is to log these exceptions to a file.  This type of logging is often referred to as an “exception stack trace” and we’ll talk more about this in the next section.  By doing this we can identify new or unexpected unhandled exceptions, and then we can decide if we want to added specific handlers and where the best place to handle exceptions would be.</p>
 <figure
 class="m-3 text-center"><img
-class="figure-img img-fluid rounded" style="border: 1px solid #000;" src="http://localhost:32771/wp-content/uploads/2019/01/error-hierarchy.png" /><figcaption
+class="figure-img img-fluid rounded" style="border: 1px solid #000;" src="https://brilliantcoding.com/wp-content/uploads/2019/01/error-hierarchy.png" /><figcaption
 class="figure-caption text-center">An example program where exceptions are handled or passed up the call stack</figcaption></figure><p>Let’s take a stroll through a simple program that makes an HTTP call to a remote server (you can find the full code example at the end of the post).  We have all used programs that do this type of function (in fact your using one now!), this is the core of what a web browser does.  But even in the simplest case, exception handling is much harder than you might think!</p><p>Our simple program has a simple call stack where the main function needs some data, so it calls a response handler, who then calls the HTTP connection class.  It’s useful to note that our program execution travels “down” the call stack while our exceptions pass back “up” the same stack.  At the lower level, Http Connection, can only retry the connection this only really handles low level network failures or timeouts.  Depending on how frequently you are making connections, this exception often rarely happens.  In this example we have an exception handler but you could also just let the exception pass up the next level in the call stack, the response handler.</p><p>At the response handler level we have a much broader set of design choices on how to deal with exceptions. For example if we get an exception parsing the data in the response, we can validate it or even send it to a different parser altogether (maybe it’s not HTML after all!).  Additionally we might have logic which looks for missing or empty data, in this case we need to manually throw a new exception otherwise when we pass the data to the main function, it will *think* it has data, but in fact, it does not.</p><p>Finally we have worked our way back to the top of the call stack.  At this point we should be calling a single exception handling routine, this routine handles all “unhandled” exceptions.  In the case of our simple example we simply display the exception to the user.</p><p>Here&#8217;s a few more key exception design observations:<br
 />
 Often it&#8217;s useful to keep the exception handler close to where the exception occurs, this is so we can pass local information to the handler that will lose scope if we wait. Another key design concept is that we only attempt to catch exceptions that we want to handle.</p><p>Sometimes programs will catch an exception, but not actually handle it.  In these cases we’ll want to “repeat” (“throw” in Java and “raise” in Python)  the exception so that it gets passed up the next level in the call stack.</p><p>Many languages like Java and Python have a built-in exception hierarchy.  Learn this hierarchy and use it, it’ll make building the exception handling part of the program easier.</p><ul><li><a
@@ -166,7 +165,7 @@ href="https://airbrake.io/blog/java-exception-handling/the-java-exception-class-
 class="blockquote"><p>By using exception handling as part of your program, you’ll have better control of program failures and be able to prevent unexpected behavior.</p></blockquote><h3>Tracing the call stack</h3>
 <figure
 class="figure float-right m-3"><img
-class="figure-img img-fluid rounded" style="border: 1px solid #000;" src="http://localhost:32771/wp-content/uploads/2019/01/example-stack-traces.png" /><figcaption
+class="figure-img img-fluid rounded" style="border: 1px solid #000;" src="https://brilliantcoding.com/wp-content/uploads/2019/01/example-stack-traces.png" /><figcaption
 class="figure-caption text-right">Stack traces come in many forms!</figcaption></figure><p>Our discussion of programming for failure would not be complete without mentioning the stack trace.  One common step our exception handlers should do at the top level of any call stack is to log the stack trace of the exception.  A stack trace represents a “map” of the execution of our program at the time the exception happened. Stack traces aren’t pretty and are for programmers only.  Without an in depth knowledge of the program, it’s easy for non programmers to make incorrect inferences based on a particular stack trace.  Instead we want to log the stack trace to a file the programmer can review and at the same time display a reasonable message or action to the user.<br
 />
 In many programming languages the stack trace is displayed by default.  So this is one of the first design considerations for our program; But as we saw if we use exception handlers, we can catch these exceptions before they make it back to the user and instead tell the user that a problem has occurred.</p><h3>Wrapping up</h3><p>Here are some additional dos and don’ts for exception handling and stack tracing:</p><ul><li>DO: Keep any exception handling code simple.</li><li>DO: Allow external operational exceptions to fail fast and not wait on timers.</li><li>DO: Displaying messages from exceptions is an important part of the user interface design.</li><li>DO: Make any stack trace logging configurable.</li><li>DON’T: Keep stack trace logs forever.</li><li>DON’T: Truncate the stack trace.</li><li>DON’T: Automatically email the stack traces.</li><li>DON’T: Handle errors inside of your program.  Remember, errors represent a significant failure of the environment or invalid code, so by definition are irrecoverable (handle the exceptions).</li><p></p><blockquote
@@ -240,30 +239,30 @@ class="d-none d-xl-block col-xl-2 p-0 bc-sidebar"><h6>Categories</h6><ul
 class="section"><li
 class="list-item">
 <a
-class="list-link " href="http://localhost:32771/category/code-refactor/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+class="list-link " href="https://brilliantcoding.com/category/code-refactor/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
 <span>Code Refactor (3)						</a></li><li
 class="list-item">
 <a
-class="list-link " href="http://localhost:32771/category/programming-languages/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+class="list-link " href="https://brilliantcoding.com/category/programming-languages/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
 <span>Programming Languages (3)						</a></li><li
 class="list-item">
 <a
-class="list-link " href="http://localhost:32771/category/software-development/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+class="list-link " href="https://brilliantcoding.com/category/software-development/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
 <span>Software Development (2)						</a></li><li
 class="list-item">
 <a
-class="list-link " href="http://localhost:32771/category/open-source-software/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+class="list-link " href="https://brilliantcoding.com/category/open-source-software/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
 <span>Open Source Software (2)						</a></li><li
 class="list-item">
 <a
-class="list-link " href="http://localhost:32771/category/developer-tools/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+class="list-link " href="https://brilliantcoding.com/category/developer-tools/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
 <span>Developer Tools (1)						</a></li><li
 class="list-item">
 <a
-class="list-link " href="http://localhost:32771/category/notes-from-the-dev/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+class="list-link " href="https://brilliantcoding.com/category/notes-from-the-dev/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
 <span>Notes from the Dev (1)						</a></li></ul></div>
 <a
-id="bc-skippy" class="sr-only sr-only-focusable" href="http://localhost:32771/2019/01/19/programming-for-failure-learning-the-basics/">
+id="bc-skippy" class="sr-only sr-only-focusable" href="https://brilliantcoding.com/2019/01/19/programming-for-failure-learning-the-basics/">
 <span
 class="bc-skiplink-text">Programming for failure &#8211; learning the basics</span>
 </a></article></div></div>

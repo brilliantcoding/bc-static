@@ -9,7 +9,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 ><channel><title>Software Development &#8211; Brilliant Coding Blog</title>
 <atom:link href="http://localhost/category/software-development/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
 <description>Be Brilliant</description>
-<lastBuildDate>Sat, 19 Jan 2019 06:53:38 +0000</lastBuildDate>
+<lastBuildDate>Mon, 21 Jan 2019 08:34:38 +0000</lastBuildDate>
 <language>en-US</language>
 <sy:updatePeriod>hourly</sy:updatePeriod>
 <sy:updateFrequency>1</sy:updateFrequency>
@@ -21,7 +21,9 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 <item><title>Programming for failure &#8211; learning the basics</title><link>https://brilliantcoding.com/2019/01/19/programming-for-failure-learning-the-basics/</link>
 <pubDate>Sat, 19 Jan 2019 06:53:38 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
-<category><![CDATA[Software Development]]></category><guid
+<category><![CDATA[Software Development]]></category>
+<category><![CDATA[Java]]></category>
+<category><![CDATA[Python]]></category><guid
 isPermaLink="false">https://brilliantcoding.com/?p=606</guid>
 <description><![CDATA[<p>When code fails, the programmer has to consider what happens when that failure occurs. That includes knowing what the failure means and how to handle it. Exception handling is the sub-program inside of the program where we, as programmers, attempt to exert some control over the results of that failure. Often we break program failures [&#8230;]</p><p>The post <a
 rel="nofollow" href="https://brilliantcoding.com/2019/01/19/programming-for-failure-learning-the-basics/">Programming for failure &#8211; learning the basics</a> appeared first on <a
