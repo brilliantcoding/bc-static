@@ -6,10 +6,10 @@ xmlns:atom="http://www.w3.org/2005/Atom"
 xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
 >
 <channel><title>
-Comments on: JavaOne and the forgotten Java edition</title>
-<atom:link href="https://brilliantcoding.com/2016/10/08/javaone-forgotten-java-edition/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com/2016/10/08/javaone-forgotten-java-edition/</link>
+Comments on: Programming for failure &#8211; asynchronous code</title>
+<atom:link href="https://brilliantcoding.com/2019/12/12/programming-for-failure-asynchronous-code/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com/2019/12/12/programming-for-failure-asynchronous-code/</link>
 <description>Be Brilliant</description>
-<lastBuildDate>Sun, 20 May 2018 20:33:34 +0000</lastBuildDate>
+<lastBuildDate>Fri, 13 Dec 2019 19:46:06 +0000</lastBuildDate>
 <sy:updatePeriod>
 hourly	</sy:updatePeriod>
 <sy:updateFrequency>

@@ -7,13 +7,15 @@ xmlns:atom="http://www.w3.org/2005/Atom"
 xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
 xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 ><channel><title>Python &#8211; Brilliant Coding Blog</title>
-<atom:link href="http://localhost/tag/python/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
+<atom:link href="https://brilliantcoding.com/tag/python/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
 <description>Be Brilliant</description>
-<lastBuildDate>Mon, 21 Jan 2019 08:34:38 +0000</lastBuildDate>
+<lastBuildDate>Fri, 13 Dec 2019 14:02:59 +0000</lastBuildDate>
 <language>en-US</language>
-<sy:updatePeriod>hourly</sy:updatePeriod>
-<sy:updateFrequency>1</sy:updateFrequency>
-<generator>https://wordpress.org/?v=4.9.6</generator><image>
+<sy:updatePeriod>
+hourly	</sy:updatePeriod>
+<sy:updateFrequency>
+1	</sy:updateFrequency>
+<generator>https://wordpress.org/?v=5.3</generator><image>
 <url>https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png</url><title>Python &#8211; Brilliant Coding Blog</title><link>https://brilliantcoding.com</link>
 <width>32</width>
 <height>32</height>
@@ -24,7 +26,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 <category><![CDATA[Software Development]]></category>
 <category><![CDATA[Java]]></category>
 <category><![CDATA[Python]]></category><guid
-isPermaLink="false">https://brilliantcoding.com/?p=606</guid>
+isPermaLink="false">http://localhost:32783/?p=606</guid>
 <description><![CDATA[<p>When code fails, the programmer has to consider what happens when that failure occurs. That includes knowing what the failure means and how to handle it. Exception handling is the sub-program inside of the program where we, as programmers, attempt to exert some control over the results of that failure. Often we break program failures [&#8230;]</p><p>The post <a
 rel="nofollow" href="https://brilliantcoding.com/2019/01/19/programming-for-failure-learning-the-basics/">Programming for failure &#8211; learning the basics</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
@@ -51,7 +53,7 @@ rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 <category><![CDATA[PHP]]></category>
 <category><![CDATA[Python]]></category>
 <category><![CDATA[Ruby]]></category><guid
-isPermaLink="false">http://brilliantcoding.com:8080/?p=50</guid>
+isPermaLink="false">http://localhost:32783:8080/?p=50</guid>
 <description><![CDATA[<p>A programmer&#8217;s life is hard enough keeping up-to-date on the latest technologies, understanding product specifications, and debugging issues. These programming environments help keep programmer sane by offering integrated syntax coloring, auto-completion, debugging tools and more. The main tools on this list are also all Open Source projects themselves. This enables you to directly contribute to [&#8230;]</p><p>The post <a
 rel="nofollow" href="https://brilliantcoding.com/2015/12/22/open-source-programming-environments-that-make-coding-easier/">Open Source programming environments that make coding easier</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>

@@ -7,13 +7,15 @@ xmlns:atom="http://www.w3.org/2005/Atom"
 xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
 xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 ><channel><title>PHP &#8211; Brilliant Coding Blog</title>
-<atom:link href="http://localhost/tag/php/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
+<atom:link href="https://brilliantcoding.com/tag/php/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
 <description>Be Brilliant</description>
-<lastBuildDate>Mon, 21 Jan 2019 08:34:38 +0000</lastBuildDate>
+<lastBuildDate>Sun, 20 May 2018 20:58:04 +0000</lastBuildDate>
 <language>en-US</language>
-<sy:updatePeriod>hourly</sy:updatePeriod>
-<sy:updateFrequency>1</sy:updateFrequency>
-<generator>https://wordpress.org/?v=4.9.6</generator><image>
+<sy:updatePeriod>
+hourly	</sy:updatePeriod>
+<sy:updateFrequency>
+1	</sy:updateFrequency>
+<generator>https://wordpress.org/?v=5.3</generator><image>
 <url>https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png</url><title>PHP &#8211; Brilliant Coding Blog</title><link>https://brilliantcoding.com</link>
 <width>32</width>
 <height>32</height>
@@ -24,7 +26,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 <category><![CDATA[Notes from the Dev]]></category>
 <category><![CDATA[PHP]]></category>
 <category><![CDATA[SASS]]></category><guid
-isPermaLink="false">https://brilliantcoding.com/?p=396</guid>
+isPermaLink="false">http://localhost:32783/?p=396</guid>
 <description><![CDATA[<p>Notes from the dev For the Brilliant Coding blog, I built a new WordPress theme called: Brilliant Coding Alpha. Previously I had used existing WordPress themes, which were great, but lacked some of the flexibility I wanted. Instead I wanted something a little more &#8220;hackable&#8221;, after some research I found a few &#8220;theme builders&#8221; that [&#8230;]</p><p>The post <a
 rel="nofollow" href="https://brilliantcoding.com/2018/01/21/bootstrap-4-hackable-wordpress-theme/">A Bootstrap 4 hackable WordPress Theme</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
@@ -51,7 +53,7 @@ rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 <category><![CDATA[PHP]]></category>
 <category><![CDATA[Python]]></category>
 <category><![CDATA[Ruby]]></category><guid
-isPermaLink="false">http://brilliantcoding.com:8080/?p=50</guid>
+isPermaLink="false">http://localhost:32783:8080/?p=50</guid>
 <description><![CDATA[<p>A programmer&#8217;s life is hard enough keeping up-to-date on the latest technologies, understanding product specifications, and debugging issues. These programming environments help keep programmer sane by offering integrated syntax coloring, auto-completion, debugging tools and more. The main tools on this list are also all Open Source projects themselves. This enables you to directly contribute to [&#8230;]</p><p>The post <a
 rel="nofollow" href="https://brilliantcoding.com/2015/12/22/open-source-programming-environments-that-make-coding-easier/">Open Source programming environments that make coding easier</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
