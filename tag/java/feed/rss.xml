@@ -9,7 +9,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 ><channel><title>Java &#8211; Brilliant Coding Blog</title>
 <atom:link href="https://brilliantcoding.com/tag/java/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
 <description>Be Brilliant</description>
-<lastBuildDate>Fri, 13 Dec 2019 14:02:59 +0000</lastBuildDate>
+<lastBuildDate>Mon, 16 Dec 2019 14:47:54 +0000</lastBuildDate>
 <language>en-US</language>
 <sy:updatePeriod>
 hourly	</sy:updatePeriod>
@@ -20,7 +20,7 @@ hourly	</sy:updatePeriod>
 <width>32</width>
 <height>32</height>
 </image>
-<item><title>Programming for failure &#8211; learning the basics</title><link>https://brilliantcoding.com/2019/01/19/programming-for-failure-learning-the-basics/</link>
+<item><title>Programming for failure &#8211; learning the basics</title><link>https://brilliantcoding.com/2019/01/programming-for-failure-learning-the-basics/</link>
 <pubDate>Sat, 19 Jan 2019 06:53:38 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
 <category><![CDATA[Software Development]]></category>
@@ -28,33 +28,33 @@ hourly	</sy:updatePeriod>
 <category><![CDATA[Python]]></category><guid
 isPermaLink="false">http://localhost:32783/?p=606</guid>
 <description><![CDATA[<p>When code fails, the programmer has to consider what happens when that failure occurs. That includes knowing what the failure means and how to handle it. Exception handling is the sub-program inside of the program where we, as programmers, attempt to exert some control over the results of that failure. Often we break program failures [&#8230;]</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2019/01/19/programming-for-failure-learning-the-basics/">Programming for failure &#8211; learning the basics</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com/2019/01/programming-for-failure-learning-the-basics/">Programming for failure &#8211; learning the basics</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
 </item>
-<item><title>Java Enterprise Edition, where have you gone?</title><link>https://brilliantcoding.com/2018/03/10/java-enterprise-edition-where-have-you-gone/</link>
+<item><title>Java Enterprise Edition, where have you gone?</title><link>https://brilliantcoding.com/2018/03/java-enterprise-edition-where-have-you-gone/</link>
 <pubDate>Sat, 10 Mar 2018 19:21:38 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
 <category><![CDATA[Open Source Software]]></category>
 <category><![CDATA[Java]]></category><guid
 isPermaLink="false">http://localhost:32783/?p=438</guid>
 <description><![CDATA[<p>What is the Java Enterprise Edition framework and why it is still an important part of many applications? About a year and half ago, I wrote a post about it and it’s uncertain future.&#160; Since then there has been quite a few changes and while the future is far from certain, I feel it is [&#8230;]</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2018/03/10/java-enterprise-edition-where-have-you-gone/">Java Enterprise Edition, where have you gone?</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com/2018/03/java-enterprise-edition-where-have-you-gone/">Java Enterprise Edition, where have you gone?</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
 </item>
-<item><title>JavaOne and the forgotten Java edition</title><link>https://brilliantcoding.com/2016/10/08/javaone-forgotten-java-edition/</link>
+<item><title>JavaOne and the forgotten Java edition</title><link>https://brilliantcoding.com/2016/10/javaone-forgotten-java-edition/</link>
 <pubDate>Sat, 08 Oct 2016 05:00:29 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
 <category><![CDATA[Programming Languages]]></category>
 <category><![CDATA[Java]]></category><guid
 isPermaLink="false">http://localhost:32783/?p=252</guid>
 <description><![CDATA[<p>JavaOne is one of the biggest annual conferences to discuss Java technologies. It was inaugurated in 1996 by Sun Microsystems, and now is run during Oracle OpenWorld after the 2010 acquisition of Sun by Oracle Corporation. This year there was more excitement than usual around the JavaOne event, usually the event focuses on the technical [&#8230;]</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2016/10/08/javaone-forgotten-java-edition/">JavaOne and the forgotten Java edition</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com/2016/10/javaone-forgotten-java-edition/">JavaOne and the forgotten Java edition</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
 </item>
-<item><title>Looking ahead: JVM Programming Languages</title><link>https://brilliantcoding.com/2016/03/24/jvm-programming-languages/</link>
+<item><title>Looking ahead: JVM Programming Languages</title><link>https://brilliantcoding.com/2016/03/jvm-programming-languages/</link>
 <pubDate>Thu, 24 Mar 2016 04:51:09 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
 <category><![CDATA[Programming Languages]]></category>
@@ -64,22 +64,22 @@ rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 <category><![CDATA[Scala]]></category><guid
 isPermaLink="false">http://192.168.99.100:32791/?p=109</guid>
 <description><![CDATA[<p>In this article I take a look ahead at the future of four programming languages; Java, Scala, Clojure and Kotlin. All four of these languages are designed to run on the Java Virtual Machine ( JVM ), which is supported on practically every computer operating system. Most recently, JVM programming languages have become popular choices [&#8230;]</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2016/03/24/jvm-programming-languages/">Looking ahead: JVM Programming Languages</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com/2016/03/jvm-programming-languages/">Looking ahead: JVM Programming Languages</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
 </item>
-<item><title>Refactoring a For-Loop to a Lambda in Java</title><link>https://brilliantcoding.com/2015/12/28/refactoring-a-for-loop-to-a-lambda-in-java/</link>
+<item><title>Refactoring a For-Loop to a Lambda in Java</title><link>https://brilliantcoding.com/2015/12/refactoring-a-for-loop-to-a-lambda-in-java/</link>
 <pubDate>Mon, 28 Dec 2015 07:47:49 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
 <category><![CDATA[Code Refactor]]></category>
 <category><![CDATA[Java]]></category><guid
 isPermaLink="false">http://localhost:32783:8080/?p=62</guid>
 <description><![CDATA[<p>This is a quick example to show refactoring a &#8216;for-loop&#8217; over a List of objects by using a Lambda function instead. We will take a simple List of Message objects and simply output the name of the message. Typically you may want to perform various side affects instead of the outputting the object&#8217;s name on [&#8230;]</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2015/12/28/refactoring-a-for-loop-to-a-lambda-in-java/">Refactoring a For-Loop to a Lambda in Java</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com/2015/12/refactoring-a-for-loop-to-a-lambda-in-java/">Refactoring a For-Loop to a Lambda in Java</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
 </item>
-<item><title>Open Source programming environments that make coding easier</title><link>https://brilliantcoding.com/2015/12/22/open-source-programming-environments-that-make-coding-easier/</link>
+<item><title>Open Source programming environments that make coding easier</title><link>https://brilliantcoding.com/2015/12/open-source-programming-environments-that-make-coding-easier/</link>
 <pubDate>Tue, 22 Dec 2015 07:11:12 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
 <category><![CDATA[Developer Tools]]></category>
@@ -91,7 +91,7 @@ rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 <category><![CDATA[Ruby]]></category><guid
 isPermaLink="false">http://localhost:32783:8080/?p=50</guid>
 <description><![CDATA[<p>A programmer&#8217;s life is hard enough keeping up-to-date on the latest technologies, understanding product specifications, and debugging issues. These programming environments help keep programmer sane by offering integrated syntax coloring, auto-completion, debugging tools and more. The main tools on this list are also all Open Source projects themselves. This enables you to directly contribute to [&#8230;]</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2015/12/22/open-source-programming-environments-that-make-coding-easier/">Open Source programming environments that make coding easier</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com/2015/12/open-source-programming-environments-that-make-coding-easier/">Open Source programming environments that make coding easier</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
 </item>

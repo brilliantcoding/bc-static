@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><rss
+version="2.0"
+xmlns:content="http://purl.org/rss/1.0/modules/content/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:atom="http://www.w3.org/2005/Atom"
+xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+>
+<channel><title>
+Comments on: Programming for failure &#8211; asynchronous code</title>
+<atom:link href="https://brilliantcoding.com/2019/12/programming-for-failure-asynchronous-code/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com/2019/12/programming-for-failure-asynchronous-code/</link>
+<description>Be Brilliant</description>
+<lastBuildDate>Sat, 14 Dec 2019 00:26:23 +0000</lastBuildDate>
+<sy:updatePeriod>
+hourly	</sy:updatePeriod>
+<sy:updateFrequency>
+1	</sy:updateFrequency>
+<generator>https://wordpress.org/?v=5.3</generator>
+</channel>
+</rss>

@@ -1,0 +1,364 @@
+<!DOCTYPE html><html
+lang="en-US"><head><meta
+charset="UTF-8"><meta
+name="viewport" content="width=device-width, initial-scale=1"><link
+rel="profile" href="http://gmpg.org/xfn/11"> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-74127232-1', 'auto',{
+		'anonymizeIp': true,
+		'storage': 'none',
+		'storeGac': false,
+		'siteSpeedSampleRate': 90
+	});
+	ga('require', 'autotrack');
+	ga('send', 'pageview');</script> <title>Build a Static Website Using Python, Pelican, and Docker &#8211; Brilliant Coding Blog</title><meta
+name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/><link
+rel="canonical" href="https://brilliantcoding.com/2016/06/website-using-python-pelican-docker/" /><meta
+property="og:locale" content="en_US" /><meta
+property="og:type" content="article" /><meta
+property="og:title" content="Build a Static Website Using Python, Pelican, and Docker" /><meta
+property="og:description" content="In this example I&#039;ll show you how you can build a static website for your open source project on GitHub pages using the combination of Python, Pelican, and Docker." /><meta
+property="og:url" content="https://brilliantcoding.com/2016/06/website-using-python-pelican-docker/" /><meta
+property="og:site_name" content="Brilliant Coding Blog" /><meta
+property="article:tag" content="Python" /><meta
+property="article:section" content="Open Source Software" /><meta
+property="article:published_time" content="2016-06-14T07:23:06+00:00" /><meta
+property="article:modified_time" content="2019-12-16T14:38:05+00:00" /><meta
+property="og:updated_time" content="2019-12-16T14:38:05+00:00" /><meta
+property="og:image" content="https://brilliantcoding.com/wp-content/uploads/2016/06/website-using-python-pelican-docker-socialthumb.png" /><meta
+property="og:image:width" content="1200" /><meta
+property="og:image:height" content="675" /><meta
+name="twitter:card" content="summary" /><meta
+name="twitter:description" content="In this example I&#039;ll show you how you can build a static website for your open source project on GitHub pages using the combination of Python, Pelican, and Docker." /><meta
+name="twitter:title" content="Build a Static Website Using Python, Pelican, and Docker" /><meta
+name="twitter:site" content="@brilliantcoding" /><meta
+name="twitter:image" content="http://localhost:32783/wp-content/uploads/2016/06/website-using-python-pelican-docker-socialthumb.png" /><meta
+name="twitter:creator" content="@brilliantcoding" /> <script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://brilliantcoding.com/#organization",
+            "name": "Brilliant Coding",
+            "url": "https://brilliantcoding.com/",
+            "sameAs": [
+                "https://twitter.com/brilliantcoding"
+            ],
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "https://brilliantcoding.com/#logo",
+                "url": "https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png",
+                "width": 120,
+                "height": 120,
+                "caption": "Brilliant Coding"
+            },
+            "image": {
+                "@id": "https://brilliantcoding.com/#logo"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://brilliantcoding.com/#website",
+            "url": "https://brilliantcoding.com/",
+            "name": "Brilliant Coding Blog",
+            "description": "Be Brilliant",
+            "publisher": {
+                "@id": "https://brilliantcoding.com/#organization"
+            },
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://brilliantcoding.com/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        },
+        {
+            "@type": "ImageObject",
+            "@id": "https://brilliantcoding.com/2016/06/website-using-python-pelican-docker/#primaryimage",
+            "url": "https://brilliantcoding.com/wp-content/uploads/2016/06/website-using-python-pelican-docker-2.jpg",
+            "width": 1160,
+            "height": 642
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://brilliantcoding.com/2016/06/website-using-python-pelican-docker/#webpage",
+            "url": "https://brilliantcoding.com/2016/06/website-using-python-pelican-docker/",
+            "inLanguage": "en-US",
+            "name": "",
+            "isPartOf": {
+                "@id": "https://brilliantcoding.com/#website"
+            },
+            "primaryImageOfPage": {
+                "@id": "https://brilliantcoding.com/2016/06/website-using-python-pelican-docker/#primaryimage"
+            },
+            "datePublished": "2016-06-14T07:23:06+00:00",
+            "dateModified": "2019-12-16T14:38:05+00:00",
+            "breadcrumb": {
+                "@id": "https://brilliantcoding.com/2016/06/website-using-python-pelican-docker/#breadcrumb"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://brilliantcoding.com/2016/06/website-using-python-pelican-docker/#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@type": "WebPage",
+                        "@id": "https://brilliantcoding.com/",
+                        "url": "https://brilliantcoding.com/",
+                        "name": "Home"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@type": "WebPage",
+                        "@id": "https://brilliantcoding.com/category/open-source-software/",
+                        "url": "https://brilliantcoding.com/category/open-source-software/",
+                        "name": "Open Source Software"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@type": "WebPage",
+                        "@id": "https://brilliantcoding.com/2016/06/website-using-python-pelican-docker/",
+                        "url": "https://brilliantcoding.com/2016/06/website-using-python-pelican-docker/",
+                        "name": "Build a Static Website Using Python, Pelican, and Docker"
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "Article",
+            "@id": "https://brilliantcoding.com/2016/06/website-using-python-pelican-docker/#article",
+            "isPartOf": {
+                "@id": "https://brilliantcoding.com/2016/06/website-using-python-pelican-docker/#webpage"
+            },
+            "author": {
+                "@id": "https://brilliantcoding.com/#/schema/person/bb992c97c32509cfb75e6f4834eedaae"
+            },
+            "headline": "Build a Static Website Using Python, Pelican, and Docker",
+            "datePublished": "2016-06-14T07:23:06+00:00",
+            "dateModified": "2019-12-16T14:38:05+00:00",
+            "commentCount": 0,
+            "mainEntityOfPage": {
+                "@id": "https://brilliantcoding.com/2016/06/website-using-python-pelican-docker/#webpage"
+            },
+            "publisher": {
+                "@id": "https://brilliantcoding.com/#organization"
+            },
+            "image": {
+                "@id": "https://brilliantcoding.com/2016/06/website-using-python-pelican-docker/#primaryimage"
+            },
+            "keywords": "Python",
+            "articleSection": "Open Source Software"
+        },
+        {
+            "@type": [
+                "Person"
+            ],
+            "@id": "https://brilliantcoding.com/#/schema/person/bb992c97c32509cfb75e6f4834eedaae",
+            "name": "Matthew Jackowski",
+            "image": {
+                "@type": "ImageObject",
+                "@id": "https://brilliantcoding.com/#authorlogo",
+                "url": "http://0.gravatar.com/avatar/65b78c2dd9dc2d89bd72cc4ed922c954?s=96&d=mm&r=g",
+                "caption": "Matthew Jackowski"
+            },
+            "sameAs": []
+        }
+    ]
+}</script> <link
+rel='dns-prefetch' href='//s.w.org' /><link
+rel="alternate" type="application/rss+xml" title="Brilliant Coding Blog &raquo; Feed" href="https://brilliantcoding.com/feed/rss.xml" /><link
+rel="alternate" type="application/rss+xml" title="Brilliant Coding Blog &raquo; Build a Static Website Using Python, Pelican, and Docker Comments Feed" href="https://brilliantcoding.com/2016/06/website-using-python-pelican-docker/feed/rss.xml" /><link
+rel='stylesheet' id='bc-847cba1013f2ef83c10e8641953cb3bc-css'  href='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/css/bc.min.css' type='text/css' media='all' /> <script type='text/javascript' src='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/js/bc.min.js'></script> <meta
+name="generator" content="WordPress 5.3" /><link
+rel="icon" href="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" sizes="32x32" /><link
+rel="icon" href="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" sizes="192x192" /><link
+rel="apple-touch-icon-precomposed" href="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" /><meta
+name="msapplication-TileImage" content="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" /></head><body
+class="post-template-default single single-post postid-223 single-format-standard"><a
+id="bc-skippy" class="sr-only sr-only-focusable" href="#content">
+<span
+class="bc-skiplink-text">Skip to content</span>
+</a><header
+class="bc-navbar nav navbar navbar-expand navbar-dark flex-column flex-md-row"><div
+class="navbar-nav-scroll"><ul
+class="navbar-nav d-flex align-items-center"><li
+class="navbar-item">
+<a
+class="nav-link " href="https://brilliantcoding.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<span
+class="font-weight-bold">Home</span>
+</a></li><li
+class="navbar-item">
+<a
+class="nav-link " href="https://brilliantcoding.com/now/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<span
+class="font-weight-bold">Now</span>
+</a></li><li
+class="navbar-item">
+<a
+class="nav-link " href="https://brilliantcoding.com/about/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<span
+class="font-weight-bold">About</span>
+</a></li></ul></div><ul
+class="navbar-nav flex-row ml-md-auto d-none d-md-flex"><li
+class="navbar-item"><a
+class="nav-link " href="https://github.com/brilliantcoding" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fab fa-github" aria-hidden="true"></i>
+</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://twitter.com/brilliantcoding" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fab fa-twitter" aria-hidden="true"></i>
+</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://brilliantcoding.com/feed/rss.xml" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fa fa-rss" aria-hidden="true"></i>
+</a></li></ul></header><div
+class="blog-title mt-2"><div
+class="container-fluid d-flex"><div
+class="row pl-5"><div>
+<span
+class="float-left mr-3">
+<img
+src="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" />
+</span></div></div><div
+class="align-self-end"><h1 class="site-title">
+Brilliant Coding Blog</h1><p
+class="site-description mb-0">Be Brilliant</p></div></div></div><div
+class="bc-content"><div
+class="container-fluid">
+<article
+id="post-223" class="h-entry row mt-5 row flex-xl-nowrap bc-post-article"><div
+id="left_gutter" class="d-none d-xl-block col-xl-1"></div><div
+class="col-md-12 col-xl-9 pl-4 pr-4 pb-4"><h2 class="p-name">Build a Static Website Using Python, Pelican, and Docker</h2><div
+class="pl-2 bc-metadata">
+<span
+class="clearfix"></span>
+<i
+class="fa fa-user" aria-hidden="true"></i>
+<a
+class="p-author h-card" href="https://brilliantcoding.com/author/mjjacko/">
+Matthew Jackowski		</a>
+<span
+class="sep"> | </span>
+<i
+class="fa fa-calendar" aria-hidden="true"></i>
+<time
+class="dt-published" datetime="2016-06-14T07:23:06+00:00">
+June 14, 2016			</time>
+<span
+class="sep"> | </span>
+<i
+class="fa fa-tags" aria-hidden="true"></i>
+<span
+class="tag-list"><a
+href="https://brilliantcoding.com/tag/python/" rel="tag">Python</a></span>
+<span
+class="d-none">
+<time
+class="dt-updated" datetime="2019-12-16T14:38:05+00:00">
+December 16, 2019			</time>
+</span></div><div
+class="e-content"><p>In this example I&#8217;ll show you how you can build a static website for your open source project on <a
+href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub pages</a> using the combination of <a
+href="https://www.python.org/" target="_blank" rel="noopener noreferrer">Python</a> (language), <a
+href="http://blog.getpelican.com/" target="_blank" rel="noopener noreferrer">Pelican</a> (generator), and <a
+href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">Docker</a> (environment).&nbsp; For this type of task, speed is important.&nbsp; I want to avoid spending time thinking about designing a blog system or implementing a content management system.&nbsp; My goal with this approach, is to focus on the content, and avoid worrying about installation, setup, or infrastructure.<br
+/>
+<span
+id="more-223"></span></p><p>As far as content creation goes, Pelican <a
+href="http://docs.getpelican.com/en/stable/content.html" target="_blank" rel="noopener noreferrer">supports</a> HTML, Markdown reStructuredText formats and more.&nbsp; There are many editors out there that will make building content in these formats very simple.&nbsp; A deeper discussion of formats and editors deserves its own post, so I&#8217;m not going to delve into the details here.</p><h2>Step by Step</h2><p>Here&#8217;s the entire process:</p><ul><li><strong>Step 1 &#8211; </strong>First setup and <a
+href="https://docs.docker.com/" target="_blank" rel="noopener noreferrer">install docker</a>.&nbsp; I do this on my local system, but you could use any of the various Docker hosting providers as well.</li></ul><p><a
+href="https://hub.docker.com/r/mjjacko/pelican/" target="_blank" rel="noopener noreferrer"><img
+class="alignright" style="border: 1px solid #000;" src="https://brilliantcoding.com/wp-content/uploads/2016/06/website-using-python-pelican-docker-2.jpg" alt="MJJacko's Pelican Image" width="369" height="204"></a></p><p>&nbsp;</p><ul><li><strong>Step 2 &#8211; </strong>Next, run an existing Docker image.&nbsp; I have a great <a
+href="https://hub.docker.com/r/mjjacko/pelican/" target="_blank" rel="noopener noreferrer">docker image</a> already setup, but of course you could also build your own (see below for <a
+href="#1" target="_blank" rel="noopener noreferrer">&#8216;advanced&#8217; configuration</a>).</li></ul><p>&nbsp;</p><ul><li><strong>Step 3 &#8211; </strong>Next map the Docker volume to one of your local file folders.&nbsp; This allows you to edit and create your content files, just as you would any other local file.</li></ul><p>&nbsp;</p><ul><li><strong>Step 4 &#8211; </strong>The web server included with Pelican will detect any file changes and auto-rebuild your site.&nbsp; You can see the updates directly by just browsing to the web server&#8217;s URL.</li></ul><p><a
+href="https://help.github.com/articles/creating-project-pages-manually/#add-content-and-push" target="_blank" rel="noopener noreferrer"><img
+class="alignright" style="border: 1px solid #000;" src="https://brilliantcoding.com/wp-content/uploads/2016/06/website-using-python-pelican-docker-1.png" alt="GitHub Add content and push" width="375" height="208"></a></p><p>&nbsp;</p><ul><li><strong>Step 5 &#8211; </strong>Once you are happy with your site&#8230;ship it!&nbsp; In this case deployment is done by simply pushing your generated HTML content to the gh-pages branch.</li></ul><p>&nbsp;</p><ul><li><strong>And done!</strong></li></ul><h2><a
+name="1"></a>Advanced Configuration</h2><p>While we are avoiding the complexity of a blog or CMS application, there is some configuration that still have to be defined.&nbsp; However if we bundle these configuration files inside of our docker image we only need to worry about it when we are initially setting up the project, or making environmental changes (which should be fairly infrequent).</p><p>Making a docker image requires a docker &#8216;build&#8217; (<a
+href="https://docs.docker.com/engine/reference/builder/" target="_blank" rel="noopener noreferrer">Dockerfile</a>) file plus any files that need to be added to the new image.&nbsp; You can checkout <a
+href="https://github.com/matthewjackowski/pelican-dockerfile" target="_blank" rel="noopener noreferrer">my example</a> on GitHub.</p><p>In this case there are 3 important configuration files:</p><ul><li><a
+href="https://github.com/matthewjackowski/pelican-dockerfile/blob/master/files/pelican/requirements.txt" target="_blank" rel="noopener noreferrer">requirements.txt</a> &#8211; any Python dependencies that are needed</li><li><a
+href="https://github.com/matthewjackowski/pelican-dockerfile/blob/master/files/pelican/pelicanconf.py" target="_blank" rel="noopener noreferrer">pelicanconf.py</a> &#8211; basic site configuration</li><li><a
+href="https://github.com/matthewjackowski/pelican-dockerfile/blob/master/files/pelican/publishconf.py" target="_blank" rel="noopener noreferrer">publishconf.py</a> &#8211; configuration for static publishing</li></ul><p>These configuration files are intended to to be a basic minimum to get you running quickly, however you might want to replace them from your own repository.&nbsp; This is totally fine, however be aware that re-installing requirements in the container will not happen automatically.&nbsp; You will either need to build a new image, or login to the container, run &#8216;<a
+href="https://pip.pypa.io/en/stable/" target="_blank" rel="noopener noreferrer">pip</a>&#8216; and then use &#8216;<a
+href="https://docs.docker.com/engine/reference/commandline/commit/" target="_blank" rel="noopener noreferrer">Docker commit</a>&#8216; to save the image.</p><p>Also we will include a <a
+href="https://github.com/matthewjackowski/pelican-dockerfile/blob/master/files/develop_server.sh" target="_blank" rel="noopener noreferrer">bash script</a> that keeps the a running server with the site available.&nbsp; Otherwise Docker would run once and exit.</p><p>With these files in place, actually creating the image is easy, change to your build directory and run: <code>docker build -t user/myrepo:latest .</code></p><p>Once you build the image from the Dockerfile others on your team can use the image directly.&nbsp; Additionally you can maintain the Dockerfile with source control so that the team can easily contribute any changes to the environment back to it.</p><p>With static site generation, a docker managed environment and a GitHub pages hosting solution, building a website is quick, and simple to manage.</p><h2>Notes</h2><ul><li>Pelican has a large library of <a
+href="https://github.com/getpelican/pelican-plugins#pelican-plugins" target="_blank" rel="noopener noreferrer">plugins</a> that can help address many content publishing needs.&nbsp; You might be surprised how much you can do with a static site generator!</li><li>We might add additional build tools in different languages, such as&nbsp; Ruby&#8217;s SASS for CSS development.&nbsp; These tools can be added to the Docker build process a single time, then when other team members update their environments this will preconfigured.</li><li>This post relies heavily on GitHub pages, but it&#8217;s worthwhile to mention that other static hosting solutions that use Git should work equally well.</li></ul><p><em>Have a comment, question or correction about this article? I’d love to hear from you!<br
+/>
+Simply reply to this article&#8217;s tweet: <a
+href="https://twitter.com/brilliantcoding/status/742651612221440000">link to status</a><br
+/>
+Or direct message me at: <a
+href="https://twitter.com/mjjacko">link to profile</a></em></p></div></div><div
+class="d-none d-xl-block col-xl-2 p-0 bc-sidebar"><h6>Categories</h6><ul
+class="section"><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/code-refactor/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Code Refactor (3)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/programming-languages/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Programming Languages (3)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/software-development/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Software Development (3)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/open-source-software/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Open Source Software (2)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/developer-tools/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Developer Tools (1)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/notes-from-the-dev/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Notes from the Dev (1)						</a></li></ul></div>
+<a
+id="bc-skippy" class="sr-only sr-only-focusable" href="https://brilliantcoding.com/2016/06/website-using-python-pelican-docker/">
+<span
+class="bc-skiplink-text">Build a Static Website Using Python, Pelican, and Docker</span>
+</a></article></div></div>
+<footer
+id="colophon" class="bc-footer" role="contentinfo"><div
+class="container"><div
+class="bc-social-icons"><ul
+class="navbar-nav flex-row ml-md-auto d-none d-md-flex"><li
+class="navbar-item"><a
+class="nav-link " href="https://github.com/brilliantcoding" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fab fa-github" aria-hidden="true"></i>
+GIthub			</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://twitter.com/brilliantcoding" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fab fa-twitter" aria-hidden="true"></i>
+Twitter			</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://brilliantcoding.com/feed/rss.xml" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fa fa-rss" aria-hidden="true"></i>
+RSS			</a></li></ul></div><div
+class="bc-copyright">
+<span>© 2018 Matthew Jackowski</span>
+<span>- Powered by the <a
+href="https://github.com/brilliantcoding/bc-wptheme">Brilliant Coding Wordpress Theme</a></span></div>		</div>
+	</footer>
+</body>
+</html>

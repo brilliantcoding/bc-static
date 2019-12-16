@@ -9,7 +9,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 ><channel><title>Scala &#8211; Brilliant Coding Blog</title>
 <atom:link href="https://brilliantcoding.com/tag/scala/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
 <description>Be Brilliant</description>
-<lastBuildDate>Sun, 20 May 2018 20:54:08 +0000</lastBuildDate>
+<lastBuildDate>Mon, 16 Dec 2019 14:39:19 +0000</lastBuildDate>
 <language>en-US</language>
 <sy:updatePeriod>
 hourly	</sy:updatePeriod>
@@ -20,7 +20,7 @@ hourly	</sy:updatePeriod>
 <width>32</width>
 <height>32</height>
 </image>
-<item><title>Looking ahead: JVM Programming Languages</title><link>https://brilliantcoding.com/2016/03/24/jvm-programming-languages/</link>
+<item><title>Looking ahead: JVM Programming Languages</title><link>https://brilliantcoding.com/2016/03/jvm-programming-languages/</link>
 <pubDate>Thu, 24 Mar 2016 04:51:09 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
 <category><![CDATA[Programming Languages]]></category>
@@ -30,7 +30,7 @@ hourly	</sy:updatePeriod>
 <category><![CDATA[Scala]]></category><guid
 isPermaLink="false">http://192.168.99.100:32791/?p=109</guid>
 <description><![CDATA[<p>In this article I take a look ahead at the future of four programming languages; Java, Scala, Clojure and Kotlin. All four of these languages are designed to run on the Java Virtual Machine ( JVM ), which is supported on practically every computer operating system. Most recently, JVM programming languages have become popular choices [&#8230;]</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2016/03/24/jvm-programming-languages/">Looking ahead: JVM Programming Languages</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com/2016/03/jvm-programming-languages/">Looking ahead: JVM Programming Languages</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
 </item>

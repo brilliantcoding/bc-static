@@ -1,0 +1,364 @@
+<!DOCTYPE html><html
+lang="en-US"><head><meta
+charset="UTF-8"><meta
+name="viewport" content="width=device-width, initial-scale=1"><link
+rel="profile" href="http://gmpg.org/xfn/11"> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-74127232-1', 'auto',{
+		'anonymizeIp': true,
+		'storage': 'none',
+		'storeGac': false,
+		'siteSpeedSampleRate': 90
+	});
+	ga('require', 'autotrack');
+	ga('send', 'pageview');</script> <title>Looking ahead: JVM Programming Languages &#8211; Brilliant Coding Blog</title><meta
+name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/><link
+rel="canonical" href="https://brilliantcoding.com/2016/03/jvm-programming-languages/" /><meta
+property="og:locale" content="en_US" /><meta
+property="og:type" content="article" /><meta
+property="og:title" content="Looking ahead: JVM Programming Languages" /><meta
+property="og:description" content="In this article I take a look ahead at the future of four programming languages; Java, Scala, Clojure and Kotin. All four of these languages are designed to run on the JVM." /><meta
+property="og:url" content="https://brilliantcoding.com/2016/03/jvm-programming-languages/" /><meta
+property="og:site_name" content="Brilliant Coding Blog" /><meta
+property="article:tag" content="Clojure" /><meta
+property="article:tag" content="Java" /><meta
+property="article:tag" content="Kotlin" /><meta
+property="article:tag" content="Scala" /><meta
+property="article:section" content="Programming Languages" /><meta
+property="article:published_time" content="2016-03-24T04:51:09+00:00" /><meta
+property="article:modified_time" content="2019-12-16T14:39:19+00:00" /><meta
+property="og:updated_time" content="2019-12-16T14:39:19+00:00" /><meta
+property="og:image" content="https://brilliantcoding.com/wp-content/uploads/2016/03/1e91b7f.jpg" /><meta
+property="og:image:width" content="698" /><meta
+property="og:image:height" content="400" /><meta
+name="twitter:card" content="summary" /><meta
+name="twitter:description" content="In this article I take a look ahead at the future of four programming languages; Java, Scala, Clojure and Kotin. All four of these languages are designed to run on the JVM." /><meta
+name="twitter:title" content="Looking ahead: JVM Programming Languages" /><meta
+name="twitter:site" content="@brilliantcoding" /><meta
+name="twitter:image" content="http://localhost:32783/wp-content/uploads/2016/03/1e91b7f.jpg" /><meta
+name="twitter:creator" content="@brilliantcoding" /> <script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://brilliantcoding.com/#organization",
+            "name": "Brilliant Coding",
+            "url": "https://brilliantcoding.com/",
+            "sameAs": [
+                "https://twitter.com/brilliantcoding"
+            ],
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "https://brilliantcoding.com/#logo",
+                "url": "https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png",
+                "width": 120,
+                "height": 120,
+                "caption": "Brilliant Coding"
+            },
+            "image": {
+                "@id": "https://brilliantcoding.com/#logo"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://brilliantcoding.com/#website",
+            "url": "https://brilliantcoding.com/",
+            "name": "Brilliant Coding Blog",
+            "description": "Be Brilliant",
+            "publisher": {
+                "@id": "https://brilliantcoding.com/#organization"
+            },
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://brilliantcoding.com/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        },
+        {
+            "@type": "ImageObject",
+            "@id": "https://brilliantcoding.com/2016/03/jvm-programming-languages/#primaryimage",
+            "url": "https://brilliantcoding.com/wp-content/uploads/2016/03/1e91b7f.jpg",
+            "width": 698,
+            "height": 400
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://brilliantcoding.com/2016/03/jvm-programming-languages/#webpage",
+            "url": "https://brilliantcoding.com/2016/03/jvm-programming-languages/",
+            "inLanguage": "en-US",
+            "name": "",
+            "isPartOf": {
+                "@id": "https://brilliantcoding.com/#website"
+            },
+            "primaryImageOfPage": {
+                "@id": "https://brilliantcoding.com/2016/03/jvm-programming-languages/#primaryimage"
+            },
+            "datePublished": "2016-03-24T04:51:09+00:00",
+            "dateModified": "2019-12-16T14:39:19+00:00",
+            "breadcrumb": {
+                "@id": "https://brilliantcoding.com/2016/03/jvm-programming-languages/#breadcrumb"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://brilliantcoding.com/2016/03/jvm-programming-languages/#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@type": "WebPage",
+                        "@id": "https://brilliantcoding.com/",
+                        "url": "https://brilliantcoding.com/",
+                        "name": "Home"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@type": "WebPage",
+                        "@id": "https://brilliantcoding.com/category/programming-languages/",
+                        "url": "https://brilliantcoding.com/category/programming-languages/",
+                        "name": "Programming Languages"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@type": "WebPage",
+                        "@id": "https://brilliantcoding.com/2016/03/jvm-programming-languages/",
+                        "url": "https://brilliantcoding.com/2016/03/jvm-programming-languages/",
+                        "name": "Looking ahead: JVM Programming Languages"
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "Article",
+            "@id": "https://brilliantcoding.com/2016/03/jvm-programming-languages/#article",
+            "isPartOf": {
+                "@id": "https://brilliantcoding.com/2016/03/jvm-programming-languages/#webpage"
+            },
+            "author": {
+                "@id": "https://brilliantcoding.com/#/schema/person/bb992c97c32509cfb75e6f4834eedaae"
+            },
+            "headline": "Looking ahead: JVM Programming Languages",
+            "datePublished": "2016-03-24T04:51:09+00:00",
+            "dateModified": "2019-12-16T14:39:19+00:00",
+            "commentCount": 0,
+            "mainEntityOfPage": {
+                "@id": "https://brilliantcoding.com/2016/03/jvm-programming-languages/#webpage"
+            },
+            "publisher": {
+                "@id": "https://brilliantcoding.com/#organization"
+            },
+            "image": {
+                "@id": "https://brilliantcoding.com/2016/03/jvm-programming-languages/#primaryimage"
+            },
+            "keywords": "Clojure,Java,Kotlin,Scala",
+            "articleSection": "Programming Languages"
+        },
+        {
+            "@type": [
+                "Person"
+            ],
+            "@id": "https://brilliantcoding.com/#/schema/person/bb992c97c32509cfb75e6f4834eedaae",
+            "name": "Matthew Jackowski",
+            "image": {
+                "@type": "ImageObject",
+                "@id": "https://brilliantcoding.com/#authorlogo",
+                "url": "http://0.gravatar.com/avatar/65b78c2dd9dc2d89bd72cc4ed922c954?s=96&d=mm&r=g",
+                "caption": "Matthew Jackowski"
+            },
+            "sameAs": []
+        }
+    ]
+}</script> <link
+rel='dns-prefetch' href='//s.w.org' /><link
+rel="alternate" type="application/rss+xml" title="Brilliant Coding Blog &raquo; Feed" href="https://brilliantcoding.com/feed/rss.xml" /><link
+rel="alternate" type="application/rss+xml" title="Brilliant Coding Blog &raquo; Looking ahead: JVM Programming Languages Comments Feed" href="https://brilliantcoding.com/2016/03/jvm-programming-languages/feed/rss.xml" /><link
+rel='stylesheet' id='bc-847cba1013f2ef83c10e8641953cb3bc-css'  href='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/css/bc.min.css' type='text/css' media='all' /> <script type='text/javascript' src='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/js/bc.min.js'></script> <meta
+name="generator" content="WordPress 5.3" /><link
+rel="icon" href="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" sizes="32x32" /><link
+rel="icon" href="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" sizes="192x192" /><link
+rel="apple-touch-icon-precomposed" href="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" /><meta
+name="msapplication-TileImage" content="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" /></head><body
+class="post-template-default single single-post postid-109 single-format-standard"><a
+id="bc-skippy" class="sr-only sr-only-focusable" href="#content">
+<span
+class="bc-skiplink-text">Skip to content</span>
+</a><header
+class="bc-navbar nav navbar navbar-expand navbar-dark flex-column flex-md-row"><div
+class="navbar-nav-scroll"><ul
+class="navbar-nav d-flex align-items-center"><li
+class="navbar-item">
+<a
+class="nav-link " href="https://brilliantcoding.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<span
+class="font-weight-bold">Home</span>
+</a></li><li
+class="navbar-item">
+<a
+class="nav-link " href="https://brilliantcoding.com/now/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<span
+class="font-weight-bold">Now</span>
+</a></li><li
+class="navbar-item">
+<a
+class="nav-link " href="https://brilliantcoding.com/about/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<span
+class="font-weight-bold">About</span>
+</a></li></ul></div><ul
+class="navbar-nav flex-row ml-md-auto d-none d-md-flex"><li
+class="navbar-item"><a
+class="nav-link " href="https://github.com/brilliantcoding" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fab fa-github" aria-hidden="true"></i>
+</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://twitter.com/brilliantcoding" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fab fa-twitter" aria-hidden="true"></i>
+</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://brilliantcoding.com/feed/rss.xml" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fa fa-rss" aria-hidden="true"></i>
+</a></li></ul></header><div
+class="blog-title mt-2"><div
+class="container-fluid d-flex"><div
+class="row pl-5"><div>
+<span
+class="float-left mr-3">
+<img
+src="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" />
+</span></div></div><div
+class="align-self-end"><h1 class="site-title">
+Brilliant Coding Blog</h1><p
+class="site-description mb-0">Be Brilliant</p></div></div></div><div
+class="bc-content"><div
+class="container-fluid">
+<article
+id="post-109" class="h-entry row mt-5 row flex-xl-nowrap bc-post-article"><div
+id="left_gutter" class="d-none d-xl-block col-xl-1"></div><div
+class="col-md-12 col-xl-9 pl-4 pr-4 pb-4"><h2 class="p-name">Looking ahead: JVM Programming Languages</h2><div
+class="pl-2 bc-metadata">
+<span
+class="clearfix"></span>
+<i
+class="fa fa-user" aria-hidden="true"></i>
+<a
+class="p-author h-card" href="https://brilliantcoding.com/author/mjjacko/">
+Matthew Jackowski		</a>
+<span
+class="sep"> | </span>
+<i
+class="fa fa-calendar" aria-hidden="true"></i>
+<time
+class="dt-published" datetime="2016-03-24T04:51:09+00:00">
+March 24, 2016			</time>
+<span
+class="sep"> | </span>
+<i
+class="fa fa-tags" aria-hidden="true"></i>
+<span
+class="tag-list"><a
+href="https://brilliantcoding.com/tag/clojure/" rel="tag">Clojure</a>, <a
+href="https://brilliantcoding.com/tag/java/" rel="tag">Java</a>, <a
+href="https://brilliantcoding.com/tag/kotlin/" rel="tag">Kotlin</a>, <a
+href="https://brilliantcoding.com/tag/scala/" rel="tag">Scala</a></span>
+<span
+class="d-none">
+<time
+class="dt-updated" datetime="2019-12-16T14:39:19+00:00">
+December 16, 2019			</time>
+</span></div><div
+class="e-content"><p>In this article I take a look ahead at the future of four programming languages; Java, Scala, Clojure and Kotlin. All four of these languages are designed to run on the Java Virtual Machine ( JVM ), which is supported on practically every computer operating system. Most recently, JVM programming languages have become popular choices for building cloud applications.<br
+/>
+<span
+id="more-109"></span><br
+/>
+<img
+class="wp-image-119 alignright" style="border: 1px solid #000;" src="https://brilliantcoding.com/wp-content/uploads/2016/03/1e91b7f.jpg" alt="White laptop with cup of coffee isolated on white" width="388" height="222"></p><h3><a
+href="https://www.java.com" target="_blank" rel="noopener noreferrer">Java</a></h3><p>Status: waiting patiently</p><p>Maybe the most exciting change for the Java programming language comes from <a
+href="http://www.infoq.com/articles/Project-Jigsaw-Coming-in-Java-9" target="_blank" rel="noopener noreferrer">Project Jigsaw</a>, it is one of the biggest changes that the JRE has undergone in years.&nbsp; Unfortunately it has been delayed and we will need to wait until 2017 for it. Unfortunately this also means that Java 9 has been delayed as well.&nbsp; I don&#8217;t expect much change in the Java landscape until the Java 9 release.&nbsp; Right now the project to watch is the <a
+href="http://openjdk.java.net/" target="_blank" rel="noopener noreferrer">OpenJDK project</a>.&nbsp; Historically it&#8217;s been a bit like mystery-meat where you are never quite sure which Java features are rolled into each build.&nbsp; Now, however, Google will be <a
+href="http://venturebeat.com/2015/12/29/google-confirms-next-android-version-wont-use-oracles-proprietary-java-apis/" target="_blank" rel="noopener noreferrer">looking to use OpenJDK</a> for their popular Android mobile OS.&nbsp; This could bring some much needed direction and rigor to the project.&nbsp; Will this lead to any long-term &#8216;forking&#8217; of the Java ecosystem?&#8230;I highly doubt it.&nbsp; Oracle has done a good job in continuing to steward new features into the Java platform and even with a release slip of a year&#8230;the Java community doesn&#8217;t tend to move particularly fast to merit a radical split.</p><blockquote><p>The radical thinking by Martin Odersky and team is a gamble that could lead to an impressive future for the Scala language.</p></blockquote><h3><a
+href="http://www.scala-lang.org" target="_blank" rel="noopener noreferrer">Scala</a></h3><p>Status: so you say you want a revolution?</p><p>While Java has held steady, the Scala language has been anything BUT steady. The main company supporting the Scala language, formerly known as &#8216;Typesafe&#8217; <a
+href="https://www.lightbend.com/blog/typesafe-changes-name-to-lightbend" target="_blank" rel="noopener noreferrer">changed their name</a> to &#8216;Lightbend&#8217; and appear to have a new &#8216;prime&#8217; directive targeting the replacement of <a
+href="https://www.lightbend.com/lagom" target="_blank" rel="noopener noreferrer">enterprise monoliths</a> .&nbsp; Even more radical is the shift for the next Scala version to refocus on <a
+href="http://www.scala-lang.org/blog/2016/02/03/essence-of-scala.html" target="_blank" rel="noopener noreferrer">DOT</a> which would enable Scala to build not only for the JRE&#8230;but also for Javascript engines like V8.&nbsp; This radical approach by Martin Odersky and team is a gamble that could lead to an impressive future for the Scala language.&nbsp; However, currently, this path is continuing to cause a rift with established Java veterans.&nbsp; With so much uncertainty about the language direction, I expect Scala to fall back into a very niche usage, primarily by startups and data scientists.</p><blockquote><p>Kotlin is the &#8216;Thomas the tank engine&#8217; of languages in that it just wants to be &#8216;useful&#8217;.</p></blockquote><h3><a
+href="http://clojure.org" target="_blank" rel="noopener noreferrer">Clojure</a></h3><p>Status: trying to cross the chasm</p><p>Speaking of niche languages, Clojure has been the new, up and coming JVM based language for quite some time.&nbsp; There is a well known gap where niche adoption gives way to broad acceptance, unfortunately Clojure has been trying to overcome that gap for some time and still has been largely unsuccessful.&nbsp; It&#8217;s starting to look like that gap might be a chasm.&nbsp; <a
+href="https://cursive-ide.com/" target="_blank" rel="noopener noreferrer">Cursive</a> a much needed development environment still remains an IntelliJ plugin.&nbsp; On the positive side, the Clojure development team continues to release yearly <a
+href="http://blog.cognitect.com/blog/2016/1/19/clojure-18" target="_blank" rel="noopener noreferrer">updates</a> with new features.&nbsp; To me, there is still a lot to like about the Clojure platform, however with many languages occupying this niche space, a flexible but less tool-heavy Clojure could simply get drowned out of consideration in the future.</p><blockquote><p>The Groovy language was abandoned by Pivotal and now is incubator status with the Apache project.</p></blockquote><h3><a
+href="https://kotlinlang.org/" target="_blank" rel="noopener noreferrer">KOTLIN</a></h3><p>Status: safety above all else</p><p>Speaking of languages with advanced tooling, by far the most exciting language to watch right now is Kotlin.&nbsp; Created by Jetbrains, the company responsible for the industry leading IntelliJ IDE, Kotlin is the &#8216;Thomas the tank engine&#8217; of languages in that it just wants to be &#8216;useful&#8217;.&nbsp; The exciting thing about Kotlin is that it offers many improvements over stock Java and it could quickly become the go to alternative for Java veterans.&nbsp; This is especially likely due to the uncertainty around the future of Scala.&nbsp; Also since Kotlin was developed by a development tool company all of the supporting components are already in place (ie build tools, analysis tools, testing and documentation).&nbsp; With version 1.0 fully released, I expect to see it used on more serious projects and for the overall adoption rate to increase significantly this year.</p><p><strong>Final thoughts</strong></p><p>I left a couple favorite JVM languages off the list.&nbsp; This is because I expect very little change from these projects in the next year.&nbsp; The <a
+href="http://www.groovy-lang.org/" target="_blank" rel="noopener noreferrer">Groovy</a> language was <a
+href="http://www.infoworld.com/article/2895752/development-tools/groovy-language-moves-to-apache-dumped-by-pivotal.html" target="_blank" rel="noopener noreferrer">abandoned</a> by Pivotal and now is incubator status with the Apache project.&nbsp; While <a
+href="http://www.groovy-lang.org/" target="_blank" rel="noopener noreferrer">Groovy</a> is a mature project, it will take the Apache project some time to get this project moving forward again.&nbsp; Another project that I absolutely adore is the <a
+href="http://jruby.org/" target="_blank" rel="noopener noreferrer">JRuby</a> project.&nbsp; It&#8217;s a testament to the options you get from embracing open source as it&#8217;s a sanctuary from MRI versus other <a
+href="http://llvm.org/" target="_blank" rel="noopener noreferrer">LLVM</a> forks (ie <a
+href="http://rubinius.com/">Rubinius</a>).&nbsp; However for serious long term production development I see Ruby users switching to Clojure instead of using <a
+href="http://jruby.org/" target="_blank" rel="noopener noreferrer">JRuby</a> (Clojures poor development environment by Java standards is still far better than what the Ruby community has to work with).</p><p>Copyright (c) Matthew Jackowski, 2016. Photo: © Africa Studio &#8211; Fotolia.com.</p></div></div><div
+class="d-none d-xl-block col-xl-2 p-0 bc-sidebar"><h6>Categories</h6><ul
+class="section"><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/code-refactor/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Code Refactor (3)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/programming-languages/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Programming Languages (3)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/software-development/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Software Development (3)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/open-source-software/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Open Source Software (2)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/developer-tools/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Developer Tools (1)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/notes-from-the-dev/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Notes from the Dev (1)						</a></li></ul></div>
+<a
+id="bc-skippy" class="sr-only sr-only-focusable" href="https://brilliantcoding.com/2016/03/jvm-programming-languages/">
+<span
+class="bc-skiplink-text">Looking ahead: JVM Programming Languages</span>
+</a></article></div></div>
+<footer
+id="colophon" class="bc-footer" role="contentinfo"><div
+class="container"><div
+class="bc-social-icons"><ul
+class="navbar-nav flex-row ml-md-auto d-none d-md-flex"><li
+class="navbar-item"><a
+class="nav-link " href="https://github.com/brilliantcoding" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fab fa-github" aria-hidden="true"></i>
+GIthub			</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://twitter.com/brilliantcoding" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fab fa-twitter" aria-hidden="true"></i>
+Twitter			</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://brilliantcoding.com/feed/rss.xml" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fa fa-rss" aria-hidden="true"></i>
+RSS			</a></li></ul></div><div
+class="bc-copyright">
+<span>© 2018 Matthew Jackowski</span>
+<span>- Powered by the <a
+href="https://github.com/brilliantcoding/bc-wptheme">Brilliant Coding Wordpress Theme</a></span></div>		</div>
+	</footer>
+</body>
+</html>

@@ -9,7 +9,7 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 ><channel><title>PHP &#8211; Brilliant Coding Blog</title>
 <atom:link href="https://brilliantcoding.com/tag/php/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com</link>
 <description>Be Brilliant</description>
-<lastBuildDate>Sun, 20 May 2018 20:58:04 +0000</lastBuildDate>
+<lastBuildDate>Mon, 16 Dec 2019 14:47:54 +0000</lastBuildDate>
 <language>en-US</language>
 <sy:updatePeriod>
 hourly	</sy:updatePeriod>
@@ -20,7 +20,7 @@ hourly	</sy:updatePeriod>
 <width>32</width>
 <height>32</height>
 </image>
-<item><title>A Bootstrap 4 hackable WordPress Theme</title><link>https://brilliantcoding.com/2018/01/21/bootstrap-4-hackable-wordpress-theme/</link>
+<item><title>A Bootstrap 4 hackable WordPress Theme</title><link>https://brilliantcoding.com/2018/01/bootstrap-4-hackable-wordpress-theme/</link>
 <pubDate>Sun, 21 Jan 2018 09:30:59 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
 <category><![CDATA[Notes from the Dev]]></category>
@@ -28,22 +28,22 @@ hourly	</sy:updatePeriod>
 <category><![CDATA[SASS]]></category><guid
 isPermaLink="false">http://localhost:32783/?p=396</guid>
 <description><![CDATA[<p>Notes from the dev For the Brilliant Coding blog, I built a new WordPress theme called: Brilliant Coding Alpha. Previously I had used existing WordPress themes, which were great, but lacked some of the flexibility I wanted. Instead I wanted something a little more &#8220;hackable&#8221;, after some research I found a few &#8220;theme builders&#8221; that [&#8230;]</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2018/01/21/bootstrap-4-hackable-wordpress-theme/">A Bootstrap 4 hackable WordPress Theme</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com/2018/01/bootstrap-4-hackable-wordpress-theme/">A Bootstrap 4 hackable WordPress Theme</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
 </item>
-<item><title>Refactoring to Factory Function in PHP</title><link>https://brilliantcoding.com/2016/04/04/refactoring-to-factory-methods-in-php/</link>
+<item><title>Refactoring to Factory Function in PHP</title><link>https://brilliantcoding.com/2016/04/refactoring-to-factory-methods-in-php/</link>
 <pubDate>Mon, 04 Apr 2016 05:49:52 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
 <category><![CDATA[Code Refactor]]></category>
 <category><![CDATA[PHP]]></category><guid
 isPermaLink="false">http://192.168.99.100:32772/?p=147</guid>
 <description><![CDATA[<p>This is a quick example to show a simple PHP refactoring for object creation.  Specifically our goal is to use static functions to better encapsulate our object constructor calls. In this example, we assume that we have a flexible message constructor that allows us to build messages given some text and time information. public function [&#8230;]</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2016/04/04/refactoring-to-factory-methods-in-php/">Refactoring to Factory Function in PHP</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com/2016/04/refactoring-to-factory-methods-in-php/">Refactoring to Factory Function in PHP</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
 </item>
-<item><title>Open Source programming environments that make coding easier</title><link>https://brilliantcoding.com/2015/12/22/open-source-programming-environments-that-make-coding-easier/</link>
+<item><title>Open Source programming environments that make coding easier</title><link>https://brilliantcoding.com/2015/12/open-source-programming-environments-that-make-coding-easier/</link>
 <pubDate>Tue, 22 Dec 2015 07:11:12 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
 <category><![CDATA[Developer Tools]]></category>
@@ -55,7 +55,7 @@ rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 <category><![CDATA[Ruby]]></category><guid
 isPermaLink="false">http://localhost:32783:8080/?p=50</guid>
 <description><![CDATA[<p>A programmer&#8217;s life is hard enough keeping up-to-date on the latest technologies, understanding product specifications, and debugging issues. These programming environments help keep programmer sane by offering integrated syntax coloring, auto-completion, debugging tools and more. The main tools on this list are also all Open Source projects themselves. This enables you to directly contribute to [&#8230;]</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2015/12/22/open-source-programming-environments-that-make-coding-easier/">Open Source programming environments that make coding easier</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com/2015/12/open-source-programming-environments-that-make-coding-easier/">Open Source programming environments that make coding easier</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
 </item>

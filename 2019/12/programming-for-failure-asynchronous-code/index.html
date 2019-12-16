@@ -1,0 +1,401 @@
+<!DOCTYPE html><html
+lang="en-US"><head><meta
+charset="UTF-8"><meta
+name="viewport" content="width=device-width, initial-scale=1"><link
+rel="profile" href="http://gmpg.org/xfn/11"> <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-74127232-1', 'auto',{
+		'anonymizeIp': true,
+		'storage': 'none',
+		'storeGac': false,
+		'siteSpeedSampleRate': 90
+	});
+	ga('require', 'autotrack');
+	ga('send', 'pageview');</script> <title>Programming for failure &#8211; asynchronous code &#8211; Brilliant Coding Blog</title><meta
+name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/><link
+rel="canonical" href="https://brilliantcoding.com/2019/12/programming-for-failure-asynchronous-code/" /><meta
+property="og:locale" content="en_US" /><meta
+property="og:type" content="article" /><meta
+property="og:title" content="Programming for failure - asynchronous code" /><meta
+property="og:description" content="When writing asynchronous code, if you haven&#039;t built your program to handle failure, then often, it may appear that the failure never even happened. Exception handling in asynchronous code is very different than in sequential code, because the failure has to be &quot;woven&quot; into the code itself. Let&#039;s take a closer look at this!" /><meta
+property="og:url" content="https://brilliantcoding.com/2019/12/programming-for-failure-asynchronous-code/" /><meta
+property="og:site_name" content="Brilliant Coding Blog" /><meta
+property="article:tag" content="Javascript" /><meta
+property="article:section" content="Software Development" /><meta
+property="article:published_time" content="2019-12-12T06:09:00+00:00" /><meta
+property="article:modified_time" content="2019-12-14T00:26:23+00:00" /><meta
+property="og:updated_time" content="2019-12-14T00:26:23+00:00" /><meta
+property="og:image" content="https://brilliantcoding.com/wp-content/uploads/2019/12/programming-for-failure-async-socialthumb.jpg" /><meta
+property="og:image:width" content="1200" /><meta
+property="og:image:height" content="675" /><meta
+name="twitter:card" content="summary" /><meta
+name="twitter:description" content="When writing asynchronous code, if you haven&#039;t built your program to handle failure, then often, it may appear that the failure never even happened. Exception handling in asynchronous code is very different than in sequential code, because the failure has to be &quot;woven&quot; into the code itself. Let&#039;s take a closer look at this!" /><meta
+name="twitter:title" content="Programming for failure - asynchronous code" /><meta
+name="twitter:site" content="@brilliantcoding" /><meta
+name="twitter:image" content="https://brilliantcoding.com/wp-content/uploads/2019/12/programming-for-failure-async-socialthumb.jpg" /><meta
+name="twitter:creator" content="@brilliantcoding" /> <script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://brilliantcoding.com/#organization",
+            "name": "Brilliant Coding",
+            "url": "https://brilliantcoding.com/",
+            "sameAs": [
+                "https://twitter.com/brilliantcoding"
+            ],
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "https://brilliantcoding.com/#logo",
+                "url": "https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png",
+                "width": 120,
+                "height": 120,
+                "caption": "Brilliant Coding"
+            },
+            "image": {
+                "@id": "https://brilliantcoding.com/#logo"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://brilliantcoding.com/#website",
+            "url": "https://brilliantcoding.com/",
+            "name": "Brilliant Coding Blog",
+            "description": "Be Brilliant",
+            "publisher": {
+                "@id": "https://brilliantcoding.com/#organization"
+            },
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://brilliantcoding.com/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://brilliantcoding.com/2019/12/programming-for-failure-asynchronous-code/#webpage",
+            "url": "https://brilliantcoding.com/2019/12/programming-for-failure-asynchronous-code/",
+            "inLanguage": "en-US",
+            "name": "",
+            "isPartOf": {
+                "@id": "https://brilliantcoding.com/#website"
+            },
+            "datePublished": "2019-12-12T06:09:00+00:00",
+            "dateModified": "2019-12-14T00:26:23+00:00",
+            "breadcrumb": {
+                "@id": "https://brilliantcoding.com/2019/12/programming-for-failure-asynchronous-code/#breadcrumb"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": "https://brilliantcoding.com/2019/12/programming-for-failure-asynchronous-code/#breadcrumb",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                        "@type": "WebPage",
+                        "@id": "https://brilliantcoding.com/",
+                        "url": "https://brilliantcoding.com/",
+                        "name": "Home"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                        "@type": "WebPage",
+                        "@id": "https://brilliantcoding.com/category/software-development/",
+                        "url": "https://brilliantcoding.com/category/software-development/",
+                        "name": "Software Development"
+                    }
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                        "@type": "WebPage",
+                        "@id": "https://brilliantcoding.com/2019/12/programming-for-failure-asynchronous-code/",
+                        "url": "https://brilliantcoding.com/2019/12/programming-for-failure-asynchronous-code/",
+                        "name": "Programming for failure &#8211; asynchronous code"
+                    }
+                }
+            ]
+        },
+        {
+            "@type": "Article",
+            "@id": "https://brilliantcoding.com/2019/12/programming-for-failure-asynchronous-code/#article",
+            "isPartOf": {
+                "@id": "https://brilliantcoding.com/2019/12/programming-for-failure-asynchronous-code/#webpage"
+            },
+            "author": {
+                "@id": "https://brilliantcoding.com/#/schema/person/bb992c97c32509cfb75e6f4834eedaae"
+            },
+            "headline": "Programming for failure &#8211; asynchronous code",
+            "datePublished": "2019-12-12T06:09:00+00:00",
+            "dateModified": "2019-12-14T00:26:23+00:00",
+            "commentCount": 0,
+            "mainEntityOfPage": {
+                "@id": "https://brilliantcoding.com/2019/12/programming-for-failure-asynchronous-code/#webpage"
+            },
+            "publisher": {
+                "@id": "https://brilliantcoding.com/#organization"
+            },
+            "keywords": "Javascript",
+            "articleSection": "Software Development"
+        },
+        {
+            "@type": [
+                "Person"
+            ],
+            "@id": "https://brilliantcoding.com/#/schema/person/bb992c97c32509cfb75e6f4834eedaae",
+            "name": "Matthew Jackowski",
+            "image": {
+                "@type": "ImageObject",
+                "@id": "https://brilliantcoding.com/#authorlogo",
+                "url": "http://0.gravatar.com/avatar/65b78c2dd9dc2d89bd72cc4ed922c954?s=96&d=mm&r=g",
+                "caption": "Matthew Jackowski"
+            },
+            "sameAs": []
+        }
+    ]
+}</script> <link
+rel='dns-prefetch' href='//s.w.org' /><link
+rel="alternate" type="application/rss+xml" title="Brilliant Coding Blog &raquo; Feed" href="https://brilliantcoding.com/feed/rss.xml" /><link
+rel="alternate" type="application/rss+xml" title="Brilliant Coding Blog &raquo; Programming for failure &#8211; asynchronous code Comments Feed" href="https://brilliantcoding.com/2019/12/programming-for-failure-asynchronous-code/feed/rss.xml" /><link
+rel='stylesheet' id='bc-847cba1013f2ef83c10e8641953cb3bc-css'  href='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/css/bc.min.css' type='text/css' media='all' /> <script type='text/javascript' src='https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/assets/js/bc.min.js'></script> <meta
+name="generator" content="WordPress 5.3" /><link
+rel="icon" href="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" sizes="32x32" /><link
+rel="icon" href="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" sizes="192x192" /><link
+rel="apple-touch-icon-precomposed" href="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" /><meta
+name="msapplication-TileImage" content="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" /></head><body
+class="post-template-default single single-post postid-680 single-format-standard"><a
+id="bc-skippy" class="sr-only sr-only-focusable" href="#content">
+<span
+class="bc-skiplink-text">Skip to content</span>
+</a><header
+class="bc-navbar nav navbar navbar-expand navbar-dark flex-column flex-md-row"><div
+class="navbar-nav-scroll"><ul
+class="navbar-nav d-flex align-items-center"><li
+class="navbar-item">
+<a
+class="nav-link " href="https://brilliantcoding.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<span
+class="font-weight-bold">Home</span>
+</a></li><li
+class="navbar-item">
+<a
+class="nav-link " href="https://brilliantcoding.com/now/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<span
+class="font-weight-bold">Now</span>
+</a></li><li
+class="navbar-item">
+<a
+class="nav-link " href="https://brilliantcoding.com/about/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<span
+class="font-weight-bold">About</span>
+</a></li></ul></div><ul
+class="navbar-nav flex-row ml-md-auto d-none d-md-flex"><li
+class="navbar-item"><a
+class="nav-link " href="https://github.com/brilliantcoding" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fab fa-github" aria-hidden="true"></i>
+</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://twitter.com/brilliantcoding" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fab fa-twitter" aria-hidden="true"></i>
+</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://brilliantcoding.com/feed/rss.xml" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fa fa-rss" aria-hidden="true"></i>
+</a></li></ul></header><div
+class="blog-title mt-2"><div
+class="container-fluid d-flex"><div
+class="row pl-5"><div>
+<span
+class="float-left mr-3">
+<img
+src="https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png" />
+</span></div></div><div
+class="align-self-end"><h1 class="site-title">
+Brilliant Coding Blog</h1><p
+class="site-description mb-0">Be Brilliant</p></div></div></div><div
+class="bc-content"><div
+class="container-fluid">
+<article
+id="post-680" class="h-entry row mt-5 row flex-xl-nowrap bc-post-article"><div
+id="left_gutter" class="d-none d-xl-block col-xl-1"></div><div
+class="col-md-12 col-xl-9 pl-4 pr-4 pb-4"><h2 class="p-name">Programming for failure &#8211; asynchronous code</h2><div
+class="pl-2 bc-metadata">
+<span
+class="clearfix"></span>
+<i
+class="fa fa-user" aria-hidden="true"></i>
+<a
+class="p-author h-card" href="https://brilliantcoding.com/author/mjjacko/">
+Matthew Jackowski		</a>
+<span
+class="sep"> | </span>
+<i
+class="fa fa-calendar" aria-hidden="true"></i>
+<time
+class="dt-published" datetime="2019-12-12T06:09:00+00:00">
+December 12, 2019			</time>
+<span
+class="sep"> | </span>
+<i
+class="fa fa-tags" aria-hidden="true"></i>
+<span
+class="tag-list"><a
+href="https://brilliantcoding.com/tag/javascript/" rel="tag">Javascript</a></span>
+<span
+class="d-none">
+<time
+class="dt-updated" datetime="2019-12-14T00:26:23+00:00">
+December 14, 2019			</time>
+</span></div><div
+class="e-content"><p>When writing asynchronous code, if you haven&#8217;t built your program to handle failure, then often, it may appear that the failure never even happened. Exception handling in asynchronous code is very different than in sequential code, because the failure has to be &#8220;woven&#8221; into the code itself.  Let&#8217;s take a closer look at this!<br><span
+id="more-680"></span><style type="text/css">@import url("https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/highlight/styles/solarized-dark.css");</style> <script src="https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/highlight/highlight.pack.js"></script> <script>hljs.initHighlightingOnLoad();</script> <style>@font-face {
+    font-family: "Iosevka";
+    src: url(https://brilliantcoding.com/wp-content/themes/brilliantcodingalpha/iosevka/iosevka-regular.ttf) format("truetype");
+}</style><br>Previously we talked about <a
+href="https://brilliantcoding.com/2019/01/19/programming-for-failure-learning-the-basics/">handling exceptions in sequential programs</a>, that is programs which have a functional call stack that is in order based on how the code is written. In asynchronous programs the program execution is not as rigid since code execution is delegated to different processes, threads, etc.  Because of this, it&#8217;s more difficult to <i>reason</i> about our exception handling separately. However, our goal is similar to that of sequential code: failures will happen, sometimes in unexpected ways and our code needs to handle these cases in a well designed way.</p><p><i>Let&#8217;s take a look at a simple asynchronous callback design pattern:</i></p><pre><code class="javascript hljs">
+request.get(url, function(ex, res, body) {
+    if (!err) {
+        console.log('Success!')
+    } else {
+        console.log(ex.stack);
+    }
+});
+
+</code></pre><p>We can see from this example the distinction between our error handling code and the main execution code is not distinct, we are using regular logic &#8220;if/else&#8221; statements and object truthiness to branch on the error instead of a specialized &#8220;try/catch&#8221; statements.</p><p>It&#8217;s important to note that the callback design pattern does not <i>require</i> asynchronous functions, but this is a commonly used pattern for making asynchronous function calls. The examples in this article use http requests because this is a common reason for needing to write asynchronous code. Often writing a program which needs to use the http protocol is often the first time many programmers encounter needing to write asynchronous code.</p><p>An important design consideration is to make sure the code doesn&#8217;t &#8220;block&#8221; the execution of code that otherwise could run concurrently.  As a programmer you want to avoid making your program wait for external http requests to resolve.  This type of issue, blocking execution, wastes cpu time and if it happens in loops or other iterative components, could drastically slow down the program.</p><p>Another important design approach is to let our exceptions &#8220;bubble up&#8221; from inner function calls to outer calls.  This forms the basis of a &#8220;call stack&#8221; which is useful for logging as it gives a sequential view of the program execution that you can use to debug your program.  However in the case of asychronous code, the inner call might appear <i>much</i> later in the logs and it can be very difficult to trace asycronous program execution in this way.</p><p><i>Let&#8217;s look at a nested example using our callback example:</i></p><pre><code class="javascript hljs">
+request.get(url, function(err, res, body) {
+    if (!err) {
+        request.get(a_different_url, function(ex, res, body) {
+            if (!err) {
+                console.log('Success!')
+            } else {
+                console.log(ex.stack);
+            }
+        });
+    } else {
+        console.log(ex.stack);
+    }
+});
+
+</code></pre><p>Hopefully the challenge is fairly obvious, we can&#8217;t push the inner exception up through the caller due to the fact that the caller already completed. So our program design choices are <i>much</i> more limited and in this case we are simply logging the exception and letting the program potentially crash in some unspecified way (ie, what happens when the inner call fails? does our model state become inconsistent? does the user sees a message? etc).</p><p>Generally speaking asynchronous code is not recoverable. Because you are designing your program to have concurrent execution, that implies that you are not going to &#8220;block&#8221; or wait for the inner function to complete and allow for some graceful error handler to determine the correct program flow.</p><p><h5>Oh My! What can we do?</h5>To be fair my example highlighted one of the worst design cases (often referred to as &#8220;callback hell&#8221;), there are quite a few better ways to design for asynchronous exception handling. For the rest of this article I&#8217;m going to give an overview of few of these options. However, keep in mind, this topic is fairly dense and there is a lot of information available on it.  If you decide to dive deeply into it by asking &#8220;why?&#8221;, that can lead you to need to ponder the fundamentals of programming. I&#8217;ve included links to relevant external resources throughout the article.</p><ul>
+<i>Here are the three options I&#8217;m going to cover:</i><li>Make the asynchronous code look like sequential code</li><li>Stop the flow of execution in your asynchronous code when exceptions happen</li><li>Make your execution flow into a chained set of functions</li></ul><h5>Promises</h5><p>The examples below use Promises. Keep in mind that in code that uses Promises, often there is no literal construction of a &#8220;Promise&#8221;.  The idea of a Promise is more of an abstract specification.  Therefore the use of certain methods (usually &#8220;then&#8221;) implies the convention.</p><ul>
+<i>Additional information:</i><li><a
+href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises">&#8220;Using Promises&#8221;</a> via Mozilla Developer Network</li><li><a
+href="https://promisesaplus.com/">&#8220;Promises/A+ specification&#8221;</a> via the Promises/A+ organization</li></ul><p><h3>Option 1 &#8211; Async/await</h3>I think this approach really is the simplest conceptually. Basically what we want is to have is our asynchronous code replicate the &#8220;look&#8221; of synchronous code. This is exactly what the async/await approach does. With this approach there is potentially some blocking going on here, however it is done &#8220;strategically&#8221;. In this case the strategy is enforce limited blocking inside of the specifically designated &#8220;async&#8221; function when the await is called.  Otherwise the functions are able to execute concurrently.  <i>Let&#8217;s look at how our simple callback example changes with this design pattern:</i></p><pre><code>
+const getData = async url => {
+  try {
+    const response = await fetch(url);
+  } catch (ex) {
+    console.log(ex);
+  }
+}
+
+</code></pre><p>It&#8217;s important to note that this means that you need <i>design</i> this strategy into your code and denote the async and associated awaits. If these are implemented in a naive fashion, it can result in blocking your program&#8217;s execution and you might lose most of the benefits from concurrency.</p><ul><i>Additional information:</i><li><a
+href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await">&#8220;Making asynchronous programming easier with async and await&#8221;</a> via the Mozilla Developer Network</ul><p><h3>Option 2 &#8211; Circuit breaker</h3>In this option we start with a very simple premise, which is the asynchronous function should not worry about handling exceptions at all.  Instead we are going to &#8220;proxy&#8221; all calls to execute through another &#8220;circuit breaker&#8221; function.  The circuit breaker design handles exceptions in a <i>very</i> generic way which allows it to be used for virtually any purpose.  The downside to this is the added complexity that gets introduced in this design.  The internal design of the circuit breaker pattern is a state-machine that generally has three states (OPEN, CLOSED, HALF-OPEN) and a set of configuration parameters that can be used to change its behavior upon instantiation.  For practical purposes this approach is best suited for solving complex problems in a highly reliable and robust way.  <i>Let&#8217;s take a look at what a &#8220;minimal&#8221; example could be:</i></p><pre><code class="javascript hljs">   
+// Function that we want to execute asynchronously
+function get_url(url) {
+    return request.get(url, function(ex, res, body) {
+        console.log('Success!')
+    });
+}
+
+// Setup circuit breaker instance for this function
+const my_circuit_breaker = circuit_breaker(get_url)
+
+// Execute it, and notice that it conveniently returns a "safe" promise
+const getData = my_circuit_breaker(url).then(parse_response);
+
+</code></pre><p>The added complexity in this approach means you will likely need a whole extra library that implements the circuit breaker design.  This example assumes this is the case, I&#8217;ve included some links below to articles which discuss the specifics of that implementation.  Also it&#8217;s important to note that in this example the circuit breaker will return &#8220;safely&#8221;.  That is to say any errors will have been handled by the circuit breaker logic so you can then call &#8220;parse_response&#8221; assuming that &#8220;get_url&#8221; completed.</p><ul><i>Additional information:</i><li><a
+href="https://www.martinfowler.com/bliki/CircuitBreaker.html">&#8220;CircuitBreaker&#8221;</a> via martinFowler.com</li><li><a
+href="https://nodeshift.dev/opossum/">&#8220;Opossum Nodejs project&#8221;</a> via GitHub (an example library)</li></ul><p><h3>Option 3 &#8211; Chaining</h3>The final option that I&#8217;m going to cover is comes in many different &#8220;flavors&#8221; so let&#8217;s start with the basic premise. Back from the beginning of this post we mentioned that by their nature asynchronous functions cannot be recovered.  So instead of building one big function, we can decompose our function into smaller ones and &#8220;chain&#8221; them together.  This approach allows us to handle exceptions &#8220;between&#8221; each function in the chain.  <i>Let&#8217;s look at a code example (using the &#8220;Promise/rejection&#8221; naming convention):</i></p><pre><code class="javascript hljs">
+function get_url() {
+    // For this example I'm using the fetch() API because it uses Promises.
+    return fetch(url).then(response => {
+        if (response.headers.get('content-type') != 'application/json') {
+            throw new ContentTypeError();
+        }
+        // We return a new "chained" Promise.
+        return response.json();
+    });
+}
+
+get_url.catch(ex) => {
+    if (exception instanceof ContentTypeError) {
+        console.log('Exception - The response is not JSON')
+    } else {
+        console.log(ex);
+    }
+}
+const getData = get_url().then();
+
+</code></pre><p>With the chaining option, we have clearly moved away from a syntax that is representative of exception handling in sequential code.  In fact the code itself more closely resembles the original callback example we started with.  Notice how we have added a &#8220;catch&#8221;, but that it does not handle the exception but rather allows us to define an exception handler function (more correctly called a &#8220;rejection&#8221; since &#8220;exception&#8221; is more of sequential code terminology).  Also the &#8220;try&#8221; part that we use in sequential code becomes implicit in the Promise itself due to the nature of asynchronous functions.</p><p>It&#8217;s also important to note that Promises used in the example are a common idiom in Javascript but the chaining behavior can be implemented in other ways too. There are other approaches such as: &#8220;Futures&#8221;, &#8220;Results&#8221;, &#8220;Either&#8221;, or simple functional composition.  These other approaches make different trade-offs so should be carefully considered during the design of the program.</p><ul><i>Additional information:</i><li><a
+href="https://javascript.info/promise-chaining">&#8220;Promises chaining&#8221;</a> via Javascript.info</li></ul><p><h3>Wrapping up</h3>Programming for failure is all about being aware of the design choices that you are making about your program with regard to handling exceptions. Like many aspects of software development there are a wide range of choices available and tons of information on this topic to research further. In this article I wanted to just skim the surface and cover a few common options. Knowing what options are available and their respective trade-offs is crucial in order to have good software design and to ensuring your program handles failure correctly.</p></div></div><div
+class="d-none d-xl-block col-xl-2 p-0 bc-sidebar"><h6>Categories</h6><ul
+class="section"><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/code-refactor/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Code Refactor (3)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/programming-languages/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Programming Languages (3)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/software-development/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Software Development (3)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/open-source-software/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Open Source Software (2)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/developer-tools/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Developer Tools (1)						</a></li><li
+class="list-item">
+<a
+class="list-link " href="https://brilliantcoding.com/category/notes-from-the-dev/" onclick="ga('send', 'event', 'Navbar', 'Category links', 'Bootstrap');">
+<span>Notes from the Dev (1)						</a></li></ul></div>
+<a
+id="bc-skippy" class="sr-only sr-only-focusable" href="https://brilliantcoding.com/2019/12/programming-for-failure-asynchronous-code/">
+<span
+class="bc-skiplink-text">Programming for failure &#8211; asynchronous code</span>
+</a></article></div></div>
+<footer
+id="colophon" class="bc-footer" role="contentinfo"><div
+class="container"><div
+class="bc-social-icons"><ul
+class="navbar-nav flex-row ml-md-auto d-none d-md-flex"><li
+class="navbar-item"><a
+class="nav-link " href="https://github.com/brilliantcoding" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fab fa-github" aria-hidden="true"></i>
+GIthub			</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://twitter.com/brilliantcoding" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fab fa-twitter" aria-hidden="true"></i>
+Twitter			</a></li><li
+class="navbar-item"><a
+class="nav-link " href="https://brilliantcoding.com/feed/rss.xml" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">
+<i
+class="fa fa-rss" aria-hidden="true"></i>
+RSS			</a></li></ul></div><div
+class="bc-copyright">
+<span>© 2018 Matthew Jackowski</span>
+<span>- Powered by the <a
+href="https://github.com/brilliantcoding/bc-wptheme">Brilliant Coding Wordpress Theme</a></span></div>		</div>
+	</footer>
+</body>
+</html>
