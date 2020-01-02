@@ -15,45 +15,45 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 hourly	</sy:updatePeriod>
 <sy:updateFrequency>
 1	</sy:updateFrequency>
-<generator>https://wordpress.org/?v=5.3</generator><image>
+<generator>https://wordpress.org/?v=5.3.2</generator><image>
 <url>https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png</url><title>Code Refactor &#8211; Brilliant Coding Blog</title><link>https://brilliantcoding.com</link>
 <width>32</width>
 <height>32</height>
 </image>
-<item><title>Refactoring to Factory Function in PHP</title><link>https://brilliantcoding.com/2016/04/refactoring-to-factory-methods-in-php/</link>
+<item><title>Refactoring to Factory Function in PHP</title><link>https://brilliantcoding.com/2016/04/04/refactoring-to-factory-methods-in-php/</link>
 <pubDate>Mon, 04 Apr 2016 05:49:52 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
 <category><![CDATA[Code Refactor]]></category>
 <category><![CDATA[PHP]]></category><guid
 isPermaLink="false">http://192.168.99.100:32772/?p=147</guid>
 <description><![CDATA[<p>This is a quick example to show a simple PHP refactoring for object creation.  Specifically our goal is to use static functions to better encapsulate our object constructor calls. In this example, we assume that we have a flexible message constructor that allows us to build messages given some text and time information. public function [&#8230;]</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2016/04/refactoring-to-factory-methods-in-php/">Refactoring to Factory Function in PHP</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com/2016/04/04/refactoring-to-factory-methods-in-php/">Refactoring to Factory Function in PHP</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
 </item>
-<item><title>Refactoring a For-Loop to a Lambda in Java</title><link>https://brilliantcoding.com/2015/12/refactoring-a-for-loop-to-a-lambda-in-java/</link>
+<item><title>Refactoring a For-Loop to a Lambda in Java</title><link>https://brilliantcoding.com/2015/12/28/refactoring-a-for-loop-to-a-lambda-in-java/</link>
 <pubDate>Mon, 28 Dec 2015 07:47:49 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
 <category><![CDATA[Code Refactor]]></category>
 <category><![CDATA[Java]]></category><guid
 isPermaLink="false">http://localhost:32783:8080/?p=62</guid>
 <description><![CDATA[<p>This is a quick example to show refactoring a &#8216;for-loop&#8217; over a List of objects by using a Lambda function instead. We will take a simple List of Message objects and simply output the name of the message. Typically you may want to perform various side affects instead of the outputting the object&#8217;s name on [&#8230;]</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2015/12/refactoring-a-for-loop-to-a-lambda-in-java/">Refactoring a For-Loop to a Lambda in Java</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com/2015/12/28/refactoring-a-for-loop-to-a-lambda-in-java/">Refactoring a For-Loop to a Lambda in Java</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
 </item>
-<item><title>Refactoring to Strategy Pattern in Javascript</title><link>https://brilliantcoding.com/2015/12/refactoring-to-strategy-pattern-in-javascript/</link>
-<comments>https://brilliantcoding.com/2015/12/refactoring-to-strategy-pattern-in-javascript/#respond</comments>
+<item><title>Refactoring to Strategy Pattern in Javascript</title><link>https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/</link>
+<comments>https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/#respond</comments>
 <pubDate>Mon, 21 Dec 2015 06:57:28 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
 <category><![CDATA[Code Refactor]]></category>
 <category><![CDATA[Javascript]]></category><guid
 isPermaLink="false">http://192.168.99.100:32769/?p=16</guid>
 <description><![CDATA[<p>This is a quick example to show refactoring to a strategy pattern.  We will take a simple function that uses a case statement and refactor with the strategy pattern. Keep in mind this approach will also work with 'if ... else' trees too!</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2015/12/refactoring-to-strategy-pattern-in-javascript/">Refactoring to Strategy Pattern in Javascript</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/">Refactoring to Strategy Pattern in Javascript</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
-<wfw:commentRss>https://brilliantcoding.com/2015/12/refactoring-to-strategy-pattern-in-javascript/feed/rss.xml</wfw:commentRss>
+<wfw:commentRss>https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/feed/rss.xml</wfw:commentRss>
 <slash:comments>0</slash:comments>
 </item>
 </channel>

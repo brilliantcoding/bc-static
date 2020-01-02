@@ -9,11 +9,11 @@ xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
 Comments on: Programming for failure &#8211; asynchronous code</title>
 <atom:link href="https://brilliantcoding.com/2019/12/12/programming-for-failure-asynchronous-code/feed/rss.xml" rel="self" type="application/rss+xml" /><link>https://brilliantcoding.com/2019/12/12/programming-for-failure-asynchronous-code/</link>
 <description>Be Brilliant</description>
-<lastBuildDate>Fri, 13 Dec 2019 19:46:06 +0000</lastBuildDate>
+<lastBuildDate>Sat, 14 Dec 2019 00:26:23 +0000</lastBuildDate>
 <sy:updatePeriod>
 hourly	</sy:updatePeriod>
 <sy:updateFrequency>
 1	</sy:updateFrequency>
-<generator>https://wordpress.org/?v=5.3</generator>
+<generator>https://wordpress.org/?v=5.3.2</generator>
 </channel>
 </rss>

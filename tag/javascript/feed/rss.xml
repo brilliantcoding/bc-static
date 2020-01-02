@@ -15,23 +15,23 @@ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 hourly	</sy:updatePeriod>
 <sy:updateFrequency>
 1	</sy:updateFrequency>
-<generator>https://wordpress.org/?v=5.3</generator><image>
+<generator>https://wordpress.org/?v=5.3.2</generator><image>
 <url>https://brilliantcoding.com/wp-content/uploads/2018/01/brilliantcoding-logo.png</url><title>Javascript &#8211; Brilliant Coding Blog</title><link>https://brilliantcoding.com</link>
 <width>32</width>
 <height>32</height>
 </image>
-<item><title>Programming for failure &#8211; asynchronous code</title><link>https://brilliantcoding.com/2019/12/programming-for-failure-asynchronous-code/</link>
+<item><title>Programming for failure &#8211; asynchronous code</title><link>https://brilliantcoding.com/2019/12/12/programming-for-failure-asynchronous-code/</link>
 <pubDate>Thu, 12 Dec 2019 06:09:00 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
 <category><![CDATA[Software Development]]></category>
 <category><![CDATA[Javascript]]></category><guid
 isPermaLink="false">http://localhost:32783/?p=680</guid>
 <description><![CDATA[<p>When writing asynchronous code, if you haven&#8217;t built your program to handle failure, then often, it may appear that the failure never even happened. Exception handling in asynchronous code is very different than in sequential code, because the failure has to be &#8220;woven&#8221; into the code itself. Let&#8217;s take a closer look at this!Previously we [&#8230;]</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2019/12/programming-for-failure-asynchronous-code/">Programming for failure &#8211; asynchronous code</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com/2019/12/12/programming-for-failure-asynchronous-code/">Programming for failure &#8211; asynchronous code</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
 </item>
-<item><title>Functional Programming Ebooks</title><link>https://brilliantcoding.com/2018/05/functional-programming-ebooks/</link>
+<item><title>Functional Programming Ebooks</title><link>https://brilliantcoding.com/2018/05/19/functional-programming-ebooks/</link>
 <pubDate>Sat, 19 May 2018 06:13:41 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
 <category><![CDATA[Programming Languages]]></category>
@@ -40,11 +40,11 @@ rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 <category><![CDATA[Lisp]]></category><guid
 isPermaLink="false">http://localhost:32783/?p=510</guid>
 <description><![CDATA[<p>This is my first list of freely available ebooks about functional programming. Rather than trying to compile a long list of every online ebook on the subject, I focused on the ones that are completely free such that they do not require any registration. However if you do find these useful, I would encourage supporting [&#8230;]</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2018/05/functional-programming-ebooks/">Functional Programming Ebooks</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com/2018/05/19/functional-programming-ebooks/">Functional Programming Ebooks</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
 </item>
-<item><title>Open Source programming environments that make coding easier</title><link>https://brilliantcoding.com/2015/12/open-source-programming-environments-that-make-coding-easier/</link>
+<item><title>Open Source programming environments that make coding easier</title><link>https://brilliantcoding.com/2015/12/22/open-source-programming-environments-that-make-coding-easier/</link>
 <pubDate>Tue, 22 Dec 2015 07:11:12 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
 <category><![CDATA[Developer Tools]]></category>
@@ -56,22 +56,22 @@ rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 <category><![CDATA[Ruby]]></category><guid
 isPermaLink="false">http://localhost:32783:8080/?p=50</guid>
 <description><![CDATA[<p>A programmer&#8217;s life is hard enough keeping up-to-date on the latest technologies, understanding product specifications, and debugging issues. These programming environments help keep programmer sane by offering integrated syntax coloring, auto-completion, debugging tools and more. The main tools on this list are also all Open Source projects themselves. This enables you to directly contribute to [&#8230;]</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2015/12/open-source-programming-environments-that-make-coding-easier/">Open Source programming environments that make coding easier</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com/2015/12/22/open-source-programming-environments-that-make-coding-easier/">Open Source programming environments that make coding easier</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
 </item>
-<item><title>Refactoring to Strategy Pattern in Javascript</title><link>https://brilliantcoding.com/2015/12/refactoring-to-strategy-pattern-in-javascript/</link>
-<comments>https://brilliantcoding.com/2015/12/refactoring-to-strategy-pattern-in-javascript/#respond</comments>
+<item><title>Refactoring to Strategy Pattern in Javascript</title><link>https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/</link>
+<comments>https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/#respond</comments>
 <pubDate>Mon, 21 Dec 2015 06:57:28 +0000</pubDate>
 <dc:creator><![CDATA[Matthew Jackowski]]></dc:creator>
 <category><![CDATA[Code Refactor]]></category>
 <category><![CDATA[Javascript]]></category><guid
 isPermaLink="false">http://192.168.99.100:32769/?p=16</guid>
 <description><![CDATA[<p>This is a quick example to show refactoring to a strategy pattern.  We will take a simple function that uses a case statement and refactor with the strategy pattern. Keep in mind this approach will also work with 'if ... else' trees too!</p><p>The post <a
-rel="nofollow" href="https://brilliantcoding.com/2015/12/refactoring-to-strategy-pattern-in-javascript/">Refactoring to Strategy Pattern in Javascript</a> appeared first on <a
+rel="nofollow" href="https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/">Refactoring to Strategy Pattern in Javascript</a> appeared first on <a
 rel="nofollow" href="https://brilliantcoding.com">Brilliant Coding Blog</a>.</p>
 ]]></description>
-<wfw:commentRss>https://brilliantcoding.com/2015/12/refactoring-to-strategy-pattern-in-javascript/feed/rss.xml</wfw:commentRss>
+<wfw:commentRss>https://brilliantcoding.com/2015/12/21/refactoring-to-strategy-pattern-in-javascript/feed/rss.xml</wfw:commentRss>
 <slash:comments>0</slash:comments>
 </item>
 </channel>
